@@ -8,7 +8,7 @@
 
 There are three GitHub repositories:
 
-  * [kbalog/web-programming](https://github.com/kbalog/web-programming/): (i.e., this repository) contains examples, exercises, assignment descriptions, etc. (public)
+  * [course-info](https://github.com/uis-dat310-spring19/course-info): (i.e., this repository) contains examples, exercises, assignment descriptions, etc. (public)
   * [uis-dat310-spring19/{yourname}-assignments](https://github.com/uis-dat310-spring19/): your submissions for the assignments ({yourname} is to be substituted with the username you registered on GitHub) (private)
   * [uis-dat310-spring19/assignments](https://github.com/uis-dat310-spring19/assignments): contains the reference solutions to the assignments (posted after the deadline has passed) (private)
 
