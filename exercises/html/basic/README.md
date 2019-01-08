@@ -1,7 +1,7 @@
 # HTML exercises
 
-* [Exercise 1](#exercise-#1)
-* [Exercise 10](#exercise-10)
+* [Exercise 1](#exercise-#1:-hello-world)
+* [Exercise 10](#exercise-10:-images-from-the-web)
 
 
 ## Exercise #1: Hello world
