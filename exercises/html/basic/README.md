@@ -1,5 +1,9 @@
 # HTML exercises
 
+* [Exercise 1](#exercise-#1)
+* [Exercise 10](#exercise-10)
+
+
 ## Exercise #1: Hello world
 
 Copy-paste the following snippet to a text editor and save it as exercise1.html.
