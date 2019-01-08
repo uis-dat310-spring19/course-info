@@ -46,7 +46,7 @@ You can also work from the command line (for geeks). Here is a crash course: htt
   0. Clone repository (to be done only once)
   1. Pull changes from server (`pull`)
   2. Make local changes (edit/add/delete files)
-  3. Commit changes to server (`commit`)
+  3. Commit changes to local repository (`commit`)
   4. Push changes to server (`push`)
 
 *In GitHub desktop, both pull and push are called "sync".*
