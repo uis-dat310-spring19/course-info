@@ -1,9 +1,5 @@
 # HTML exercises
 
-* [Exercise 1](#exercise-#1:-hello-world)
-* [Exercise 10](#exercise-10:-images-from-the-web)
-
-
 ## Exercise #1: Hello world
 
 Copy-paste the following snippet to a text editor and save it as exercise1.html.
@@ -124,7 +120,7 @@ For this exercise and the next, you'll need to save the files on your local comp
 ![Exercise9](images/exercise9.png)
 
 
-## Exercise #10: Images from the Web
+## Exercise 10: Images from the Web
 
 Make a table with the top-3 places you would like to visit.
 
