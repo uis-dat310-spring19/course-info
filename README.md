@@ -28,7 +28,7 @@ This is a tentative shedule and will be subject to changes.
 | 26/02 Tue | Python Part I. | |
 | 27/02 Wed | Python Part II. | |
 | 05/03 Tue | Web protocols | |
-| 07/03 Wed | Server-side programming I. (handling requests) | |
+| 06/03 Wed | Server-side programming I. (handling requests) | |
 | 12/03 Tue | Server-side programming II. (templating) | |
 | 13/03 Wed | Server-side programming III. (MySQL) | |
 | 19/03 Tue | Server-side programming IV. (cookies and sessions) | |
