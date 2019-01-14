@@ -13,7 +13,7 @@ This is a tentative shedule and will be subject to changes.
 | Date | Topic | Resources |
 | --- | --- | --- |
 | 09/01 Wed | HTML basics | [slides](https://speakerdeck.com/ljehl/web-programming-html-basics), [examples](examples/html/basic), [exercises](exercises/html/basic), [solutions](solutions/html/basic)|
-| 15/01 Tue | CSS Part I. (properties) |  |
+| 15/01 Tue | CSS Part I. (properties) | [examples](examples/css/properties), [exercises](exercises/css/propserties) |
 | 16/01 Wed | CSS Part II. (selectors & positioning ) |  |
 | 22/01 Tue | HTML Forms |  |
 | 23/01 Wed | JavaScript Part I. | |
