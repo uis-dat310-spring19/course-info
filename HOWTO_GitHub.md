@@ -8,9 +8,9 @@
 
 There are three GitHub repositories:
 
-  * [course-info](https://github.com/uis-dat310-spring19/course-info): (i.e., this repository) contains examples, exercises, assignment descriptions, etc. (public)
+  * [uis-dat310-spring19/course-info](https://github.com/uis-dat310-spring19/course-info/): (i.e., this repository) contains examples, exercises, etc. (public)
   * [uis-dat310-spring19/{yourname}-assignments](https://github.com/uis-dat310-spring19/): your submissions for the assignments ({yourname} is to be substituted with the username you registered on GitHub) (private)
-  * [uis-dat310-spring19/assignments](https://github.com/uis-dat310-spring19/assignments): contains the reference solutions to the assignments (posted after the deadline has passed) (private)
+  * [uis-dat310-spring19/assignments](https://github.com/uis-dat310-spring19/assignments): contains assignment descriptions
 
 Private means that you need to sign up on the [Online Course Admin](www2.ux.uis.no/~ljehl/dat310/) to get access to these repositories. (*Note that the private repositories are created manually, in batches, so you might need to wait 1-2 days after you signed up.*)
 
@@ -46,7 +46,7 @@ You can also work from the command line (for geeks). Here is a crash course: htt
   0. Clone repository (to be done only once)
   1. Pull changes from server (`pull`)
   2. Make local changes (edit/add/delete files)
-  3. Commit changes to local repository (`commit`)
+  3. Commit changes to locally (`commit`)
   4. Push changes to server (`push`)
 
 *In GitHub desktop, both pull and push are called "sync".*
@@ -61,34 +61,43 @@ The first two steps are to be done only once.
 
 Download it from: https://desktop.github.com/
 
+* Register with your github username and password.
 
 ### 2. Clone your assignments repository
 
   * Go to your private repository: https://github.com/uis-dat310-spring19/{yourname}-assignments
   * Click the *clone in Desktop* button.
 
-![Step 1](images/HOWTO_GitHub-1.png)
+![Step 1](images/Github-CloneInDesktop.png)
 
   * Specify the target folder, then you’ll see something like this:
 
-![Step 2](images/HOWTO_GitHub-2.png)
+![Step 2](images/github-setLocation.png)
 
+  * You can open your location using the link in the tool.
+
+![Step 2](images/github-showRepo.png)
 
 ### 3. For each assignment
 
-  * Click the Sync button to receive the starter files (if you cloned the repository for the first time, then you won't see anything new).
-  * Complete the assignment — add/edit files in the given assignment folder (e.g., 1).
-  * When you're done, you should see a number of uncommitted changes.
-  * Click the button *X Uncommitted Changes* to switch to the list of changes.
 
-![Step 3](images/HOWTO_GitHub-3.png)
+  * Click the *fetch* button to see if anything new is available. (Will not be necessary for assignment 1 and 2.)
 
-  * Make sure all your changes are selected.
-  * (A) Fill in the *Summary* (doesn't matter what you put there); the *Description* can be left empty.
-  * (B) Click *Commit to master*.
-  * (C) Press *Sync*.
+![Step 3](images/github-fetch.png)
 
-![Step 4](images/HOWTO_GitHub-4.png)
+  * If new changes are available, you can click *pull* to add them to your local repository. (Will not be necessary for assignment 1 and 2.)
+
+![Step 4](images/github-pull.png)
+
+ * When you have done changes to the files and added your solution. Commit them.
+ * Fill in the *Summary* (doesn't matter what you put there); the *Description* can be left empty.
+
+![Step 5](images/github-commit.png)
+
+ * After commiting *push* changes to github.
+
+ ![Step 6](images/github-push.png)
+
 
 That's it. You can double check on the web interface if your changes have been synchronized.
 
