@@ -13,13 +13,12 @@ This is a tentative shedule and will be subject to changes.
 | Date | Topic | Resources |
 | --- | --- | --- |
 | 09/01 Wed | HTML basics | [slides](https://speakerdeck.com/ljehl/web-programming-html-basics), [examples](examples/html/basic), [exercises](exercises/html/basic), [solutions](solutions/html/basic)|
-| 15/01 Tue | CSS Part I. (properties) | [slides](https://speakerdeck.com/ljehl/web-programming-css-p1), [examples](examples/css/properties), [exercises](exercises/css/properties) |
-| 16/01 Wed | CSS Part II. (selectors) |  [slides](https://speakerdeck.com/ljehl/css-part-ii-selectors), [examples](examples/css/selectors), [exercises](exercises/css/selectors) |
-| 16/01 Wed | CSS Part III. (positioning) |  [slides](https://speakerdeck.com/ljehl/css-part-iii-positioning), [examples](examples/css/positioning), [exercises](exercises/css/positioning) |
-| 22/01 Tue | HTML Forms |  |
-| 23/01 Wed | JavaScript Part I. | |
-| 29/01 Tue | JavaScript Part II.  | |
-| 30/01 Wed | JavaScript Part II. cont'd | |
+| 15/01 Tue | CSS Part I. (properties) | [slides](https://speakerdeck.com/ljehl/web-programming-css-p1), [examples](examples/css/properties), [exercises](exercises/css/properties), [solutions](solutions/css/properties) |
+| 16/01 Wed | CSS Part II. (selectors) |  [slides](https://speakerdeck.com/ljehl/css-part-ii-selectors), [examples](examples/css/selectors), [exercises](exercises/css/selectors), [solutions](solutions/css/selectors) |
+| 22/01 Tue | CSS Part III. (positioning) |  [slides](https://speakerdeck.com/ljehl/css-part-iii-positioning), [examples](examples/css/positioning), [exercises](exercises/css/positioning), [solutions](solutions/css/positioning) |
+| 23/01 Wed | HTML Forms |  |
+| 29/01 Tue | JavaScript Part I.  | |
+| 30/01 Wed | JavaScript Part II. | |
 | 05/02 Tue | Lab (extra time for assignments) | |
 | 06/02 Wed | Lab (extra time for assignments) | |
 | 12/02 Tue | JQuery | |
