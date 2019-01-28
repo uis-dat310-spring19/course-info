@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #7: Simple playlist</title>
+    <link rel="stylesheet" href="exercise7.css">
+    <script>
+        /* TODO this is for you to complete */
+        var last;
+
+        function addSong(){
+            var name = document.getElementById("songTextInput").value;
+            if (name.length == 0 )
+                return;
+            var li = document.createElement("li");
+            li.innerHTML = name;
+
+            var playlist = document.getElementById("playlist");
+            if (last){
+                playlist.insertBefore(li, last);
+            } else {
+                playlist.appendChild(li);
+            }
+            last = li;
+        }
+    </script>
+</head>
+<body>
+
+<form>
+    <input type="text" id="songTextInput" size="40" placeholder="Song name">
+    <input type="button" id="addButton" value="Add Song" onclick="addSong();">
+</form>
+
+<ul id="playlist">
+</ul>
+
+</body>
+</html>
+

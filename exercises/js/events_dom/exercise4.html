@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #4: Formatting text</title>
+    <style>
+        div {
+            width: 600px;
+            height: 100px;
+            border: 1px solid black;
+            margin-top: 10px;
+            /* default options */
+            font-family: Arial;
+            font-size: 12pt;
+        }
+    </style>
+    <script>
+            function processForm() {
+                var fontfam = document.getElementById("font_family");
+                var fontsize = document.getElementById("font_size");
+                var text = document.getElementById("text");
+                
+                text.style.fontFamily = fontfam.value;
+                text.style.fontSize = fontsize.value;
+                
+                var italic = document.getElementById("font_italic");
+                if (italic.checked)
+                    text.style.fontStyle = "italic";
+                else
+                    text.style.fontStyle = "normal";
+
+                var bold = document.getElementById("font_bold");
+                if (bold.checked)
+                    text.style.fontWeight = "bold";
+                else
+                    text.style.fontWeight = "normal";
+
+                var underline = document.getElementById("font_underline");
+                if (underline.checked)
+                    text.style.textDecoration = "underline";
+                else
+                    text.style.textDecoration = "none";
+
+            }
+        </script>
+    
+</head>
+<body>
+<form name="form">
+    <select name="font_family" id="font_family"  onchange="processForm();">
+        <option value="Arial" selected>Arial</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Helvetica">Helvetica</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Courier New">Courier New</option>
+    </select>
+    <select name="font_size" id="font_size"  onchange="processForm();">
+        <option value="8pt">8pt</option>
+        <option value="10pt">10pt</option>
+        <option value="12pt" selected>12pt</option>
+        <option value="14pt">14pt</option>
+        <option value="16pt">16pt</option>
+    </select>
+    <label>Italic <input type="checkbox" name="font_italic" id="font_italic" onclick="processForm();"></label>
+    <label>Bold <input type="checkbox" name="font_bold" id="font_bold" onclick="processForm();"></label>
+    <label>Underline <input type="checkbox" name="font_underline" id="font_underline" onclick="processForm();"></label>
+</form>
+
+<div id="text">The quick brown fox jumps over the lazy dog</div>
+</body>
+</html>
