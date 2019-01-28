@@ -15,18 +15,8 @@
             font-weight: bold;
         }
     </style>
-    <script>
-        function ChangeContent(isnew) {
-            var box = document.getElementById("mydiv");
-            if (isnew){
-                box.innerHTML = "Can I help you?";
-            } else {
-                box.innerHTML = "Hello world";
-            }
-        }
-    </script>
 </head>
 <body>
-<div id="mydiv" onmouseover="ChangeContent(true)" onmouseout="ChangeContent(false)">Hello world</div>
+<div id="mydiv">Hello world</div>
 </body>
 </html>

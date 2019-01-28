@@ -1,38 +1,20 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Exercise #2: Changing colors</title>
     <style>
-        
+        #mydiv {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
     </style>
     <script>
-        function processForm() {
-            var country = document.getElementById("country");
-            var img = document.getElementById("img");
-            if (country.value === "DE")
-                img.src ="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Flag_of_Germany_%283-2_aspect_ratio%29.svg/150px-Flag_of_Germany_%283-2_aspect_ratio%29.svg.png";
-            
-            if (country.value === "NO")
-                img.src = "https://1.bp.blogspot.com/-YAN5dIqWBB8/UKaYnupcu_I/AAAAAAAAASA/2Wd4R8-eojY/s1600/Norsk-flagg.jpg";
-            
-            
-            
-            console.log(country);
-        }
+        /* TODO: write JS code here */
     </script>
 </head>
 <body>
-<div id="mydiv">
-    <form>
-        <select name="country" id="country" onchange="processForm();">
-            <option value="--">Select</option>
-            <option value="NO">Norway</option>
-            <option value="DE">Germany</option>
-        </select>
-    </form>
-    <img id="img" width="300" height="200" src="https://vollrath.com/ClientCss/images/VollrathImages/No_Image_Available.jpg">
-</div>
-
+<div id="mydiv"></div>
 </body>
 </html>

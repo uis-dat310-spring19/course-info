@@ -14,39 +14,7 @@
         }
     </style>
     <script>
-
-        function validate(){
-            var submit = document.getElementById("submitBtn");
-            if (isValid()){
-                submit.hidden= false;
-            } else {
-                submit.hidden= true;
-            }
-        }
-
         /* TODO complete this part */
-        function isValid() {
-            var firstPass = document.getElementById("password1");
-            var secondPass = document.getElementById("password2");
-            var check1 = document.getElementById("pw1_check");
-            var check2 = document.getElementById("pw2_check");
-            if (firstPass.value.length < 6){
-                check1.innerHTML = "Too short";
-                check2.innerHTML = "";
-                secondPass.value = "";
-                return false;
-            } 
-            check1.innerHTML = "";
-            if (secondPass.value.length == 0){
-                check2.innerHTML = "";
-                return false;
-            }
-            if (firstPass.value != secondPass.value){
-                check2.innerHTML = "the two passwords don't match";
-                return false;
-            }
-            return true;
-        }
     </script>
 </head>
 <body>
@@ -55,8 +23,7 @@
     <table>
         <tr>
             <td>Password (min 6 characters):</td>
-            <td><input type="password" name="password1" id="password1" size="10" placeholder="Password" 
-                        onchange="validate();">
+            <td><input type="password" name="password1" id="password1" size="10" placeholder="Password">
             </td>
             <td>
                 <div id="pw1_check" class="err"></div>
@@ -64,8 +31,7 @@
         </tr>
         <tr>
             <td>Repeat password:</td>
-            <td><input type="password" name="password2" id="password2" size="10" placeholder="Password"
-                onchange="validate();">
+            <td><input type="password" name="password2" id="password2" size="10" placeholder="Password">
             </td>
             <td>
                 <div id="pw2_check" class="err"></div>
