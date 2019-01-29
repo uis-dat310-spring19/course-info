@@ -19,8 +19,8 @@ This is a tentative shedule and will be subject to changes.
 | 23/01 Wed | HTML Forms |  [slides](https://speakerdeck.com/ljehl/html-forms), [examples](examples/html/forms), [exercises](exercises/html/forms), [solutions](solutions/html/forms) |
 | 29/01 Tue | JavaScript Part I.  | [slides](https://speakerdeck.com/ljehl/dat310-js-p1), [examples](examples/js/basics), [exercises](exercises/js/basics), [solutions](solutions/js/basics) |
 | 30/01 Wed | JavaScript Part II. | [slides](https://speakerdeck.com/ljehl/dat310-js-p2), [examples](examples/js/events_dom), [exercises](exercises/js/events_dom), [solutions](solutions/js/events_dom) |
-| 05/02 Tue | Lab (extra time for assignments) | |
-| 06/02 Wed | Lab (extra time for assignments) | |
+| 05/02 Tue | Lab 10-12 (extra time for assignments) no lecture | |
+| 06/02 Wed | Lab 8-10 (extra time for assignments) no lecture  | |
 | 12/02 Tue | JQuery | |
 | 13/02 Wed | Lab (extra time for assignments) | |
 | 19/02 Tue | Midterm trial exam Part I. | |
