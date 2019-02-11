@@ -22,12 +22,12 @@ This is a tentative shedule and will be subject to changes.
 | 05/02 Tue | Lab 10-12 (extra time for assignments) no lecture | |
 | 06/02 Wed | Lab 8-10 (extra time for assignments) no lecture  | |
 | 12/02 Tue | JQuery | |
-| 13/02 Wed | Lab (extra time for assignments) | |
+| 13/02 Wed | Python Part I. | |
 | 19/02 Tue | Midterm trial exam Part I. | |
 | 20/02 Wed | Midterm trial exam Part II. | |
-| 26/02 Tue | Python Part I. | |
-| 27/02 Wed | Python Part II. | |
-| 05/03 Tue | Web protocols | |
+| 26/02 Tue | Python Part II. | |
+| 27/02 Wed | Web protocols | |
+| 05/03 Tue | Åpen dag, no lectures | |
 | 06/03 Wed | Server-side programming I. (handling requests) | |
 | 12/03 Tue | Server-side programming II. (templating) | |
 | 13/03 Wed | Server-side programming III. (MySQL) | |
