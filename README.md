@@ -21,7 +21,7 @@ This is a tentative shedule and will be subject to changes.
 | 30/01 Wed | JavaScript Part II. | [slides](https://speakerdeck.com/ljehl/dat310-js-p2), [examples](examples/js/events_dom), [exercises](exercises/js/events_dom), [solutions](solutions/js/events_dom) |
 | 05/02 Tue | Lab 10-12 (extra time for assignments) no lecture | |
 | 06/02 Wed | Lab 8-10 (extra time for assignments) no lecture  | |
-| 12/02 Tue | JQuery | |
+| 12/02 Tue | JQuery | , [examples](examples/jquery), [exercises](exercises/jquery), [solutions](solutions/jquery) |
 | 13/02 Wed | Python Part I. | |
 | 19/02 Tue | Midterm trial exam Part I. | |
 | 20/02 Wed | Midterm trial exam Part II. | |
