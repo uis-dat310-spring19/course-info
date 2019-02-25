@@ -23,8 +23,8 @@ This is a tentative shedule and will be subject to changes.
 | 06/02 Wed | Lab 8-10 (extra time for assignments) no lecture  | |
 | 12/02 Tue | JQuery | [slides](https://speakerdeck.com/ljehl/dat310-jquery-0b62ca41-e661-4408-87eb-ba4957db2bc4) , [examples](examples/jquery), [exercises](exercises/jquery), [solutions](solutions/jquery) |
 | 13/02 Wed | Python Part I. | [installation](HOWTO_Python.md), [slides](https://speakerdeck.com/ljehl/python-p1), [examples](examples/python/basics), [exercises](exercises/python/basics), [solutions](solutions/python/basics) |
-| 19/02 Tue | Midterm trial exam Part I. | [info](Midterm_Trial.md) |
-| 20/02 Wed | Midterm trial exam Part II. | |
+| 19/02 Tue | Midterm trial exam Part I. | [info](Midterm_Trial.md), [solution](solutions/exam) |
+| 20/02 Wed | Midterm trial exam Part II. | [solution](solutions/exam) |
 | 26/02 Tue | Python Part II. | |
 | 27/02 Wed | Web protocols | |
 | 05/03 Tue | Åpen dag, no lectures | |
