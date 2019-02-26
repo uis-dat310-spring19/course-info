@@ -26,7 +26,7 @@ This is a tentative shedule and will be subject to changes.
 | 19/02 Tue | Midterm trial exam Part I. | [info](Midterm_Trial.md), [solution](solutions/exam) |
 | 20/02 Wed | Midterm trial exam Part II. | [solution](solutions/exam) |
 | 26/02 Tue | Python Part II. | [slides](https://speakerdeck.com/ljehl/dat310-python-p2), [examples](examples/python/basics), [exercises](exercises/python/basics), [solutions](solutions/python/basics) |
-| 27/02 Wed | Web protocols | [examples](examples/python/http), [exercises](exercises/python/http), [solutions](solutions/python/http) |
+| 27/02 Wed | Web protocols | [slides](https://speakerdeck.com/ljehl/dat310-http), [examples](examples/python/http), [exercises](exercises/python/http), [solutions](solutions/python/http) |
 | 05/03 Tue | Åpen dag, no lectures | |
 | 06/03 Wed | Server-side programming I. (handling requests) | |
 | 12/03 Tue | Server-side programming II. (templating) | |
