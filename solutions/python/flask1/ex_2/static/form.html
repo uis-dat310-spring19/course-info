@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form handling in flask</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h2>Add postnumber</h2>
+<form action="/sendform" method="POST">
+    <label for="number">Postnumber: </label><input type="number" name="number" max="9999"><br />
+    <label for="city">City: </label><input type="text" name="city" size="30"><br />
+    <input type="submit" value="Add" />
+</form>
+
+<h2>Lookup</h2>
+<form action="/sendform" method="GET">
+    <label for="number">Postnumber: </label><input type="number" name="number" size="4"><br />
+    <input type="submit" value="Send" />
+</form>
+
+</body>
+</html>

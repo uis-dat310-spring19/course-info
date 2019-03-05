@@ -1,0 +1,10 @@
+* {
+    font-family: Verdana, Arial, sans-serif;;
+}
+
+label {
+
+    width: 110px;
+    display: inline-block;
+
+}
