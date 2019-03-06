@@ -33,6 +33,8 @@ pip install --upgrade pip
 If `pip` is not found you can either add it to the path, of just use
 ```
 python -m pip install --upgrade pip
+python -m pip install requests
+python -m pip install Flask
 ```
 
 # Installing Python for DAT310
