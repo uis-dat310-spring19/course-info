@@ -1,10 +1,15 @@
   # UiS DAT310 Web Programming course
 
+Please fill out the midterm evaluation form until February 11th.
+  - [Midterm evaluation](https://goo.gl/forms/kBwdxA8rCzyNtdqz2) 
+
 This repository is for the 2019 spring edition of the DAT310 Web programming course at the University of Stavanger.
 
   - [Assignments](https://github.com/uis-dat310-spring19/assignments) (and [how to hand them in on GitHub](HOWTO_GitHub.md))
   - [Online course admin](http://www2.ux.uis.no/~ljehl/dat310/)
   - [List of useful resources](Resources.md)
+  
+  
   
 ## Schedule 
  
