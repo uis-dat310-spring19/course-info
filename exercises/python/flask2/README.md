@@ -25,7 +25,7 @@ Given an input value (amount to pay), your task is to figure out how to pay that
 
   * The available bills/coins are defined as a list `VALUES = [1, 5, 10, 20, 50, 100, 500]`
   * You need to optimize for using the minimal number of bills/coins
-  * You're not given any starter files for this exercise
+  * Try to do this exercise without using the starter files. Use [ex_3](ex_3/) if necessary.
 
 ![Exercise3](images/exercise3.png)
 ![Exercise3/2](images/exercise3_2.png)
