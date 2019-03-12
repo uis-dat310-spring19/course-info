@@ -35,7 +35,7 @@ This is a tentative shedule and will be subject to changes.
 | 05/03 Tue | Åpen dag, no lectures | |
 | 06/03 Wed | Server-side programming I. (handling requests) | [slides](https://speakerdeck.com/ljehl/dat310-server-p1), [examples](examples/python/flask), [exercises](exercises/python/flask1), [solutions](solutions/python/flask1) |
 | 12/03 Tue | Server-side programming II. (templating) | [slides](https://speakerdeck.com/ljehl/dat310-server-p2), [examples](examples/python/flask), [exercises](exercises/python/flask2), [solutions](solutions/python/flask2)  |
-| 13/03 Wed | Server-side programming III. (MySQL) | |
+| 13/03 Wed | Server-side programming III. (MySQL) | [slides](https://speakerdeck.com/ljehl/dat310-server-p3), [examples](examples/python/flask), [exercises](exercises/python/flask3), [solutions](solutions/python/flask3) |
 | 19/03 Tue | Server-side programming IV. (cookies and sessions) | |
 | 20/03 Wed | AJAX | |
 | 26/03 Tue | Guest lecture? | |
