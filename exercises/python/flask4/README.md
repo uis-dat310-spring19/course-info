@@ -4,6 +4,9 @@
   * [Jinja Templates](http://jinja.pocoo.org/docs/2.9/templates/)
 
 
+## Exercise #0: Try the example
+Try to run the cookies [example](../../../examples/python/flask/6_cookies).
+
 ## Exercise #1: Remembering user details
 
 Make a form that asks for the user's name and email address, and then remembers the values using cookies.
