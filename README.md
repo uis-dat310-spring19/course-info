@@ -36,7 +36,7 @@ This is a tentative shedule and will be subject to changes.
 | 19/03 Tue | Server-side programming IV. (cookies and sessions) | [slides](https://speakerdeck.com/ljehl/dat310-server-p4), [examples](examples/python/flask), [exercises](exercises/python/flask4), [solutions](solutions/python/flask4) |
 | 20/03 Wed | Lab (extra time for assignments) | |
 | 26/03 Tue | AJAX | [slides](https://speakerdeck.com/ljehl/dat310-ajax), [examples](examples/ajax), [exercises](exercises/ajax), [solutions](solutions/ajax) |
-| 27/03 Wed | Guest lecture: Robert Ewald *Openlab: Design and Implementation of a web enabled simulation infrastructure* | |
+| 27/03 Wed | 10:00 Guest lecture: Robert Ewald *Openlab: Design and Implementation of a web enabled simulation infrastructure* | |
 | 02/04 Tue | Bootstrap | |
 | 03/04 Wed | Lab (extra time for assignments) | |
 | 09/04 Tue | Lab (extra time for assignments) | |
