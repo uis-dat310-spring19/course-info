@@ -36,7 +36,7 @@ This is a tentative shedule and will be subject to changes.
 | 19/03 Tue | Server-side programming IV. (cookies and sessions) | [slides](https://speakerdeck.com/ljehl/dat310-server-p4), [examples](examples/python/flask), [exercises](exercises/python/flask4), [solutions](solutions/python/flask4) |
 | 20/03 Wed | Lab (extra time for assignments) | |
 | 26/03 Tue | Guest lecture? | |
-| 27/03 Wed | AJAX | |
+| 27/03 Wed | AJAX | [slides](https://speakerdeck.com/ljehl/dat310-ajax), [examples](examples/ajax), [exercises](exercises/ajax), [solutions](solutions/ajax) |
 | 02/04 Tue | Bootstrap | |
 | 03/04 Wed | Web APIs | |
 | 09/04 Tue | Lab (extra time for assignments) | |
