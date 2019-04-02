@@ -34,12 +34,14 @@ Desktop view:
 
 Complete the Bootstrap table exercises from the W3C tutorial: [1](http://www.w3schools.com/bootstrap/exercise.asp?filename=exercise_tables1), [2](http://www.w3schools.com/bootstrap/exercise.asp?filename=exercise_tables2), [3](http://www.w3schools.com/bootstrap/exercise.asp?filename=exercise_tables3), [4](http://www.w3schools.com/bootstrap/exercise.asp?filename=exercise_tables4), [5](http://www.w3schools.com/bootstrap/exercise.asp?filename=exercise_tables5), [6](http://www.w3schools.com/bootstrap/exercise.asp?filename=exercise_tables6).
 
+[Summary](https://www.w3schools.com/bootstrap/bootstrap_tables.asp)
 
 ## Exercise #4: Images
 
 Complete the Bootstrap image exercises from the W3C tutorial: [1](http://www.w3schools.com/bootstrap/exercise.asp?filename=exercise_images1),
 [2](http://www.w3schools.com/bootstrap/exercise.asp?filename=exercise_images2), [3](http://www.w3schools.com/bootstrap/exercise.asp?filename=exercise_images3), [4](http://www.w3schools.com/bootstrap/exercise.asp?filename=exercise_images4).
 
+[Summary](https://www.w3schools.com/bootstrap/bootstrap_images.asp)
 
 ## Exercise #5: Buttons
 
