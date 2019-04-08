@@ -40,7 +40,7 @@ This is a tentative shedule and will be subject to changes.
 | 02/04 Tue | Bootstrap | [slides](https://speakerdeck.com/ljehl/dat310-bootstrap), [examples](examples/bootstrap), [exercises](exercises/bootstrap), [solutions](solutions/bootstrap) |
 | 03/04 Wed | Lab (extra time for assignments) | |
 | 09/04 Tue | Lab (extra time for assignments) | |
-| 10/04 Wed | Web APIs | |
+| 10/04 Wed | Web APIs | [slides](https://speakerdeck.com/ljehl/dat310-web-apis), [examples](examples/apis), [exercises](exercises/apis), [solutions](solutions/apis) |
 | Easter break |
 | 23/04 Tue | Trial exam /Part I. | |
 | 24/04 Wed | Trial exam /Part II. | |
