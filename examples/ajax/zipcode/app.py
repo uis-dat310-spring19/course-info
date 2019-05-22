@@ -19,6 +19,7 @@ def getplace():
         "4050": "Sola",
         "4056": "Tananger"
     }
+    sleep(1)
     postcode = request.args.get("postcode", None)
     # look up corresponding place or return empty string
     if postcode and (postcode in POSTCODES):

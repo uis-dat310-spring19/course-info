@@ -1,0 +1,8 @@
+<div class="content">
+    <img class="main icon" src="{{ note["imageUrl"] }}"/>
+    <img class="icon exit" src="{{ url_for("static", filename="images/x.svg") }}"
+    onclick="removeArticle('{{ note["id"] }}')"/>
+    <h2>{{ note["title"] }}</h2>
+    <h3>{{ note["fdate"] }}</h3>
+    <p>{{ note["content"] }}</p>
+</div>

@@ -1,0 +1,2647 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+        Inspera Assessment
+    </title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=1000">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="assessment_data_007/base.css" rel="stylesheet" media="screen" type="text/css">
+    <link href="assessment_data_007/base_002.css" rel="stylesheet" media="screen" type="text/css">
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="/static/assessment/css/ie.css?v=d15b02d9b5fc8cf08b4f8ed467699c973f9af33c" />
+    <![endif]-->
+    <link rel="shortcut icon" href="https://uis.inspera.no/static/assessment/favicon.png">
+
+    <script type="text/javascript">
+        window.supportedLanguages = 'no_no,en_us,no_no_ny,sv_se,pl_pl'.split(',');
+        window.serverVars = {};
+        window.serverVars.version = 'd15b02d9b5fc8cf08b4f8ed467699c973f9af33c';
+        window.serverVars.isLocal = 'true' === 'false';
+        window.serverVars.isProd = 'true' === 'true';
+        window.serverVars.isStage = 'true' === 'false';
+        window.serverVars.basePath = '/static/assessment/';
+        window.serverVars.csrfToken = 'qp6DXZe3E8h8uDPf';
+        window.serverVars.staticFileLocation = '/static/';
+        window.serverVars.servletLocation = '/';
+        window.serverVars.fileServlet = window.serverVars.servletLocation + 'file/';
+        window.serverVars.marketplaceId = 1312542;
+        window.serverVars.languageId = 1;
+        window.serverVars.isNewFeaturesActivated = false;
+        window.serverVars.arMaxNumberOfCandidates = 1500;
+        window.serverVars.enableMiddleEndianDateFormat = false;
+        window.serverVars.enableLiveIndexingFrontend = true;
+        window.serverVars.enableAuthoringInlineLatexEditing = false;
+        window.serverVars.uiLanguageOverride = 'null';
+
+        
+
+        // redirect to /admin check
+        if(location.href.indexOf("/assessment") > -1 && location.search.indexOf("embedded=true") == -1) {
+            location.href = "/admin" + location.search + location.hash;
+        }
+    </script>
+    <script type="text/javascript">
+        function esablishFunctionBridge(callback) {
+            window.bridgeCallback = callback;
+        }
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config(
+        {
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: true
+            },
+            "HTML-CSS": {
+                availableFonts: ["TeX"],
+                imageFont: null
+            },
+            messageStyle: "none"
+        });
+    </script>
+
+    <script type="text/javascript" src="assessment_data_007/LanguageUtils.js"></script>
+
+    <script type="text/javascript">
+        // Saving locale in LocalStorage (App object is not available at this point, so it can't be used for cache)
+        // Defaulting the language to that of the user
+        var userLanguage = window.LanguageUtils.getLocaleFromLanguageId(1);
+        var _locale = localStorage.getItem('locale') || userLanguage;
+        localStorage.setItem('locale', _locale);
+    </script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/static/assessment/js/main-built.js?v=d15b02d9b5fc8cf08b4f8ed467699c973f9af33c" src="assessment_data_007/main-built.js"></script><style>.cke{visibility:hidden;}</style></head>
+<body class="embedded-assessment">
+<div id="modal-container" class="modal hide fade"></div>
+<div id="alert-container"></div>
+<div id="wrap" class="edit-test">
+    
+
+    <div id="header" class="navbar navbar-inverse navbar-static-top ">
+        <div class="navbar-inner header-navbar-inner">
+            <a class="logo" href="https://uis.inspera.no/tests"><img src="assessment_data_007/IA_logo.svg" onerror="this.src='/static/assessment/img/logo_40.png'; this.onerror=null;"></a>
+        </div>
+    </div>
+    <div id="sidebar-container"></div>
+    <div id="page-container">
+        <div id="sub-header">
+            <div class="inner"><div id="test-edit-sub-header" class="fixed clearfix" view_read_only="false"><div class="nav-left">
+    <span class="breadcrumbs">
+        
+        <a id="goToAuthoringTrigger" href="https://uis.inspera.no/authoring" class="mrs home-url "><i class="icon-home"></i></a>
+        <span class="loading-indicator" style="display: none;">
+    Laster <i class="icon-refresh icon-spin mlx"></i>
+</span>
+
+        <span class="loaded test-name hidden editable" style="display: inline;">
+            <span id="questionSetTitle" class="name value bold truncation-tooltip truncate" title="" data-original-title="DAT310 trial 25/04/2018">DAT310 trial 25/04/2018</span>
+            
+                <a id="editQuestionSetTitleTrigger" href="javascript:void(0);" class="edit"><i class="icon-pencil soft"></i></a>
+            
+        </span>
+        
+    </span>
+</div>
+
+
+    <div class="nav-right" style="">
+        
+        <span id="sharingQuestionSetsWithUsersTrigger" class="mrm sharing-status sharing-status-user soft shared" data-granteetype="user" title="" data-original-title="Del med brukere">
+            <i class="icon-user mrs"></i><span class="value">4</span>
+        </span>
+        <span id="sharingQuestionSetWithOrgUnitsTrigger" class="mrm sharing-status sharing-status-orgunit soft" data-granteetype="orgUnit" title="" data-original-title="Deling med org. enheter">
+            <i class="icon-building mrs"></i><span class="value"></span>
+        </span>
+        <a id="viewQuestionSetLogEventsTrigger" class="log-link mrm header-tool-svg" title="" data-original-title="Se hendelseslogg">
+            <object type="image/svg+xml" data="assessment_data_007/fa-history.svg"></object>
+        </a>
+        <a class="icon-print mrm printManagerNewWindow " title="" data-placement="left" data-original-title="Skriv ut"></a>
+        <a id="previewQuestionSetInNewWindowTrigger" class="icon-eye-open mrm previewNewWindow" title="" data-original-title="Forhåndsvis"></a>
+    </div>
+
+
+<div class="language-tab-container">
+    <ul class="nav nav-tabs"><li class="active"><a href="javascript:void(0);" id="selectQuestionSetLanguage_no_no" data-language="no_no" class="selectLanguage">Bokmål</a></li><li><a href="javascript:void(0);" id="selectQuestionSetLanguage_en_us" data-language="en_us" class="selectLanguage">Engelsk</a></li><li><a class="addLanguage" href="javascript:void(0);" title="" id="editQuestionSetLanguagesTrigger" data-original-title="Språkinnstillinger"><i class="icon-cog icon-large language-cog"></i></a></li></ul>
+</div></div></div>
+        </div>
+        <div id="container" class="container"><div><div id="author-wizard-step-content"><div class="hidden" style="display: block;"><ul id="test-sections" class="ui-sortable">
+    <li id="section-2615331289297" class="row-fluid"><div class="span4"></div>
+<div class="span4 text-center section-name">
+    <span class="name value sectionName">Section 1</span>
+    <span class="actions">
+        <a class="edit icon-pencil soft editSectionTrigger" href="javascript:void(0)"></a>
+        <a class="remove icon-trash soft mlm trashSectionTrigger" href="javascript:void(0)"></a>
+        <a class="move icon-move soft mlm moveSectionTrigger" href="javascript:void(0)"></a>
+        
+            <a class="random-pull icon-random soft mlm openRandomPullTrigger" href="javascript:void(0)"></a>
+        
+        
+            <a class="layout-type icon-columns soft mlm openLayoutTypeTrigger" href="javascript:void(0)"></a>
+        
+    </span>
+</div>
+<div class="span4"></div>
+
+<!-- todo: for each page -->
+<ul class="pages ui-sortable">
+     <li class="page" id="30150807"><span class="page-title mbs"><span class="truncation-tooltip truncate" title="" data-original-title="DAT310 Info 25/04/2018">DAT310 Info 25/04/2018</span></span>
+<div class="inner-preview">
+    <div class="slide-menu">
+        <ul class="menu-list hidden">
+    <li><a href="#" class="showPreview"><i class="icon-play"></i> Forhåndsvis oppgavesettet her</a></li>
+    <li><a href="#" class="duplicateQuestion"><i class="icon-copy"></i> Lag en kopi av oppgaven</a></li>
+    <li><a href="#" class="remove"><i class="icon-remove"></i> Fjern fra oppgavesettet</a></li>
+</ul>
+
+    </div>
+    <div class="slide-options">
+        <div class="max-score hidden">
+    <div class="score-overview">
+        <p>0</p>
+        <p>Maksimum poeng</p>
+    </div>
+    
+</div>
+
+<div class="subjects-labels hidden">
+    <label>Etiketter</label>
+    <div>
+        
+            
+        
+    </div>
+</div>
+
+<div class="version-control ok hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-ok icon-large"></i>
+        <p>Oppdatert.</p>
+    </div>
+    <p>denne oppgaven er delt i Oppgavebanken, og har ikke blitt endret siden du la det til i dette oppgavesettet.</p>
+</div>
+
+<div class="version-control update hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-refresh icon-large"></i>
+        <p>Ny versjon tilgjengelig.</p>
+    </div>
+    <p>Denne oppgaven har blitt endret av Krisztian Balog
+     siden du la det til</p>
+    <div>
+        <a class="btn btn-primary">Oppdater</a>
+        <a class="btn btn-version-control">Bruk gammel versjon</a>
+    </div>
+</div>
+
+<div class="version-control private hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-minus icon-large"></i>
+        <p>Privat.</p>
+    </div>
+    <p>Denne oppgaven er ikke delt i Oppgavebanken og kan bare bli endret av deg</p>
+    <p>For å dele med andre, åpne det og oppdater status for deling</p>
+</div>
+
+<div class="rev-update hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared"></span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=30150807&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-do-update" href="javascript:void(0)">Oppdater</a>
+	<a class="btn rev-keep-old" href="javascript:void(0)">Avbryt</a>
+</div>
+
+<div class="rev-edit-opt hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared">Krisztian Balog</span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=30150807&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-edit-latest" href="javascript:void(0)">Rediger ny</a>
+	<a class="btn rev-edit-old" href="javascript:void(0)">Rediger nåværende</a>
+</div>
+
+<div class="rev-share-opt hidden">
+	<p class="rev-head mtl">Ikke delt i oppgavebank</p>
+	<div class="rev-share-info">
+		<p>Denne oppgaven er privat for dette oppgavesettet.</p>
+	</div>
+	<a class="btn rev-keep-private" href="javascript:void(0)">Hold privat</a>
+	<a class="btn rev-share" href="javascript:void(0)">Del oppgaven</a>
+</div>
+
+    </div>
+
+    
+    <a href="javascript:void(0)" class="edit-test-overlay">
+        <i class="icon-pencil icon-4x"></i>
+        <p>Rediger</p>
+    </a>
+    
+
+    
+
+    <div class="preview">
+        
+            
+                <img src="assessment_data_005/DAT310_Info_25042018.png" class="question-thumbnail">
+            
+        
+    </div>
+    <div class="actions">
+        
+            <ul class="unstyled pull-left folders">
+
+                
+                    
+
+                    
+                
+
+                
+                <li>
+                    <a href="#" class="tag">
+                        <div class="emptyBlock">
+                            <i class="icon-tag"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="unstyled pull-right">
+                <li><a href="#" class="duplicate-content"><i class="icon-copy icon-2x soft"></i></a></li>
+                
+                    <li class="mll"><a href="#" class="move"><span class="icon-move icon-2x soft"></span></a></li>
+                
+                <li class="mll"><a href="https://uis.inspera.no/author/test/30150653" class="showPreview"><span class="icon-play icon-2x soft"></span></a></li>
+                
+                    <li class="mll"><a href=""><i class="icon-trash icon-2x soft remove"></i></a></li>
+                
+            </ul>
+        
+    </div>
+</div></li><li class="page" id="5988628"><span class="page-title mbs"><span class="truncation-tooltip truncate" title="" data-original-title="HTML coding 8">HTML coding 8</span></span>
+<div class="inner-preview">
+    <div class="slide-menu">
+        <ul class="menu-list hidden">
+    <li><a href="#" class="showPreview"><i class="icon-play"></i> Forhåndsvis oppgavesettet her</a></li>
+    <li><a href="#" class="duplicateQuestion"><i class="icon-copy"></i> Lag en kopi av oppgaven</a></li>
+    <li><a href="#" class="remove"><i class="icon-remove"></i> Fjern fra oppgavesettet</a></li>
+</ul>
+
+    </div>
+    <div class="slide-options">
+        <div class="max-score hidden">
+    <div class="score-overview">
+        <p>8</p>
+        <p>Maksimum poeng</p>
+    </div>
+    
+</div>
+
+<div class="subjects-labels hidden">
+    <label>Etiketter</label>
+    <div>
+        
+            HTML
+        
+    </div>
+</div>
+
+<div class="version-control ok hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-ok icon-large"></i>
+        <p>Oppdatert.</p>
+    </div>
+    <p>denne oppgaven er delt i Oppgavebanken, og har ikke blitt endret siden du la det til i dette oppgavesettet.</p>
+</div>
+
+<div class="version-control update hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-refresh icon-large"></i>
+        <p>Ny versjon tilgjengelig.</p>
+    </div>
+    <p>Denne oppgaven har blitt endret av Krisztian Balog
+     siden du la det til</p>
+    <div>
+        <a class="btn btn-primary">Oppdater</a>
+        <a class="btn btn-version-control">Bruk gammel versjon</a>
+    </div>
+</div>
+
+<div class="version-control private hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-minus icon-large"></i>
+        <p>Privat.</p>
+    </div>
+    <p>Denne oppgaven er ikke delt i Oppgavebanken og kan bare bli endret av deg</p>
+    <p>For å dele med andre, åpne det og oppdater status for deling</p>
+</div>
+
+<div class="rev-update hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared"></span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=5988628&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-do-update" href="javascript:void(0)">Oppdater</a>
+	<a class="btn rev-keep-old" href="javascript:void(0)">Avbryt</a>
+</div>
+
+<div class="rev-edit-opt hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared">Krisztian Balog</span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=5988628&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-edit-latest" href="javascript:void(0)">Rediger ny</a>
+	<a class="btn rev-edit-old" href="javascript:void(0)">Rediger nåværende</a>
+</div>
+
+<div class="rev-share-opt hidden">
+	<p class="rev-head mtl">Ikke delt i oppgavebank</p>
+	<div class="rev-share-info">
+		<p>Denne oppgaven er privat for dette oppgavesettet.</p>
+	</div>
+	<a class="btn rev-keep-private" href="javascript:void(0)">Hold privat</a>
+	<a class="btn rev-share" href="javascript:void(0)">Del oppgaven</a>
+</div>
+
+    </div>
+
+    
+    <a href="javascript:void(0)" class="edit-test-overlay hidden">
+        <i class="icon-pencil icon-4x"></i>
+        <p>Rediger</p>
+    </a>
+    
+
+    
+
+    <div class="preview">
+        
+            
+                <img src="assessment_data_005/HTML_coding_8.png" class="question-thumbnail">
+            
+        
+    </div>
+    <div class="actions">
+        
+            <ul class="unstyled pull-left folders">
+
+                
+                    
+
+                    
+                
+
+                
+                    <li>
+                        <a href="#" class="score">
+                            <div class="emptyBlock">
+                                <p>8</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a href="#" class="tag">
+                        <div class="emptyBlock">
+                            <i class="icon-tag"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="unstyled pull-right">
+                <li><a href="#" class="duplicate-content"><i class="icon-copy icon-2x soft"></i></a></li>
+                
+                    <li class="mll"><a href="#" class="move"><span class="icon-move icon-2x soft"></span></a></li>
+                
+                <li class="mll"><a href="https://uis.inspera.no/author/test/30150653" class="showPreview"><span class="icon-play icon-2x soft"></span></a></li>
+                
+                    <li class="mll"><a href=""><i class="icon-trash icon-2x soft remove"></i></a></li>
+                
+            </ul>
+        
+    </div>
+</div></li><li class="page" id="17863923"><span class="page-title mbs"><span class="truncation-tooltip truncate" title="" data-original-title="CSS guess 21">CSS guess 21</span></span>
+<div class="inner-preview">
+    <div class="slide-menu">
+        <ul class="menu-list hidden">
+    <li><a href="#" class="showPreview"><i class="icon-play"></i> Forhåndsvis oppgavesettet her</a></li>
+    <li><a href="#" class="duplicateQuestion"><i class="icon-copy"></i> Lag en kopi av oppgaven</a></li>
+    <li><a href="#" class="remove"><i class="icon-remove"></i> Fjern fra oppgavesettet</a></li>
+</ul>
+
+    </div>
+    <div class="slide-options">
+        <div class="max-score hidden">
+    <div class="score-overview">
+        <p>2</p>
+        <p>Maksimum poeng</p>
+    </div>
+    
+        <table class="score-table">
+            <tbody><tr>
+                <td>Riktig:</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Galt:</td>
+                <td>-1</td>
+            </tr>
+        </tbody></table>
+    
+</div>
+
+<div class="subjects-labels hidden">
+    <label>Etiketter</label>
+    <div>
+        
+            
+        
+    </div>
+</div>
+
+<div class="version-control ok hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-ok icon-large"></i>
+        <p>Oppdatert.</p>
+    </div>
+    <p>denne oppgaven er delt i Oppgavebanken, og har ikke blitt endret siden du la det til i dette oppgavesettet.</p>
+</div>
+
+<div class="version-control update hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-refresh icon-large"></i>
+        <p>Ny versjon tilgjengelig.</p>
+    </div>
+    <p>Denne oppgaven har blitt endret av Krisztian Balog
+     siden du la det til</p>
+    <div>
+        <a class="btn btn-primary">Oppdater</a>
+        <a class="btn btn-version-control">Bruk gammel versjon</a>
+    </div>
+</div>
+
+<div class="version-control private hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-minus icon-large"></i>
+        <p>Privat.</p>
+    </div>
+    <p>Denne oppgaven er ikke delt i Oppgavebanken og kan bare bli endret av deg</p>
+    <p>For å dele med andre, åpne det og oppdater status for deling</p>
+</div>
+
+<div class="rev-update hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared"></span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17863923&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-do-update" href="javascript:void(0)">Oppdater</a>
+	<a class="btn rev-keep-old" href="javascript:void(0)">Avbryt</a>
+</div>
+
+<div class="rev-edit-opt hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared">Krisztian Balog</span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17863923&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-edit-latest" href="javascript:void(0)">Rediger ny</a>
+	<a class="btn rev-edit-old" href="javascript:void(0)">Rediger nåværende</a>
+</div>
+
+<div class="rev-share-opt hidden">
+	<p class="rev-head mtl">Ikke delt i oppgavebank</p>
+	<div class="rev-share-info">
+		<p>Denne oppgaven er privat for dette oppgavesettet.</p>
+	</div>
+	<a class="btn rev-keep-private" href="javascript:void(0)">Hold privat</a>
+	<a class="btn rev-share" href="javascript:void(0)">Del oppgaven</a>
+</div>
+
+    </div>
+
+    
+    <a href="javascript:void(0)" class="edit-test-overlay hidden">
+        <i class="icon-pencil icon-4x"></i>
+        <p>Rediger</p>
+    </a>
+    
+
+    
+
+    <div class="preview">
+        
+            
+                <img src="assessment_data_005/CSS_guess_21.png" class="question-thumbnail">
+            
+        
+    </div>
+    <div class="actions">
+        
+            <ul class="unstyled pull-left folders">
+
+                
+                    
+
+                    
+                
+
+                
+                    <li>
+                        <a href="#" class="score">
+                            <div class="emptyBlock">
+                                <p>2</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a href="#" class="tag">
+                        <div class="emptyBlock">
+                            <i class="icon-tag"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="unstyled pull-right">
+                <li><a href="#" class="duplicate-content"><i class="icon-copy icon-2x soft"></i></a></li>
+                
+                    <li class="mll"><a href="#" class="move"><span class="icon-move icon-2x soft"></span></a></li>
+                
+                <li class="mll"><a href="https://uis.inspera.no/author/test/30150653" class="showPreview"><span class="icon-play icon-2x soft"></span></a></li>
+                
+                    <li class="mll"><a href=""><i class="icon-trash icon-2x soft remove"></i></a></li>
+                
+            </ul>
+        
+    </div>
+</div></li><li class="page" id="17873981"><span class="page-title mbs"><span class="truncation-tooltip truncate" title="" data-original-title="CSS guess 23">CSS guess 23</span></span>
+<div class="inner-preview">
+    <div class="slide-menu">
+        <ul class="menu-list hidden">
+    <li><a href="#" class="showPreview"><i class="icon-play"></i> Forhåndsvis oppgavesettet her</a></li>
+    <li><a href="#" class="duplicateQuestion"><i class="icon-copy"></i> Lag en kopi av oppgaven</a></li>
+    <li><a href="#" class="remove"><i class="icon-remove"></i> Fjern fra oppgavesettet</a></li>
+</ul>
+
+    </div>
+    <div class="slide-options">
+        <div class="max-score hidden">
+    <div class="score-overview">
+        <p>2</p>
+        <p>Maksimum poeng</p>
+    </div>
+    
+        <table class="score-table">
+            <tbody><tr>
+                <td>Riktig:</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Galt:</td>
+                <td>-1</td>
+            </tr>
+        </tbody></table>
+    
+</div>
+
+<div class="subjects-labels hidden">
+    <label>Etiketter</label>
+    <div>
+        
+            
+        
+    </div>
+</div>
+
+<div class="version-control ok hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-ok icon-large"></i>
+        <p>Oppdatert.</p>
+    </div>
+    <p>denne oppgaven er delt i Oppgavebanken, og har ikke blitt endret siden du la det til i dette oppgavesettet.</p>
+</div>
+
+<div class="version-control update hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-refresh icon-large"></i>
+        <p>Ny versjon tilgjengelig.</p>
+    </div>
+    <p>Denne oppgaven har blitt endret av Krisztian Balog
+     siden du la det til</p>
+    <div>
+        <a class="btn btn-primary">Oppdater</a>
+        <a class="btn btn-version-control">Bruk gammel versjon</a>
+    </div>
+</div>
+
+<div class="version-control private hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-minus icon-large"></i>
+        <p>Privat.</p>
+    </div>
+    <p>Denne oppgaven er ikke delt i Oppgavebanken og kan bare bli endret av deg</p>
+    <p>For å dele med andre, åpne det og oppdater status for deling</p>
+</div>
+
+<div class="rev-update hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared"></span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17873981&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-do-update" href="javascript:void(0)">Oppdater</a>
+	<a class="btn rev-keep-old" href="javascript:void(0)">Avbryt</a>
+</div>
+
+<div class="rev-edit-opt hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared">Krisztian Balog</span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17873981&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-edit-latest" href="javascript:void(0)">Rediger ny</a>
+	<a class="btn rev-edit-old" href="javascript:void(0)">Rediger nåværende</a>
+</div>
+
+<div class="rev-share-opt hidden">
+	<p class="rev-head mtl">Ikke delt i oppgavebank</p>
+	<div class="rev-share-info">
+		<p>Denne oppgaven er privat for dette oppgavesettet.</p>
+	</div>
+	<a class="btn rev-keep-private" href="javascript:void(0)">Hold privat</a>
+	<a class="btn rev-share" href="javascript:void(0)">Del oppgaven</a>
+</div>
+
+    </div>
+
+    
+    <a href="javascript:void(0)" class="edit-test-overlay hidden">
+        <i class="icon-pencil icon-4x"></i>
+        <p>Rediger</p>
+    </a>
+    
+
+    
+
+    <div class="preview">
+        
+            
+                <img src="assessment_data_005/CSS_guess_23.png" class="question-thumbnail">
+            
+        
+    </div>
+    <div class="actions">
+        
+            <ul class="unstyled pull-left folders">
+
+                
+                    
+
+                    
+                
+
+                
+                    <li>
+                        <a href="#" class="score">
+                            <div class="emptyBlock">
+                                <p>2</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a href="#" class="tag">
+                        <div class="emptyBlock">
+                            <i class="icon-tag"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="unstyled pull-right">
+                <li><a href="#" class="duplicate-content"><i class="icon-copy icon-2x soft"></i></a></li>
+                
+                    <li class="mll"><a href="#" class="move"><span class="icon-move icon-2x soft"></span></a></li>
+                
+                <li class="mll"><a href="https://uis.inspera.no/author/test/30150653" class="showPreview"><span class="icon-play icon-2x soft"></span></a></li>
+                
+                    <li class="mll"><a href=""><i class="icon-trash icon-2x soft remove"></i></a></li>
+                
+            </ul>
+        
+    </div>
+</div></li><li class="page" id="2027450"><span class="page-title mbs"><span class="truncation-tooltip truncate" title="" data-original-title="Bootstrap 2">Bootstrap 2</span></span>
+<div class="inner-preview">
+    <div class="slide-menu">
+        <ul class="menu-list hidden">
+    <li><a href="#" class="showPreview"><i class="icon-play"></i> Forhåndsvis oppgavesettet her</a></li>
+    <li><a href="#" class="duplicateQuestion"><i class="icon-copy"></i> Lag en kopi av oppgaven</a></li>
+    <li><a href="#" class="remove"><i class="icon-remove"></i> Fjern fra oppgavesettet</a></li>
+</ul>
+
+    </div>
+    <div class="slide-options">
+        <div class="max-score hidden">
+    <div class="score-overview">
+        <p>4</p>
+        <p>Maksimum poeng</p>
+    </div>
+    
+</div>
+
+<div class="subjects-labels hidden">
+    <label>Etiketter</label>
+    <div>
+        
+            
+        
+    </div>
+</div>
+
+<div class="version-control ok hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-ok icon-large"></i>
+        <p>Oppdatert.</p>
+    </div>
+    <p>denne oppgaven er delt i Oppgavebanken, og har ikke blitt endret siden du la det til i dette oppgavesettet.</p>
+</div>
+
+<div class="version-control update hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-refresh icon-large"></i>
+        <p>Ny versjon tilgjengelig.</p>
+    </div>
+    <p>Denne oppgaven har blitt endret av Krisztian Balog
+     siden du la det til</p>
+    <div>
+        <a class="btn btn-primary">Oppdater</a>
+        <a class="btn btn-version-control">Bruk gammel versjon</a>
+    </div>
+</div>
+
+<div class="version-control private hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-minus icon-large"></i>
+        <p>Privat.</p>
+    </div>
+    <p>Denne oppgaven er ikke delt i Oppgavebanken og kan bare bli endret av deg</p>
+    <p>For å dele med andre, åpne det og oppdater status for deling</p>
+</div>
+
+<div class="rev-update hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared"></span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=2027450&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-do-update" href="javascript:void(0)">Oppdater</a>
+	<a class="btn rev-keep-old" href="javascript:void(0)">Avbryt</a>
+</div>
+
+<div class="rev-edit-opt hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared">Krisztian Balog</span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=2027450&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-edit-latest" href="javascript:void(0)">Rediger ny</a>
+	<a class="btn rev-edit-old" href="javascript:void(0)">Rediger nåværende</a>
+</div>
+
+<div class="rev-share-opt hidden">
+	<p class="rev-head mtl">Ikke delt i oppgavebank</p>
+	<div class="rev-share-info">
+		<p>Denne oppgaven er privat for dette oppgavesettet.</p>
+	</div>
+	<a class="btn rev-keep-private" href="javascript:void(0)">Hold privat</a>
+	<a class="btn rev-share" href="javascript:void(0)">Del oppgaven</a>
+</div>
+
+    </div>
+
+    
+    <a href="javascript:void(0)" class="edit-test-overlay hidden">
+        <i class="icon-pencil icon-4x"></i>
+        <p>Rediger</p>
+    </a>
+    
+
+    
+
+    <div class="preview">
+        
+            
+                <img src="assessment_data_005/Bootstrap_2.png" class="question-thumbnail">
+            
+        
+    </div>
+    <div class="actions">
+        
+            <ul class="unstyled pull-left folders">
+
+                
+                    
+
+                    
+                
+
+                
+                    <li>
+                        <a href="#" class="score">
+                            <div class="emptyBlock">
+                                <p>4</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a href="#" class="tag">
+                        <div class="emptyBlock">
+                            <i class="icon-tag"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="unstyled pull-right">
+                <li><a href="#" class="duplicate-content"><i class="icon-copy icon-2x soft"></i></a></li>
+                
+                    <li class="mll"><a href="#" class="move"><span class="icon-move icon-2x soft"></span></a></li>
+                
+                <li class="mll"><a href="https://uis.inspera.no/author/test/30150653" class="showPreview"><span class="icon-play icon-2x soft"></span></a></li>
+                
+                    <li class="mll"><a href=""><i class="icon-trash icon-2x soft remove"></i></a></li>
+                
+            </ul>
+        
+    </div>
+</div></li><li class="page" id="2658446"><span class="page-title mbs"><span class="truncation-tooltip truncate" title="" data-original-title="Bootstrap 4">Bootstrap 4</span></span>
+<div class="inner-preview">
+    <div class="slide-menu">
+        <ul class="menu-list hidden">
+    <li><a href="#" class="showPreview"><i class="icon-play"></i> Forhåndsvis oppgavesettet her</a></li>
+    <li><a href="#" class="duplicateQuestion"><i class="icon-copy"></i> Lag en kopi av oppgaven</a></li>
+    <li><a href="#" class="remove"><i class="icon-remove"></i> Fjern fra oppgavesettet</a></li>
+</ul>
+
+    </div>
+    <div class="slide-options">
+        <div class="max-score hidden">
+    <div class="score-overview">
+        <p>3</p>
+        <p>Maksimum poeng</p>
+    </div>
+    
+</div>
+
+<div class="subjects-labels hidden">
+    <label>Etiketter</label>
+    <div>
+        
+            Bootstrap
+        
+    </div>
+</div>
+
+<div class="version-control ok hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-ok icon-large"></i>
+        <p>Oppdatert.</p>
+    </div>
+    <p>denne oppgaven er delt i Oppgavebanken, og har ikke blitt endret siden du la det til i dette oppgavesettet.</p>
+</div>
+
+<div class="version-control update hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-refresh icon-large"></i>
+        <p>Ny versjon tilgjengelig.</p>
+    </div>
+    <p>Denne oppgaven har blitt endret av Krisztian Balog
+     siden du la det til</p>
+    <div>
+        <a class="btn btn-primary">Oppdater</a>
+        <a class="btn btn-version-control">Bruk gammel versjon</a>
+    </div>
+</div>
+
+<div class="version-control private hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-minus icon-large"></i>
+        <p>Privat.</p>
+    </div>
+    <p>Denne oppgaven er ikke delt i Oppgavebanken og kan bare bli endret av deg</p>
+    <p>For å dele med andre, åpne det og oppdater status for deling</p>
+</div>
+
+<div class="rev-update hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared"></span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=2658446&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-do-update" href="javascript:void(0)">Oppdater</a>
+	<a class="btn rev-keep-old" href="javascript:void(0)">Avbryt</a>
+</div>
+
+<div class="rev-edit-opt hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared">Krisztian Balog</span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=2658446&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-edit-latest" href="javascript:void(0)">Rediger ny</a>
+	<a class="btn rev-edit-old" href="javascript:void(0)">Rediger nåværende</a>
+</div>
+
+<div class="rev-share-opt hidden">
+	<p class="rev-head mtl">Ikke delt i oppgavebank</p>
+	<div class="rev-share-info">
+		<p>Denne oppgaven er privat for dette oppgavesettet.</p>
+	</div>
+	<a class="btn rev-keep-private" href="javascript:void(0)">Hold privat</a>
+	<a class="btn rev-share" href="javascript:void(0)">Del oppgaven</a>
+</div>
+
+    </div>
+
+    
+    <a href="javascript:void(0)" class="edit-test-overlay hidden">
+        <i class="icon-pencil icon-4x"></i>
+        <p>Rediger</p>
+    </a>
+    
+
+    
+
+    <div class="preview">
+        
+            
+                <img src="assessment_data_005/Bootstrap_4.png" class="question-thumbnail">
+            
+        
+    </div>
+    <div class="actions">
+        
+            <ul class="unstyled pull-left folders">
+
+                
+                    
+
+                    
+                
+
+                
+                    <li>
+                        <a href="#" class="score">
+                            <div class="emptyBlock">
+                                <p>3</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a href="#" class="tag">
+                        <div class="emptyBlock">
+                            <i class="icon-tag"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="unstyled pull-right">
+                <li><a href="#" class="duplicate-content"><i class="icon-copy icon-2x soft"></i></a></li>
+                
+                    <li class="mll"><a href="#" class="move"><span class="icon-move icon-2x soft"></span></a></li>
+                
+                <li class="mll"><a href="https://uis.inspera.no/author/test/30150653" class="showPreview"><span class="icon-play icon-2x soft"></span></a></li>
+                
+                    <li class="mll"><a href=""><i class="icon-trash icon-2x soft remove"></i></a></li>
+                
+            </ul>
+        
+    </div>
+</div></li><li class="page" id="5990686"><span class="page-title mbs"><span class="truncation-tooltip truncate" title="" data-original-title="Bootstrap 5">Bootstrap 5</span></span>
+<div class="inner-preview">
+    <div class="slide-menu">
+        <ul class="menu-list hidden">
+    <li><a href="#" class="showPreview"><i class="icon-play"></i> Forhåndsvis oppgavesettet her</a></li>
+    <li><a href="#" class="duplicateQuestion"><i class="icon-copy"></i> Lag en kopi av oppgaven</a></li>
+    <li><a href="#" class="remove"><i class="icon-remove"></i> Fjern fra oppgavesettet</a></li>
+</ul>
+
+    </div>
+    <div class="slide-options">
+        <div class="max-score hidden">
+    <div class="score-overview">
+        <p>3</p>
+        <p>Maksimum poeng</p>
+    </div>
+    
+</div>
+
+<div class="subjects-labels hidden">
+    <label>Etiketter</label>
+    <div>
+        
+            
+        
+    </div>
+</div>
+
+<div class="version-control ok hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-ok icon-large"></i>
+        <p>Oppdatert.</p>
+    </div>
+    <p>denne oppgaven er delt i Oppgavebanken, og har ikke blitt endret siden du la det til i dette oppgavesettet.</p>
+</div>
+
+<div class="version-control update hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-refresh icon-large"></i>
+        <p>Ny versjon tilgjengelig.</p>
+    </div>
+    <p>Denne oppgaven har blitt endret av Krisztian Balog
+     siden du la det til</p>
+    <div>
+        <a class="btn btn-primary">Oppdater</a>
+        <a class="btn btn-version-control">Bruk gammel versjon</a>
+    </div>
+</div>
+
+<div class="version-control private hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-minus icon-large"></i>
+        <p>Privat.</p>
+    </div>
+    <p>Denne oppgaven er ikke delt i Oppgavebanken og kan bare bli endret av deg</p>
+    <p>For å dele med andre, åpne det og oppdater status for deling</p>
+</div>
+
+<div class="rev-update hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared"></span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=5990686&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-do-update" href="javascript:void(0)">Oppdater</a>
+	<a class="btn rev-keep-old" href="javascript:void(0)">Avbryt</a>
+</div>
+
+<div class="rev-edit-opt hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared">Krisztian Balog</span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=5990686&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-edit-latest" href="javascript:void(0)">Rediger ny</a>
+	<a class="btn rev-edit-old" href="javascript:void(0)">Rediger nåværende</a>
+</div>
+
+<div class="rev-share-opt hidden">
+	<p class="rev-head mtl">Ikke delt i oppgavebank</p>
+	<div class="rev-share-info">
+		<p>Denne oppgaven er privat for dette oppgavesettet.</p>
+	</div>
+	<a class="btn rev-keep-private" href="javascript:void(0)">Hold privat</a>
+	<a class="btn rev-share" href="javascript:void(0)">Del oppgaven</a>
+</div>
+
+    </div>
+
+    
+    <a href="javascript:void(0)" class="edit-test-overlay hidden">
+        <i class="icon-pencil icon-4x"></i>
+        <p>Rediger</p>
+    </a>
+    
+
+    
+
+    <div class="preview">
+        
+            
+                <img src="assessment_data_005/Bootstrap_5.png" class="question-thumbnail">
+            
+        
+    </div>
+    <div class="actions">
+        
+            <ul class="unstyled pull-left folders">
+
+                
+                    
+
+                    
+                
+
+                
+                    <li>
+                        <a href="#" class="score">
+                            <div class="emptyBlock">
+                                <p>3</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a href="#" class="tag">
+                        <div class="emptyBlock">
+                            <i class="icon-tag"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="unstyled pull-right">
+                <li><a href="#" class="duplicate-content"><i class="icon-copy icon-2x soft"></i></a></li>
+                
+                    <li class="mll"><a href="#" class="move"><span class="icon-move icon-2x soft"></span></a></li>
+                
+                <li class="mll"><a href="https://uis.inspera.no/author/test/30150653" class="showPreview"><span class="icon-play icon-2x soft"></span></a></li>
+                
+                    <li class="mll"><a href=""><i class="icon-trash icon-2x soft remove"></i></a></li>
+                
+            </ul>
+        
+    </div>
+</div></li><li class="page" id="17881616"><span class="page-title mbs"><span class="truncation-tooltip truncate" title="" data-original-title="JS prog 16">JS prog 16</span></span>
+<div class="inner-preview">
+    <div class="slide-menu">
+        <ul class="menu-list hidden">
+    <li><a href="#" class="showPreview"><i class="icon-play"></i> Forhåndsvis oppgavesettet her</a></li>
+    <li><a href="#" class="duplicateQuestion"><i class="icon-copy"></i> Lag en kopi av oppgaven</a></li>
+    <li><a href="#" class="remove"><i class="icon-remove"></i> Fjern fra oppgavesettet</a></li>
+</ul>
+
+    </div>
+    <div class="slide-options">
+        <div class="max-score hidden">
+    <div class="score-overview">
+        <p>4</p>
+        <p>Maksimum poeng</p>
+    </div>
+    
+</div>
+
+<div class="subjects-labels hidden">
+    <label>Etiketter</label>
+    <div>
+        
+            Date.class
+        
+    </div>
+</div>
+
+<div class="version-control ok hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-ok icon-large"></i>
+        <p>Oppdatert.</p>
+    </div>
+    <p>denne oppgaven er delt i Oppgavebanken, og har ikke blitt endret siden du la det til i dette oppgavesettet.</p>
+</div>
+
+<div class="version-control update hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-refresh icon-large"></i>
+        <p>Ny versjon tilgjengelig.</p>
+    </div>
+    <p>Denne oppgaven har blitt endret av Krisztian Balog
+     siden du la det til</p>
+    <div>
+        <a class="btn btn-primary">Oppdater</a>
+        <a class="btn btn-version-control">Bruk gammel versjon</a>
+    </div>
+</div>
+
+<div class="version-control private hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-minus icon-large"></i>
+        <p>Privat.</p>
+    </div>
+    <p>Denne oppgaven er ikke delt i Oppgavebanken og kan bare bli endret av deg</p>
+    <p>For å dele med andre, åpne det og oppdater status for deling</p>
+</div>
+
+<div class="rev-update hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared"></span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17881616&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-do-update" href="javascript:void(0)">Oppdater</a>
+	<a class="btn rev-keep-old" href="javascript:void(0)">Avbryt</a>
+</div>
+
+<div class="rev-edit-opt hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared">Krisztian Balog</span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17881616&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-edit-latest" href="javascript:void(0)">Rediger ny</a>
+	<a class="btn rev-edit-old" href="javascript:void(0)">Rediger nåværende</a>
+</div>
+
+<div class="rev-share-opt hidden">
+	<p class="rev-head mtl">Ikke delt i oppgavebank</p>
+	<div class="rev-share-info">
+		<p>Denne oppgaven er privat for dette oppgavesettet.</p>
+	</div>
+	<a class="btn rev-keep-private" href="javascript:void(0)">Hold privat</a>
+	<a class="btn rev-share" href="javascript:void(0)">Del oppgaven</a>
+</div>
+
+    </div>
+
+    
+    <a href="javascript:void(0)" class="edit-test-overlay hidden">
+        <i class="icon-pencil icon-4x"></i>
+        <p>Rediger</p>
+    </a>
+    
+
+    
+
+    <div class="preview">
+        
+            
+                <img src="assessment_data_005/JS_prog_16.png" class="question-thumbnail">
+            
+        
+    </div>
+    <div class="actions">
+        
+            <ul class="unstyled pull-left folders">
+
+                
+                    
+
+                    
+                
+
+                
+                    <li>
+                        <a href="#" class="score">
+                            <div class="emptyBlock">
+                                <p>4</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a href="#" class="tag">
+                        <div class="emptyBlock">
+                            <i class="icon-tag"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="unstyled pull-right">
+                <li><a href="#" class="duplicate-content"><i class="icon-copy icon-2x soft"></i></a></li>
+                
+                    <li class="mll"><a href="#" class="move"><span class="icon-move icon-2x soft"></span></a></li>
+                
+                <li class="mll"><a href="https://uis.inspera.no/author/test/30150653" class="showPreview"><span class="icon-play icon-2x soft"></span></a></li>
+                
+                    <li class="mll"><a href=""><i class="icon-trash icon-2x soft remove"></i></a></li>
+                
+            </ul>
+        
+    </div>
+</div></li><li class="page" id="17876247"><span class="page-title mbs"><span class="truncation-tooltip truncate" title="" data-original-title="JS prog 15">JS prog 15</span></span>
+<div class="inner-preview">
+    <div class="slide-menu">
+        <ul class="menu-list hidden">
+    <li><a href="#" class="showPreview"><i class="icon-play"></i> Forhåndsvis oppgavesettet her</a></li>
+    <li><a href="#" class="duplicateQuestion"><i class="icon-copy"></i> Lag en kopi av oppgaven</a></li>
+    <li><a href="#" class="remove"><i class="icon-remove"></i> Fjern fra oppgavesettet</a></li>
+</ul>
+
+    </div>
+    <div class="slide-options">
+        <div class="max-score hidden">
+    <div class="score-overview">
+        <p>8</p>
+        <p>Maksimum poeng</p>
+    </div>
+    
+</div>
+
+<div class="subjects-labels hidden">
+    <label>Etiketter</label>
+    <div>
+        
+            JS
+        
+    </div>
+</div>
+
+<div class="version-control ok hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-ok icon-large"></i>
+        <p>Oppdatert.</p>
+    </div>
+    <p>denne oppgaven er delt i Oppgavebanken, og har ikke blitt endret siden du la det til i dette oppgavesettet.</p>
+</div>
+
+<div class="version-control update hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-refresh icon-large"></i>
+        <p>Ny versjon tilgjengelig.</p>
+    </div>
+    <p>Denne oppgaven har blitt endret av Krisztian Balog
+     siden du la det til</p>
+    <div>
+        <a class="btn btn-primary">Oppdater</a>
+        <a class="btn btn-version-control">Bruk gammel versjon</a>
+    </div>
+</div>
+
+<div class="version-control private hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-minus icon-large"></i>
+        <p>Privat.</p>
+    </div>
+    <p>Denne oppgaven er ikke delt i Oppgavebanken og kan bare bli endret av deg</p>
+    <p>For å dele med andre, åpne det og oppdater status for deling</p>
+</div>
+
+<div class="rev-update hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared"></span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17876247&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-do-update" href="javascript:void(0)">Oppdater</a>
+	<a class="btn rev-keep-old" href="javascript:void(0)">Avbryt</a>
+</div>
+
+<div class="rev-edit-opt hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared">Krisztian Balog</span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17876247&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-edit-latest" href="javascript:void(0)">Rediger ny</a>
+	<a class="btn rev-edit-old" href="javascript:void(0)">Rediger nåværende</a>
+</div>
+
+<div class="rev-share-opt hidden">
+	<p class="rev-head mtl">Ikke delt i oppgavebank</p>
+	<div class="rev-share-info">
+		<p>Denne oppgaven er privat for dette oppgavesettet.</p>
+	</div>
+	<a class="btn rev-keep-private" href="javascript:void(0)">Hold privat</a>
+	<a class="btn rev-share" href="javascript:void(0)">Del oppgaven</a>
+</div>
+
+    </div>
+
+    
+    <a href="javascript:void(0)" class="edit-test-overlay hidden">
+        <i class="icon-pencil icon-4x"></i>
+        <p>Rediger</p>
+    </a>
+    
+
+    
+
+    <div class="preview">
+        
+            
+                <img src="assessment_data_005/JS_prog_15.png" class="question-thumbnail">
+            
+        
+    </div>
+    <div class="actions">
+        
+            <ul class="unstyled pull-left folders">
+
+                
+                    
+
+                    
+                
+
+                
+                    <li>
+                        <a href="#" class="score">
+                            <div class="emptyBlock">
+                                <p>8</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a href="#" class="tag">
+                        <div class="emptyBlock">
+                            <i class="icon-tag"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="unstyled pull-right">
+                <li><a href="#" class="duplicate-content"><i class="icon-copy icon-2x soft"></i></a></li>
+                
+                    <li class="mll"><a href="#" class="move"><span class="icon-move icon-2x soft"></span></a></li>
+                
+                <li class="mll"><a href="https://uis.inspera.no/author/test/30150653" class="showPreview"><span class="icon-play icon-2x soft"></span></a></li>
+                
+                    <li class="mll"><a href=""><i class="icon-trash icon-2x soft remove"></i></a></li>
+                
+            </ul>
+        
+    </div>
+</div></li><li class="page" id="1813844"><span class="page-title mbs"><span class="truncation-tooltip truncate" title="" data-original-title="JS what 2">JS what 2</span></span>
+<div class="inner-preview">
+    <div class="slide-menu">
+        <ul class="menu-list hidden">
+    <li><a href="#" class="showPreview"><i class="icon-play"></i> Forhåndsvis oppgavesettet her</a></li>
+    <li><a href="#" class="duplicateQuestion"><i class="icon-copy"></i> Lag en kopi av oppgaven</a></li>
+    <li><a href="#" class="remove"><i class="icon-remove"></i> Fjern fra oppgavesettet</a></li>
+</ul>
+
+    </div>
+    <div class="slide-options">
+        <div class="max-score hidden">
+    <div class="score-overview">
+        <p>3</p>
+        <p>Maksimum poeng</p>
+    </div>
+    
+        <table class="score-table">
+            <tbody><tr>
+                <td>Riktig:</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Galt:</td>
+                <td>0</td>
+            </tr>
+        </tbody></table>
+    
+</div>
+
+<div class="subjects-labels hidden">
+    <label>Etiketter</label>
+    <div>
+        
+            
+        
+    </div>
+</div>
+
+<div class="version-control ok hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-ok icon-large"></i>
+        <p>Oppdatert.</p>
+    </div>
+    <p>denne oppgaven er delt i Oppgavebanken, og har ikke blitt endret siden du la det til i dette oppgavesettet.</p>
+</div>
+
+<div class="version-control update hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-refresh icon-large"></i>
+        <p>Ny versjon tilgjengelig.</p>
+    </div>
+    <p>Denne oppgaven har blitt endret av Krisztian Balog
+     siden du la det til</p>
+    <div>
+        <a class="btn btn-primary">Oppdater</a>
+        <a class="btn btn-version-control">Bruk gammel versjon</a>
+    </div>
+</div>
+
+<div class="version-control private hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-minus icon-large"></i>
+        <p>Privat.</p>
+    </div>
+    <p>Denne oppgaven er ikke delt i Oppgavebanken og kan bare bli endret av deg</p>
+    <p>For å dele med andre, åpne det og oppdater status for deling</p>
+</div>
+
+<div class="rev-update hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared"></span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=1813844&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-do-update" href="javascript:void(0)">Oppdater</a>
+	<a class="btn rev-keep-old" href="javascript:void(0)">Avbryt</a>
+</div>
+
+<div class="rev-edit-opt hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared">Krisztian Balog</span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=1813844&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-edit-latest" href="javascript:void(0)">Rediger ny</a>
+	<a class="btn rev-edit-old" href="javascript:void(0)">Rediger nåværende</a>
+</div>
+
+<div class="rev-share-opt hidden">
+	<p class="rev-head mtl">Ikke delt i oppgavebank</p>
+	<div class="rev-share-info">
+		<p>Denne oppgaven er privat for dette oppgavesettet.</p>
+	</div>
+	<a class="btn rev-keep-private" href="javascript:void(0)">Hold privat</a>
+	<a class="btn rev-share" href="javascript:void(0)">Del oppgaven</a>
+</div>
+
+    </div>
+
+    
+    <a href="javascript:void(0)" class="edit-test-overlay hidden">
+        <i class="icon-pencil icon-4x"></i>
+        <p>Rediger</p>
+    </a>
+    
+
+    
+
+    <div class="preview">
+        
+            
+                <img src="assessment_data_005/JS_what_2.png" class="question-thumbnail">
+            
+        
+    </div>
+    <div class="actions">
+        
+            <ul class="unstyled pull-left folders">
+
+                
+                    
+
+                    
+                
+
+                
+                    <li>
+                        <a href="#" class="score">
+                            <div class="emptyBlock">
+                                <p>3</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a href="#" class="tag">
+                        <div class="emptyBlock">
+                            <i class="icon-tag"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="unstyled pull-right">
+                <li><a href="#" class="duplicate-content"><i class="icon-copy icon-2x soft"></i></a></li>
+                
+                    <li class="mll"><a href="#" class="move"><span class="icon-move icon-2x soft"></span></a></li>
+                
+                <li class="mll"><a href="https://uis.inspera.no/author/test/30150653" class="showPreview"><span class="icon-play icon-2x soft"></span></a></li>
+                
+                    <li class="mll"><a href=""><i class="icon-trash icon-2x soft remove"></i></a></li>
+                
+            </ul>
+        
+    </div>
+</div></li><li class="page" id="1823183"><span class="page-title mbs"><span class="truncation-tooltip truncate" title="" data-original-title="JS what 4">JS what 4</span></span>
+<div class="inner-preview">
+    <div class="slide-menu">
+        <ul class="menu-list hidden">
+    <li><a href="#" class="showPreview"><i class="icon-play"></i> Forhåndsvis oppgavesettet her</a></li>
+    <li><a href="#" class="duplicateQuestion"><i class="icon-copy"></i> Lag en kopi av oppgaven</a></li>
+    <li><a href="#" class="remove"><i class="icon-remove"></i> Fjern fra oppgavesettet</a></li>
+</ul>
+
+    </div>
+    <div class="slide-options">
+        <div class="max-score hidden">
+    <div class="score-overview">
+        <p>2</p>
+        <p>Maksimum poeng</p>
+    </div>
+    
+        <table class="score-table">
+            <tbody><tr>
+                <td>Riktig:</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Galt:</td>
+                <td>-1</td>
+            </tr>
+        </tbody></table>
+    
+</div>
+
+<div class="subjects-labels hidden">
+    <label>Etiketter</label>
+    <div>
+        
+            
+        
+    </div>
+</div>
+
+<div class="version-control ok hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-ok icon-large"></i>
+        <p>Oppdatert.</p>
+    </div>
+    <p>denne oppgaven er delt i Oppgavebanken, og har ikke blitt endret siden du la det til i dette oppgavesettet.</p>
+</div>
+
+<div class="version-control update hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-refresh icon-large"></i>
+        <p>Ny versjon tilgjengelig.</p>
+    </div>
+    <p>Denne oppgaven har blitt endret av Krisztian Balog
+     siden du la det til</p>
+    <div>
+        <a class="btn btn-primary">Oppdater</a>
+        <a class="btn btn-version-control">Bruk gammel versjon</a>
+    </div>
+</div>
+
+<div class="version-control private hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-minus icon-large"></i>
+        <p>Privat.</p>
+    </div>
+    <p>Denne oppgaven er ikke delt i Oppgavebanken og kan bare bli endret av deg</p>
+    <p>For å dele med andre, åpne det og oppdater status for deling</p>
+</div>
+
+<div class="rev-update hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared"></span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=1823183&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-do-update" href="javascript:void(0)">Oppdater</a>
+	<a class="btn rev-keep-old" href="javascript:void(0)">Avbryt</a>
+</div>
+
+<div class="rev-edit-opt hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared">Krisztian Balog</span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=1823183&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-edit-latest" href="javascript:void(0)">Rediger ny</a>
+	<a class="btn rev-edit-old" href="javascript:void(0)">Rediger nåværende</a>
+</div>
+
+<div class="rev-share-opt hidden">
+	<p class="rev-head mtl">Ikke delt i oppgavebank</p>
+	<div class="rev-share-info">
+		<p>Denne oppgaven er privat for dette oppgavesettet.</p>
+	</div>
+	<a class="btn rev-keep-private" href="javascript:void(0)">Hold privat</a>
+	<a class="btn rev-share" href="javascript:void(0)">Del oppgaven</a>
+</div>
+
+    </div>
+
+    
+    <a href="javascript:void(0)" class="edit-test-overlay hidden">
+        <i class="icon-pencil icon-4x"></i>
+        <p>Rediger</p>
+    </a>
+    
+
+    
+
+    <div class="preview">
+        
+            
+                <img src="assessment_data_005/JS_what_4.png" class="question-thumbnail">
+            
+        
+    </div>
+    <div class="actions">
+        
+            <ul class="unstyled pull-left folders">
+
+                
+                    
+
+                    
+                
+
+                
+                    <li>
+                        <a href="#" class="score">
+                            <div class="emptyBlock">
+                                <p>2</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a href="#" class="tag">
+                        <div class="emptyBlock">
+                            <i class="icon-tag"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="unstyled pull-right">
+                <li><a href="#" class="duplicate-content"><i class="icon-copy icon-2x soft"></i></a></li>
+                
+                    <li class="mll"><a href="#" class="move"><span class="icon-move icon-2x soft"></span></a></li>
+                
+                <li class="mll"><a href="https://uis.inspera.no/author/test/30150653" class="showPreview"><span class="icon-play icon-2x soft"></span></a></li>
+                
+                    <li class="mll"><a href=""><i class="icon-trash icon-2x soft remove"></i></a></li>
+                
+            </ul>
+        
+    </div>
+</div></li><li class="page" id="17897460"><span class="page-title mbs"><span class="truncation-tooltip truncate" title="" data-original-title="Python code 3">Python code 3</span></span>
+<div class="inner-preview">
+    <div class="slide-menu">
+        <ul class="menu-list hidden">
+    <li><a href="#" class="showPreview"><i class="icon-play"></i> Forhåndsvis oppgavesettet her</a></li>
+    <li><a href="#" class="duplicateQuestion"><i class="icon-copy"></i> Lag en kopi av oppgaven</a></li>
+    <li><a href="#" class="remove"><i class="icon-remove"></i> Fjern fra oppgavesettet</a></li>
+</ul>
+
+    </div>
+    <div class="slide-options">
+        <div class="max-score hidden">
+    <div class="score-overview">
+        <p>6</p>
+        <p>Maksimum poeng</p>
+    </div>
+    
+        <table class="score-table">
+            <tbody><tr>
+                <td>Riktig:</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Galt:</td>
+                <td>0</td>
+            </tr>
+        </tbody></table>
+    
+</div>
+
+<div class="subjects-labels hidden">
+    <label>Etiketter</label>
+    <div>
+        
+            
+        
+    </div>
+</div>
+
+<div class="version-control ok hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-ok icon-large"></i>
+        <p>Oppdatert.</p>
+    </div>
+    <p>denne oppgaven er delt i Oppgavebanken, og har ikke blitt endret siden du la det til i dette oppgavesettet.</p>
+</div>
+
+<div class="version-control update hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-refresh icon-large"></i>
+        <p>Ny versjon tilgjengelig.</p>
+    </div>
+    <p>Denne oppgaven har blitt endret av Krisztian Balog
+     siden du la det til</p>
+    <div>
+        <a class="btn btn-primary">Oppdater</a>
+        <a class="btn btn-version-control">Bruk gammel versjon</a>
+    </div>
+</div>
+
+<div class="version-control private hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-minus icon-large"></i>
+        <p>Privat.</p>
+    </div>
+    <p>Denne oppgaven er ikke delt i Oppgavebanken og kan bare bli endret av deg</p>
+    <p>For å dele med andre, åpne det og oppdater status for deling</p>
+</div>
+
+<div class="rev-update hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared"></span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17897460&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-do-update" href="javascript:void(0)">Oppdater</a>
+	<a class="btn rev-keep-old" href="javascript:void(0)">Avbryt</a>
+</div>
+
+<div class="rev-edit-opt hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared">Krisztian Balog</span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17897460&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-edit-latest" href="javascript:void(0)">Rediger ny</a>
+	<a class="btn rev-edit-old" href="javascript:void(0)">Rediger nåværende</a>
+</div>
+
+<div class="rev-share-opt hidden">
+	<p class="rev-head mtl">Ikke delt i oppgavebank</p>
+	<div class="rev-share-info">
+		<p>Denne oppgaven er privat for dette oppgavesettet.</p>
+	</div>
+	<a class="btn rev-keep-private" href="javascript:void(0)">Hold privat</a>
+	<a class="btn rev-share" href="javascript:void(0)">Del oppgaven</a>
+</div>
+
+    </div>
+
+    
+    <a href="javascript:void(0)" class="edit-test-overlay hidden">
+        <i class="icon-pencil icon-4x"></i>
+        <p>Rediger</p>
+    </a>
+    
+
+    
+
+    <div class="preview">
+        
+            
+                <img src="assessment_data_005/Python_code_3.png" class="question-thumbnail">
+            
+        
+    </div>
+    <div class="actions">
+        
+            <ul class="unstyled pull-left folders">
+
+                
+                    
+
+                    
+                
+
+                
+                    <li>
+                        <a href="#" class="score">
+                            <div class="emptyBlock">
+                                <p>6</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a href="#" class="tag">
+                        <div class="emptyBlock">
+                            <i class="icon-tag"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="unstyled pull-right">
+                <li><a href="#" class="duplicate-content"><i class="icon-copy icon-2x soft"></i></a></li>
+                
+                    <li class="mll"><a href="#" class="move"><span class="icon-move icon-2x soft"></span></a></li>
+                
+                <li class="mll"><a href="https://uis.inspera.no/author/test/30150653" class="showPreview"><span class="icon-play icon-2x soft"></span></a></li>
+                
+                    <li class="mll"><a href=""><i class="icon-trash icon-2x soft remove"></i></a></li>
+                
+            </ul>
+        
+    </div>
+</div></li><li class="page" id="17891975"><span class="page-title mbs"><span class="truncation-tooltip truncate" title="" data-original-title="Jinja 2">Jinja 2</span></span>
+<div class="inner-preview">
+    <div class="slide-menu">
+        <ul class="menu-list hidden">
+    <li><a href="#" class="showPreview"><i class="icon-play"></i> Forhåndsvis oppgavesettet her</a></li>
+    <li><a href="#" class="duplicateQuestion"><i class="icon-copy"></i> Lag en kopi av oppgaven</a></li>
+    <li><a href="#" class="remove"><i class="icon-remove"></i> Fjern fra oppgavesettet</a></li>
+</ul>
+
+    </div>
+    <div class="slide-options">
+        <div class="max-score hidden">
+    <div class="score-overview">
+        <p>4</p>
+        <p>Maksimum poeng</p>
+    </div>
+    
+        <table class="score-table">
+            <tbody><tr>
+                <td>Riktig:</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Galt:</td>
+                <td>0</td>
+            </tr>
+        </tbody></table>
+    
+</div>
+
+<div class="subjects-labels hidden">
+    <label>Etiketter</label>
+    <div>
+        
+            Python
+        
+    </div>
+</div>
+
+<div class="version-control ok hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-ok icon-large"></i>
+        <p>Oppdatert.</p>
+    </div>
+    <p>denne oppgaven er delt i Oppgavebanken, og har ikke blitt endret siden du la det til i dette oppgavesettet.</p>
+</div>
+
+<div class="version-control update hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-refresh icon-large"></i>
+        <p>Ny versjon tilgjengelig.</p>
+    </div>
+    <p>Denne oppgaven har blitt endret av Krisztian Balog
+     siden du la det til</p>
+    <div>
+        <a class="btn btn-primary">Oppdater</a>
+        <a class="btn btn-version-control">Bruk gammel versjon</a>
+    </div>
+</div>
+
+<div class="version-control private hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-minus icon-large"></i>
+        <p>Privat.</p>
+    </div>
+    <p>Denne oppgaven er ikke delt i Oppgavebanken og kan bare bli endret av deg</p>
+    <p>For å dele med andre, åpne det og oppdater status for deling</p>
+</div>
+
+<div class="rev-update hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared"></span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17891975&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-do-update" href="javascript:void(0)">Oppdater</a>
+	<a class="btn rev-keep-old" href="javascript:void(0)">Avbryt</a>
+</div>
+
+<div class="rev-edit-opt hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared">Krisztian Balog</span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17891975&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-edit-latest" href="javascript:void(0)">Rediger ny</a>
+	<a class="btn rev-edit-old" href="javascript:void(0)">Rediger nåværende</a>
+</div>
+
+<div class="rev-share-opt hidden">
+	<p class="rev-head mtl">Ikke delt i oppgavebank</p>
+	<div class="rev-share-info">
+		<p>Denne oppgaven er privat for dette oppgavesettet.</p>
+	</div>
+	<a class="btn rev-keep-private" href="javascript:void(0)">Hold privat</a>
+	<a class="btn rev-share" href="javascript:void(0)">Del oppgaven</a>
+</div>
+
+    </div>
+
+    
+    <a href="javascript:void(0)" class="edit-test-overlay hidden">
+        <i class="icon-pencil icon-4x"></i>
+        <p>Rediger</p>
+    </a>
+    
+
+    
+
+    <div class="preview">
+        
+            
+                <img src="assessment_data_005/Jinja_2.png" class="question-thumbnail">
+            
+        
+    </div>
+    <div class="actions">
+        
+            <ul class="unstyled pull-left folders">
+
+                
+                    
+
+                    
+                
+
+                
+                    <li>
+                        <a href="#" class="score">
+                            <div class="emptyBlock">
+                                <p>4</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a href="#" class="tag">
+                        <div class="emptyBlock">
+                            <i class="icon-tag"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="unstyled pull-right">
+                <li><a href="#" class="duplicate-content"><i class="icon-copy icon-2x soft"></i></a></li>
+                
+                    <li class="mll"><a href="#" class="move"><span class="icon-move icon-2x soft"></span></a></li>
+                
+                <li class="mll"><a href="https://uis.inspera.no/author/test/30150653" class="showPreview"><span class="icon-play icon-2x soft"></span></a></li>
+                
+                    <li class="mll"><a href=""><i class="icon-trash icon-2x soft remove"></i></a></li>
+                
+            </ul>
+        
+    </div>
+</div></li><li class="page" id="17894615"><span class="page-title mbs"><span class="truncation-tooltip truncate" title="" data-original-title="Jinja 3">Jinja 3</span></span>
+<div class="inner-preview">
+    <div class="slide-menu">
+        <ul class="menu-list hidden">
+    <li><a href="#" class="showPreview"><i class="icon-play"></i> Forhåndsvis oppgavesettet her</a></li>
+    <li><a href="#" class="duplicateQuestion"><i class="icon-copy"></i> Lag en kopi av oppgaven</a></li>
+    <li><a href="#" class="remove"><i class="icon-remove"></i> Fjern fra oppgavesettet</a></li>
+</ul>
+
+    </div>
+    <div class="slide-options">
+        <div class="max-score hidden">
+    <div class="score-overview">
+        <p>3</p>
+        <p>Maksimum poeng</p>
+    </div>
+    
+        <table class="score-table">
+            <tbody><tr>
+                <td>Riktig:</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Galt:</td>
+                <td>-1</td>
+            </tr>
+        </tbody></table>
+    
+</div>
+
+<div class="subjects-labels hidden">
+    <label>Etiketter</label>
+    <div>
+        
+            Python
+        
+    </div>
+</div>
+
+<div class="version-control ok hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-ok icon-large"></i>
+        <p>Oppdatert.</p>
+    </div>
+    <p>denne oppgaven er delt i Oppgavebanken, og har ikke blitt endret siden du la det til i dette oppgavesettet.</p>
+</div>
+
+<div class="version-control update hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-refresh icon-large"></i>
+        <p>Ny versjon tilgjengelig.</p>
+    </div>
+    <p>Denne oppgaven har blitt endret av Krisztian Balog
+     siden du la det til</p>
+    <div>
+        <a class="btn btn-primary">Oppdater</a>
+        <a class="btn btn-version-control">Bruk gammel versjon</a>
+    </div>
+</div>
+
+<div class="version-control private hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-minus icon-large"></i>
+        <p>Privat.</p>
+    </div>
+    <p>Denne oppgaven er ikke delt i Oppgavebanken og kan bare bli endret av deg</p>
+    <p>For å dele med andre, åpne det og oppdater status for deling</p>
+</div>
+
+<div class="rev-update hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared"></span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17894615&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-do-update" href="javascript:void(0)">Oppdater</a>
+	<a class="btn rev-keep-old" href="javascript:void(0)">Avbryt</a>
+</div>
+
+<div class="rev-edit-opt hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared">Krisztian Balog</span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17894615&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-edit-latest" href="javascript:void(0)">Rediger ny</a>
+	<a class="btn rev-edit-old" href="javascript:void(0)">Rediger nåværende</a>
+</div>
+
+<div class="rev-share-opt hidden">
+	<p class="rev-head mtl">Ikke delt i oppgavebank</p>
+	<div class="rev-share-info">
+		<p>Denne oppgaven er privat for dette oppgavesettet.</p>
+	</div>
+	<a class="btn rev-keep-private" href="javascript:void(0)">Hold privat</a>
+	<a class="btn rev-share" href="javascript:void(0)">Del oppgaven</a>
+</div>
+
+    </div>
+
+    
+    <a href="javascript:void(0)" class="edit-test-overlay hidden">
+        <i class="icon-pencil icon-4x"></i>
+        <p>Rediger</p>
+    </a>
+    
+
+    
+
+    <div class="preview">
+        
+            
+                <img src="assessment_data_005/Jinja_3.png" class="question-thumbnail">
+            
+        
+    </div>
+    <div class="actions">
+        
+            <ul class="unstyled pull-left folders">
+
+                
+                    
+
+                    
+                
+
+                
+                    <li>
+                        <a href="#" class="score">
+                            <div class="emptyBlock">
+                                <p>3</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a href="#" class="tag">
+                        <div class="emptyBlock">
+                            <i class="icon-tag"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="unstyled pull-right">
+                <li><a href="#" class="duplicate-content"><i class="icon-copy icon-2x soft"></i></a></li>
+                
+                    <li class="mll"><a href="#" class="move"><span class="icon-move icon-2x soft"></span></a></li>
+                
+                <li class="mll"><a href="https://uis.inspera.no/author/test/30150653" class="showPreview"><span class="icon-play icon-2x soft"></span></a></li>
+                
+                    <li class="mll"><a href=""><i class="icon-trash icon-2x soft remove"></i></a></li>
+                
+            </ul>
+        
+    </div>
+</div></li><li class="page" id="17899525"><span class="page-title mbs"><span class="truncation-tooltip truncate" title="" data-original-title="Flask 3">Flask 3</span></span>
+<div class="inner-preview">
+    <div class="slide-menu">
+        <ul class="menu-list hidden">
+    <li><a href="#" class="showPreview"><i class="icon-play"></i> Forhåndsvis oppgavesettet her</a></li>
+    <li><a href="#" class="duplicateQuestion"><i class="icon-copy"></i> Lag en kopi av oppgaven</a></li>
+    <li><a href="#" class="remove"><i class="icon-remove"></i> Fjern fra oppgavesettet</a></li>
+</ul>
+
+    </div>
+    <div class="slide-options">
+        <div class="max-score hidden">
+    <div class="score-overview">
+        <p>6</p>
+        <p>Maksimum poeng</p>
+    </div>
+    
+</div>
+
+<div class="subjects-labels hidden">
+    <label>Etiketter</label>
+    <div>
+        
+            Python
+        
+            JS
+        
+    </div>
+</div>
+
+<div class="version-control ok hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-ok icon-large"></i>
+        <p>Oppdatert.</p>
+    </div>
+    <p>denne oppgaven er delt i Oppgavebanken, og har ikke blitt endret siden du la det til i dette oppgavesettet.</p>
+</div>
+
+<div class="version-control update hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-refresh icon-large"></i>
+        <p>Ny versjon tilgjengelig.</p>
+    </div>
+    <p>Denne oppgaven har blitt endret av Krisztian Balog
+     siden du la det til</p>
+    <div>
+        <a class="btn btn-primary">Oppdater</a>
+        <a class="btn btn-version-control">Bruk gammel versjon</a>
+    </div>
+</div>
+
+<div class="version-control private hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-minus icon-large"></i>
+        <p>Privat.</p>
+    </div>
+    <p>Denne oppgaven er ikke delt i Oppgavebanken og kan bare bli endret av deg</p>
+    <p>For å dele med andre, åpne det og oppdater status for deling</p>
+</div>
+
+<div class="rev-update hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared"></span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17899525&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-do-update" href="javascript:void(0)">Oppdater</a>
+	<a class="btn rev-keep-old" href="javascript:void(0)">Avbryt</a>
+</div>
+
+<div class="rev-edit-opt hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared">Krisztian Balog</span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17899525&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-edit-latest" href="javascript:void(0)">Rediger ny</a>
+	<a class="btn rev-edit-old" href="javascript:void(0)">Rediger nåværende</a>
+</div>
+
+<div class="rev-share-opt hidden">
+	<p class="rev-head mtl">Ikke delt i oppgavebank</p>
+	<div class="rev-share-info">
+		<p>Denne oppgaven er privat for dette oppgavesettet.</p>
+	</div>
+	<a class="btn rev-keep-private" href="javascript:void(0)">Hold privat</a>
+	<a class="btn rev-share" href="javascript:void(0)">Del oppgaven</a>
+</div>
+
+    </div>
+
+    
+    <a href="javascript:void(0)" class="edit-test-overlay hidden">
+        <i class="icon-pencil icon-4x"></i>
+        <p>Rediger</p>
+    </a>
+    
+
+    
+
+    <div class="preview">
+        
+            
+                <img src="assessment_data_005/Flask_3.png" class="question-thumbnail">
+            
+        
+    </div>
+    <div class="actions">
+        
+            <ul class="unstyled pull-left folders">
+
+                
+                    
+
+                    
+                
+
+                
+                    <li>
+                        <a href="#" class="score">
+                            <div class="emptyBlock">
+                                <p>6</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a href="#" class="tag">
+                        <div class="emptyBlock">
+                            <i class="icon-tag"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="unstyled pull-right">
+                <li><a href="#" class="duplicate-content"><i class="icon-copy icon-2x soft"></i></a></li>
+                
+                    <li class="mll"><a href="#" class="move"><span class="icon-move icon-2x soft"></span></a></li>
+                
+                <li class="mll"><a href="https://uis.inspera.no/author/test/30150653" class="showPreview"><span class="icon-play icon-2x soft"></span></a></li>
+                
+                    <li class="mll"><a href=""><i class="icon-trash icon-2x soft remove"></i></a></li>
+                
+            </ul>
+        
+    </div>
+</div></li><li class="page" id="17902495"><span class="page-title mbs"><span class="truncation-tooltip truncate" title="" data-original-title="Flask 4">Flask 4</span></span>
+<div class="inner-preview">
+    <div class="slide-menu">
+        <ul class="menu-list hidden">
+    <li><a href="#" class="showPreview"><i class="icon-play"></i> Forhåndsvis oppgavesettet her</a></li>
+    <li><a href="#" class="duplicateQuestion"><i class="icon-copy"></i> Lag en kopi av oppgaven</a></li>
+    <li><a href="#" class="remove"><i class="icon-remove"></i> Fjern fra oppgavesettet</a></li>
+</ul>
+
+    </div>
+    <div class="slide-options">
+        <div class="max-score hidden">
+    <div class="score-overview">
+        <p>11</p>
+        <p>Maksimum poeng</p>
+    </div>
+    
+</div>
+
+<div class="subjects-labels hidden">
+    <label>Etiketter</label>
+    <div>
+        
+            
+        
+    </div>
+</div>
+
+<div class="version-control ok hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-ok icon-large"></i>
+        <p>Oppdatert.</p>
+    </div>
+    <p>denne oppgaven er delt i Oppgavebanken, og har ikke blitt endret siden du la det til i dette oppgavesettet.</p>
+</div>
+
+<div class="version-control update hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-refresh icon-large"></i>
+        <p>Ny versjon tilgjengelig.</p>
+    </div>
+    <p>Denne oppgaven har blitt endret av Krisztian Balog
+     siden du la det til</p>
+    <div>
+        <a class="btn btn-primary">Oppdater</a>
+        <a class="btn btn-version-control">Bruk gammel versjon</a>
+    </div>
+</div>
+
+<div class="version-control private hidden">
+    <div class="version-control-header">
+        <i class="icon-folder-close-alt icon-3x"></i><i class="icon-minus icon-large"></i>
+        <p>Privat.</p>
+    </div>
+    <p>Denne oppgaven er ikke delt i Oppgavebanken og kan bare bli endret av deg</p>
+    <p>For å dele med andre, åpne det og oppdater status for deling</p>
+</div>
+
+<div class="rev-update hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared"></span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17902495&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-do-update" href="javascript:void(0)">Oppdater</a>
+	<a class="btn rev-keep-old" href="javascript:void(0)">Avbryt</a>
+</div>
+
+<div class="rev-edit-opt hidden">
+	<p class="rev-new mtl">Ny versjon tilgjengelig</p>
+	<div class="rev-changed">
+		<p>Oppgaven har blitt endret av <span class="who-dared">Krisztian Balog</span></p>
+        <p><a class="blue-link" target="_blank" data-bypass="" href="https://uis.inspera.no/player?mode=question&amp;context=preview&amp;contentItemId=17902495&amp;selectedLanguageId=1">Forhåndsvis ny versjon</a></p>
+	</div>
+	<a class="btn rev-edit-latest" href="javascript:void(0)">Rediger ny</a>
+	<a class="btn rev-edit-old" href="javascript:void(0)">Rediger nåværende</a>
+</div>
+
+<div class="rev-share-opt hidden">
+	<p class="rev-head mtl">Ikke delt i oppgavebank</p>
+	<div class="rev-share-info">
+		<p>Denne oppgaven er privat for dette oppgavesettet.</p>
+	</div>
+	<a class="btn rev-keep-private" href="javascript:void(0)">Hold privat</a>
+	<a class="btn rev-share" href="javascript:void(0)">Del oppgaven</a>
+</div>
+
+    </div>
+
+    
+    <a href="javascript:void(0)" class="edit-test-overlay hidden">
+        <i class="icon-pencil icon-4x"></i>
+        <p>Rediger</p>
+    </a>
+    
+
+    
+
+    <div class="preview">
+        
+            
+                <img src="assessment_data_005/Flask_4.png" class="question-thumbnail">
+            
+        
+    </div>
+    <div class="actions">
+        
+            <ul class="unstyled pull-left folders">
+
+                
+                    
+
+                    
+                
+
+                
+                    <li>
+                        <a href="#" class="score">
+                            <div class="emptyBlock">
+                                <p>11</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a href="#" class="tag">
+                        <div class="emptyBlock">
+                            <i class="icon-tag"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="unstyled pull-right">
+                <li><a href="#" class="duplicate-content"><i class="icon-copy icon-2x soft"></i></a></li>
+                
+                    <li class="mll"><a href="#" class="move"><span class="icon-move icon-2x soft"></span></a></li>
+                
+                <li class="mll"><a href="https://uis.inspera.no/author/test/30150653" class="showPreview"><span class="icon-play icon-2x soft"></span></a></li>
+                
+                    <li class="mll"><a href=""><i class="icon-trash icon-2x soft remove"></i></a></li>
+                
+            </ul>
+        
+    </div>
+</div></li><li class="add-page">
+        <div class="inner-preview">
+            <div class="preview">
+                <div class="new-page"><i class="icon-plus icon-large"></i>
+                    <p>Lag ny</p>
+                </div>
+            </div>
+            <div class="actions question-bank">
+                <div class="soft">
+                    <i class="icon-folder-open icon-2x from-question-bank mrs"></i>
+                    <span>Fra oppgavebank</span>
+                </div>
+            </div>
+        </div>
+     </li>
+</ul></li><li class="add-section row-fluid">
+        <div class="span4"></div>
+        <div class="span4 text-center"><div class="add btn">Legg til seksjon</div></div>
+        <div class="span4"></div>
+    </li>
+</ul>
+<div id="test-resources"><div><div class="author-test-resources-bar">
+    
+    <div class="toggle-action">
+        
+            <a href="javascript:void(0);" class="expand blue-link">
+                <i class="icon-chevron-up"></i>
+                <span class="action-name">Vis ressurser</span>
+            </a>
+        
+    </div>
+</div></div></div>
+</div></div></div></div>
+        <div id="bottom-container"><div><div class="wizard_navigation author-test-bottom-nav">
+    <div class="center">
+        <ul class="steps unstyled">
+            
+                <li data-step-id="0" class="step soft questions current">
+                    <i class="icon-th"></i>
+                    <span class="step-text">
+                        Oppgaver
+                    </span>
+                </li>
+            
+                <li data-step-id="1" class="step soft design ">
+                    <i class="*views.authorTestBottomNavStepIcon.design*"></i>
+                    <span class="step-text">
+                        Design
+                    </span>
+                </li>
+            
+        </ul>
+    </div>
+</div></div></div>
+    </div>
+    <div id="push"></div>
+</div>
+<div id="support-container"></div>
+<div id="footer">
+    <div id="termsPrivacyWrapper">
+        <!-- the url and link title is set in app.js -->
+        <a class="soft mrm" id="privacyDeclaration" target="_blank" href="http://www.inspera.no/privacy?languageId=1">Personvernerklæring</a>
+        <a class="soft mrm" id="termsAndConditions" target="_blank" href="http://www.inspera.no/terms?languageId=1">Brukervilkår</a>
+    </div>
+    <p>
+        Powered by Inspera
+    </p>
+</div>
+
+<script type="text/javascript">
+    // We need to set the CKEDITOR basepath before loading any other JS
+    var CKEDITOR_BASEPATH = '/static/assessment/js/lib/ckeditor/';
+    var ASSESSMENT_BASE = "/static/assessment/js/";
+    var CHARTING_MODULES_BASE = "/static/assessment/charting/javascript/";
+    var SCRIPTS_BASE = "/static/scripts/";
+</script>
+<!--Only load JS if browser is other than IE or newer than IE8-->
+<script type="text/javascript">
+    /** Warning! Don't touch this block without looking at the build scripts first... **/
+    var env = "server";
+    // Write the script tag to load the correct JS file
+    // We have separate JS files for the different locales
+    // If local we just run the config as usual, and load locale from there
+    var NO_BUNLDE = "";
+
+    if (env == "local" || NO_BUNLDE != '') {
+        document.write("<script id='requireJS' data-main='/static/assessment/js/main.js' src='/static/assessment/js/lib/require.js?v=d15b02d9b5fc8cf08b4f8ed467699c973f9af33c' type='text/javascript'><\/script>");
+    } else {
+        // Set timeout for Require. Needs to be set before loading main-built
+        window.require = {waitSeconds: 60};
+        document.write("<script id='requireJS' data-main='/static/assessment/js/main-built.js?v=d15b02d9b5fc8cf08b4f8ed467699c973f9af33c' src='/static/assessment/js/lib/require.js?v=d15b02d9b5fc8cf08b4f8ed467699c973f9af33c' type='text/javascript'><\/script>");
+        
+    }
+</script><script id="requireJS" data-main="/static/assessment/js/main-built.js?v=d15b02d9b5fc8cf08b4f8ed467699c973f9af33c" src="assessment_data_007/require.js" type="text/javascript"></script>
+<script src="assessment_data_007/chartEmbedMain.js"></script>
+
+
+<script>
+    window._trackJs = {
+        token: "b4cce6c8c1e24aac8cb156f72a033c63",
+        application: "assessment",
+        onError: function (payload, error) {
+            var reportError = true;
+
+            // Remove 401 network events, they happen all the time for us
+            if (typeof error === 'string' && (error.indexOf('401') === 0 || error.indexOf('403') === 0)) {
+                reportError = false;
+            }
+
+            return reportError;
+        }
+    }
+</script>
+<script type="text/javascript" crossorigin="anonymous" src="tracker.js" data-token="b4cce6c8c1e24aac8cb156f72a033c63"></script>
+
+
+
+
+</body></html>

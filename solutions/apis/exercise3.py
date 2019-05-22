@@ -14,8 +14,8 @@ def index():
 
     params = {
         "nojsoncallback": 1,
-        "tags": "stavanger",
-        "tagmode": "any",
+        "tags": "sandnes",
+        "tagmode": "all",
         "format": "json"
     }
 
@@ -24,4 +24,4 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

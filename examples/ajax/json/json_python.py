@@ -20,7 +20,7 @@ j = json.dumps(data)
 print(j)
 
 # pretty printing
-#print(json.dumps(data, sort_keys=True, indent=4))
+print(json.dumps(data, sort_keys=True, indent=4))
 
 # decode
 data2 = json.loads(j)

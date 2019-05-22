@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="admin-html authoring" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        Inspera Assessment
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+    <script type="text/javascript">
+        window.marketplaceName = "uis";
+        var ASSESSMENT_BASE = "/static/assessment/js/";
+        var CHARTING_MODULES_BASE = "/static/assessment/charting/javascript/";
+    </script>
+
+    <script type="text/javascript">
+        
+        if (!window.name) {
+            window.name = 'IA';
+        }
+        window.basePath = '/static/dashboard/admin/';
+        window.supportedLanguages = 'no_no,en_us,no_no_ny,sv_se,pl_pl'.split(',');
+        window.supportedContentLanguage = 'no_NO,en_US,no_NO_NY'.split(",");
+        var App = {};
+        App.serverVars = {};
+        App.serverVars.deploymentEnv = "prod";
+        App.serverVars.version = 'd15b02d9b5fc8cf08b4f8ed467699c973f9af33c';
+        App.serverVars.appRootUrl = '/static/dashboard/admin/';
+        App.serverVars.appHome = '/admin';
+        App.serverVars.servletLocation = '/';
+        App.serverVars.staticFileLocation = '/static/';
+        App.serverVars.playerUrl = '/static/player/index.jsp';
+        App.serverVars.fileServlet = App.serverVars.servletLocation + 'file/';
+        App.serverVars.marketplaceId = 1312542;
+        App.serverVars.languageId = 1;
+        App.serverVars.isLocalServer = false;
+        App.serverVars.csrfToken = 'qp6DXZe3E8h8uDPf';
+        App.serverVars.signedPushURL = 'wss://a14v3tzixkvqbl-ats.iot.eu-west-1.amazonaws.com/mqtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ7TPQLDNHOAHIURQ%2F20190428%2Feu-west-1%2Fiotdata%2Faws4_request&X-Amz-Date=20190428T195222Z&X-Amz-SignedHeaders=host&X-Amz-Signature=e923b2b582989e5acf163c29edea6b5dc7804e42f64e972422853b1109013d0b';
+        App.serverVars.sharedLocation = '/static/dashboard/shared/';
+        App.serverVars.marketplaceBackground = 'https://d133zon9jtcf53.cloudfront.net/background/admin.jpg';
+        App.serverVars.marketplaceBackgroundCredits = 'Sand, Norway. Photo by Lachlan Gowen';
+        App.serverVars.marketplaceUrl = 'uis.inspera.no';
+        App.serverVars.academyMarketplaceUrl = 'academy.inspera.com'
+        App.serverVars.isSuperAdminMarketplace = false;
+        App.serverVars.taxonomyCategoryRootId = null;
+        App.serverVars.personalInformationSettings = {"assignPermanentStudentUsers":true,"sendEmailOnEvent":true,"nonAnonymousCandidates":true,"externalSystemProvidesPseudonymousIds":{"FEIDE":true,"FS":true,"IDPORTEN":true}};
+        
+        
+        App.serverVars.marketplaceImageLogo = App.serverVars.fileServlet+"cil/mp_logo/file";
+        
+        
+        App.serverVars.dashboardBackground = App.serverVars.fileServlet+"cil/mp_dashboard_background/file";
+        
+
+        
+        App.serverVars.marketplaceTitle = "uis";
+        App.serverVars.marketplaceName = "uis";
+        App.serverVars.arMaxNumberOfCandidates = 1500;
+        App.initUserId = 3438404;
+        App.initUserName = "2910522";
+        App.marketplaceProperties = {};
+        App.marketplaceProperties['IA_SHOW_EULA'] = false;
+        App.marketplaceProperties['USE_ANTIPLAGIARISM_EXTERNAL_SERVICE'] = true;
+        App.marketplaceProperties['ENABLE_OFFLINE_ANNOTATIONS'] = false;
+        App.marketplaceProperties['INCLUDE_BLANK_DELIVERIES_IN_GRADING'] = true;
+        App.marketplaceProperties['ENABLE_EXTERNAL_CANDIDATE_CSV_IMPORT'] = true;
+        App.marketplaceProperties['CXC_ENABLED'] = false;
+        App.marketplaceProperties['PERMANENT_CANDIDATES_ENABLED'] = true;
+        App.marketplaceProperties['HIDE_PLAGIARISM_FROM_GRADERS'] = false;
+        App.marketplaceProperties['IA_OFFER_ENABLE_ATTACHED_SKETCHES'] = true;
+        App.marketplaceProperties['ENABLE_VDI'] = false;
+        App.marketplaceProperties['SKOLFEDERATION_ENTITY_ID_ADMIN'] = 'null';
+        App.offlineEvaluatorAnnotationEnabled = App.marketplaceProperties['ENABLE_OFFLINE_ANNOTATIONS'];
+        App.marketplaceProperties['REQUIRE_CURRENT_PASSWORD_VERIFICATION'] = false;
+        App.marketplaceProperties['CLOSE_TEST_NOW_ENABLED'] = false;
+        App.marketplaceProperties['IA_GUI_SHOW_HELP_ICON'] = true;
+        App.marketplaceProperties['IA_GUI_SHOW_THRESHOLD_VALUE_EDITOR'] = true;
+        App.marketplaceProperties['ENABLE_SUBMISSION_DELETION'] = false;
+        App.marketplaceProperties['GRADE_EXPLANATION_ADMINISTRATION_ENABLED'] = true;
+        App.marketplaceProperties['ENABLE_MIDDLE_ENDIAN_DATE_FORMAT'] = false;
+        App.marketplaceProperties['ENABLE_LOGIN_TABS'] = false;
+        App.marketplaceProperties['DISABLE_PLANNER_OVERRIDE_COMMITTEE_STATUS'] = false;
+        App.marketplaceProperties['BANDED_MARKING_ENABLED'] = false;
+        App.marketplaceProperties['HIDE_GENERAL_OVERVIEW'] = false;
+        App.marketplaceProperties['HIDE_EXPLANATION'] = false;
+        App.marketplaceProperties['HIDE_USE_DECIMALS'] = false;
+        App.marketplaceProperties['HIDE_DEFAULT_COLUMNS_IN_GRADING'] = false;
+        App.marketplaceProperties['HIDE_ANNOTATIONS_IN_GRADING'] = false;
+        App.marketplaceProperties['HIDE_PRIVATE_NOTES_IN_GRADING'] = false;
+        App.marketplaceProperties['DEFAULT_GRADING_FILTER'] = false;
+        App.marketplaceProperties['ENABLE_NEW_GRADING_HEADER'] = false;
+        App.marketplaceProperties['HIDE_YOUR_GRADE_IN_GRADING'] = false;
+        App.marketplaceProperties['ENABLE_AMQP'] = false;
+        App.marketplaceProperties['ENABLE_GEOGEBRA'] = false;
+        App.marketplaceProperties['ENABLE_QUESTION_AUDIO_RECORD'] = false;
+        App.marketplaceProperties['ENABLE_COMPILED_PROGRAMMING_QUESTION'] = false;
+        App.marketplaceProperties['ENABLE_GRAPHIC_TEXT_ENTRY'] = false;
+        App.marketplaceProperties['ENABLE_GRAPHIC_GAP_MATCH'] = false;
+        App.marketplaceProperties['ENABLE_INLINE_GAP_MATCH'] = false;
+        App.marketplaceProperties['ENABLE_NON_ANONYMOUS_CANDIDATES'] = true;
+        App.marketplaceProperties['MULTIPLE_RESPONSE_MAX_CHOICES_ENABLED'] = false;
+        App.marketplaceProperties['ENABLE_NEW_PRINT_PDF_FEATURE'] = true;
+        App.marketplaceProperties['NEW_PDF_GENERATION_VALID_DATE'] = '2017-10-07 00:00:00';
+        App.marketplaceProperties['FS_ORGANIZATION_ID'] = "uis";
+        App.marketplaceProperties['PCGE_ENABLED'] = "false";
+        App.marketplaceProperties['LADOK_ENABLED'] = "false";
+        App.marketplaceProperties['ENABLE_AMQP'] = false;
+        App.marketplaceProperties['SCANTRON_TESTS_ENABLED'] = "false";
+        App.marketplaceProperties['ENABLE_LIVE_INDEXING_FRONTEND'] = true,
+        App.marketplaceProperties['ENABLE_EXTENDED_OFFLINE'] = false,
+        App.marketplaceProperties['ENABLE_CANDIDATE_FILTER'] = "false",
+        App.marketplaceProperties['ENABLE_DE_ANONYMIZATION_GRADING'] = false;
+        App.marketplaceProperties['ENABLE_QTI_EXPORT'] = false;
+        App.marketplaceProperties['IMPORT_CONTRIBUTORS_CSV_ENABLED'] = false;
+        App.marketplaceProperties['ENABLE_OFFLINE_SKETCHES'] = true;
+        App.marketplaceProperties['ENABLE_EXPORT_CSV_MARKS_AND_FINAL_GRADE'] = true;
+        App.marketplaceProperties['ENABLE_XLSX_EXPORT_OF_SCORES'] = false;
+        App.marketplaceProperties['ENABLE_EXCEL_GRADES_IMPORT_EXPORT'] = false;
+        App.marketplaceProperties['ITEM_BANK_DOCUMENTATION_DOCUMENT'] = "25660141";
+        App.marketplaceProperties['ITEM_BANK_NON_DEFAULT_FIELDS'] = "null";
+        App.marketplaceProperties['ENABLE_ANALYTICS_FRONTEND_Q'] = true;
+        App.marketplaceProperties['ENABLE_ANALYTICS_FRONTEND_QS'] = false;
+        App.marketplaceProperties['ANALYTICS_DOCUMENTATION_DOCUMENT'] = "25660367";
+        App.marketplaceProperties['ENABLE_API_CODE_GENERATION'] = true;
+        App.marketplaceProperties['ANALYTICS_COLUMNS_DOCUMENTATION_DOCUMENT'] = "25654431";
+        App.marketplaceProperties['UI_LANGUAGE_OVERRIDE'] = "null";
+        App.marketplaceProperties['ENABLE_TEMPLATES'] = true;
+        App.marketplaceProperties['SHOW_TEMPLATE_LIST_AS_STARTPAGE'] = false;
+        App.marketplaceProperties['GETTING_STARTED_GRADING_DOCUMENT'] = "26801505";
+        App.marketplaceProperties['GETTING_STARTED_MONITORING_DOCUMENT'] = "26801483";
+        App.marketplaceProperties['GETTING_STARTED_TEMPLATES_DOCUMENT'] = "26801689";
+        App.marketplaceProperties['GETTING_STARTED_AUTHORING_DOCUMENT'] = "29048188";
+        App.marketplaceProperties['GETTING_STARTED_DASHBOARD_DOCUMENT'] = "29048155";
+        App.marketplaceProperties['GETTING_STARTED_TESTS_DOCUMENT'] = "30061462";
+        App.marketplaceProperties['ENABLE_STUDENT_CLASS_MEMBERSHIP'] = false;
+        App.marketplaceProperties['HELP_OVERLAY_DOCUMENT'] = 28037497;
+        App.marketplaceProperties['ENABLE_PUBLISH_FINAL_GRADE_IN_STUDENT_DASHBOARD'] = false;
+        App.marketplaceProperties['ENABLE_EXAM_DUTY'] = false;
+        App.marketplaceProperties['ENABLE_TAXONOMY'] = false;
+        App.marketplaceProperties['ENABLE_TOTAL_MARKS_COLUMN'] = true;
+        App.marketplaceProperties['ENABLE_CRITERIA_MARKING'] = false;
+        App.marketplaceProperties['ENABLE_K12_SPLASH'] = false;
+        App.marketplaceProperties['PROTOCOL_ENABLE_DIGITAL_SIGNATURE'] = false;
+        App.marketplaceProperties['ALLOW_CANDIDATE_PROGRESS_OVERRIDING_IN_MONITOR'] = false;
+        App.marketplaceProperties['ENABLE_DELIVERING_STEPS_AFTER_ACTIVATION'] = true;
+        App.marketplaceProperties['ENABLE_DISTRACTOR_ANALYSIS_EXPORTS'] = false;
+        App.marketplaceProperties['ENABLE_INVIGILATOR_PASSWORD_FOR_OPEN_BROWSER_TESTS'] = false;
+        App.marketplaceProperties['ENABLE_REASSESSMENT'] = false;
+        App.marketplaceProperties['ENABLE_GRADING_HOME'] = false;
+        App.marketplaceProperties['HIDE_CANDIDATE_CREDENTIALS'] = false;
+        App.marketplaceProperties['CUSTOM_LOGIN_HELP_TEXT'] = 'null';
+        App.marketplaceProperties['ENABLE_PRESET_ESSAY_TOOLBAR'] = false;
+        App.marketplaceProperties['ENABLE_PRESET_MATH_SYMBOL_PALETTE'] = false;
+        App.marketplaceProperties['ENABLE_PRESET_GRADING_WORKSPACE'] = false;
+        App.marketplaceProperties['ENABLE_ORG_UNIT_IMPORT_FROM_CSV'] = false;
+        App.marketplaceProperties['MATH_SYMBOL_PALETTE_DOCUMENTATION_CONTENT_ITEM_ID'] = 34515394;
+        App.marketplaceProperties['ESSAY_TOOLBAR_DOCUMENTATION_CONTENT_ITEM_ID'] = 34550704;
+        App.marketplaceProperties['PCI_ENABLE_INTERACTION_TEMPLATE_SUPPORT'] = false;
+        App.marketplaceProperties['ENABLE_TRANSFER_GRADERS_PER_COMMITTEE_FS'] = false;
+        App.marketplaceProperties['STUDENT_PERSONAL_INFORMATION_MODE'] = "Minimisation";
+        App.marketplaceProperties['ENABLE_TEST_WITHOUT_SUBMISSION'] = false;
+        App.marketplaceProperties['ENABLE_GRADING_CANDIDATE_LEVEL_AND_DEADLINE'] = true;
+        App.marketplaceProperties['ENABLE_INDIVIDUAL_DELIVERY_DEADLINE'] = true;
+        App.marketplaceProperties['ACADEMY_MARKETPLACE_ID'] = 37688467;
+        App.marketplaceProperties['ENABLE_INSPERA_ACADEMY'] = false;
+        App.marketplaceProperties['ENABLE_HEADER_NEW_TEST_BUTTON'] = false;
+        App.marketplaceProperties['GET_FILTERS_POLLING_INTERVAL_IN_SECONDS'] = 60;
+        App.marketplaceProperties['ENABLE_TEACHER_MODE_WORKFLOW'] = false;
+        App.marketplaceProperties['DEFAULT_DELIVER_WORKFLOW'] = "standard";
+        App.marketplaceProperties['ENABLE_ADMIN_GRADE_APPROVAL'] = false;
+        App.marketplaceProperties['ENABLE_FRONTEND_IRT'] = false;
+        App.marketplaceProperties['USE_ANALYTICS_FIELD_NAMING_V1'] = true;
+        App.marketplaceProperties['USE_ANALYTICS_FIELD_NAMING_V2'] = false;
+        App.marketplaceProperties['ENABLE_INDIVIDUAL_DELIVERY_DEADLINE'] = true;
+        App.marketplaceProperties['MAX_STUDENTS_FROM_ORG_UNITS_TO_TEST'] = 1500;
+        App.marketplaceProperties['ENABLE_HYPOTHESIS_IN_OLD_GRADING'] = false;
+
+        
+
+        App.marketplaceIntegrations = {'integrations': [{"integrationName":"FEIDE","title":"Feide","logo":"https://d133zon9jtcf53.cloudfront.net/samllogo/feide-nokkel.png","loginURL":"https://feide.inspera.no/feide/endpoint/login?loginPath=admin&languageId=1&originatingMarketplaceId=1312542","logoutURL":"https://feide.inspera.no/feide/endpoint/marketplaceLogout?loginPath=admin&originatingMarketplaceId=1312542","admin":true,"student":true},{"integrationName":"FS","title":"FS Person ID","logo":"","loginURL":"https://","logoutURL":"https://","admin":true,"student":true},{"integrationName":"IDPORTEN","title":"IdPorten","logo":"https://d133zon9jtcf53.cloudfront.net/samllogo/id-porten.png","loginURL":"https://sso.inspera.no/idporten/endpoint/login?loginPath=admin&languageId=1&originatingMarketplaceId=1312542","logoutURL":"https://sso.inspera.no/idporten/endpoint/marketplaceLogout?loginPath=admin&originatingMarketplaceId=1312542","admin":true,"student":false}]};
+
+        
+
+        
+
+        
+
+    </script>
+
+    <link href="Inspera%20Assessment_files/base.css" rel="stylesheet" media="all" type="text/css">
+    <link href="Inspera%20Assessment_files/font-awesome.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://uis.inspera.no/static/dashboard/admin/favicon.png">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/static/dashboard/admin/js/main-build.js?v=d15b02d9b5fc8cf08b4f8ed467699c973f9af33c" src="Inspera%20Assessment_files/main-build.js"></script></head>
+
+<body class="show-header" style="position: static;">
+
+<div id="alert-container"><div data-reactid=".0"><span data-reactid=".0.0"></span></div></div>
+<div id="support-wrapper"></div>
+
+<div id="header"><div data-reactid=".1"><nav class="ia-navbar ia-show home-nav" data-reactid=".1.0" style="position: relative;"><ul class="ia-navbar-list" data-reactid=".1.0.0"><li class="dashboard" data-reactid=".1.0.0.0"><a class="ia-navitem" href="javascript:void(0)" id="main_nav_logo" data-reactid=".1.0.0.0.0"><img src="Inspera%20Assessment_files/ia_circles.png" data-reactid=".1.0.0.0.0.0"></a></li></ul><div class="main-nav" data-reactid=".1.0.2"><ul class="nav" data-reactid=".1.0.2.0"><li class="authoring popover-toggle" data-reactid=".1.0.2.0.0"><div class="pointer" data-reactid=".1.0.2.0.0.0"><a data-href="#authoring" href="javascript:void(0)" id="main_nav_authoring" class="authoring headerMenuItem current" data-reactid=".1.0.2.0.0.0.0"><span data-reactid=".1.0.2.0.0.0.0.0">Oppgaver</span><i class="fa fa-angle-down mls" aria-hidden="true" data-reactid=".1.0.2.0.0.0.0.1"></i></a><div class="nav-submenu admin popover" data-reactid=".1.0.2.0.0.0.1" style="display: none;"><ul id="main_nav_authoring_submenu" data-reactid=".1.0.2.0.0.0.1.0"><li class="item" data-reactid=".1.0.2.0.0.0.1.0.0:$questionSets_0"><a href="javascript:void(0)" id="main_nav_authoring_submenu_questionSets" data-href="#itemBank" data-reactid=".1.0.2.0.0.0.1.0.0:$questionSets_0.0"><i class="fa fa-book" data-reactid=".1.0.2.0.0.0.1.0.0:$questionSets_0.0.0"></i><span class="" data-reactid=".1.0.2.0.0.0.1.0.0:$questionSets_0.0.1">Oppgavesett</span><span data-reactid=".1.0.2.0.0.0.1.0.0:$questionSets_0.0.2"></span></a></li><li class="item" data-reactid=".1.0.2.0.0.0.1.0.0:$questions_1"><a href="javascript:void(0)" id="main_nav_authoring_submenu_questions" data-href="#itemBank/questions" data-reactid=".1.0.2.0.0.0.1.0.0:$questions_1.0"><i class="fa fa-file-text-o" data-reactid=".1.0.2.0.0.0.1.0.0:$questions_1.0.0"></i><span class="" data-reactid=".1.0.2.0.0.0.1.0.0:$questions_1.0.1">Oppgaver</span><span data-reactid=".1.0.2.0.0.0.1.0.0:$questions_1.0.2"></span></a></li></ul></div></div></li><li class="delivering popover-toggle disabled" data-reactid=".1.0.2.0.1"><div data-reactid=".1.0.2.0.1.0">Prøver</div></li><li class="monitoring" data-reactid=".1.0.2.0.2"><a data-href="#live" href="javascript:void(0)" id="main_nav_monitoring" class="monitoring" data-reactid=".1.0.2.0.2.0">Monitor</a></li><li class="grading popover-toggle" data-reactid=".1.0.2.0.3"><div class="pointer" data-reactid=".1.0.2.0.3.0"><a data-href="/grading/new" href="javascript:void(0)" id="main_nav_grading" class="grading headerMenuItem" data-reactid=".1.0.2.0.3.0.0"><span data-reactid=".1.0.2.0.3.0.0.0">Vurdering</span></a></div></li><li class="reporting disabled" data-reactid=".1.0.2.0.4"><div data-reactid=".1.0.2.0.4.0">Rapporter</div></li></ul></div><ul class="ia-navbar-list rightSideOptions" data-reactid=".1.0.3"><li class="notifications popover-toggle" data-reactid=".1.0.3.2"><a class="ia-navitem" href="javascript:void(0)" id="main_nav_notifications" data-reactid=".1.0.3.2.0"><i class="fa fa-bell-o" data-reactid=".1.0.3.2.0.0"></i><span class="unread-notifications" data-reactid=".1.0.3.2.0.1"><i class="fa fa-circle" data-reactid=".1.0.3.2.0.1.0"></i><i class="unread-notifications fa fa-circle-o" data-reactid=".1.0.3.2.0.1.1"></i></span></a></li><li class="settings" data-reactid=".1.0.3.3"><div class="ia-settings-menu grading-settings" data-reactid=".1.0.3.3.0"><a class="ia-navitem" href="javascript:void(0)" data-reactid=".1.0.3.3.0.0"><i class="fa fa-cog" aria-hidden="true" data-reactid=".1.0.3.3.0.0.0"></i></a><div id="popover0.9349095653605629" class="settings-dropdown ia-popover popover bottom popover-arrow-right" data-reactid=".1.0.3.3.0.1" style="display: none;"><div class="arrow" data-reactid=".1.0.3.3.0.1.0"></div><h3 class="popover-title" data-reactid=".1.0.3.3.0.1.1">Innstillinger</h3><div class="popover-content panel-container" data-reactid=".1.0.3.3.0.1.2"><div class="user-admin-links" data-reactid=".1.0.3.3.0.1.2.0"><div class="action-item soft pointer users hidden" data-reactid=".1.0.3.3.0.1.2.0.0"><a class="action-title mlm" href="javascript:void(0)" data-reactid=".1.0.3.3.0.1.2.0.0.0"><i class="fa fa-user" aria-hidden="true" data-reactid=".1.0.3.3.0.1.2.0.0.0.0"></i><span data-reactid=".1.0.3.3.0.1.2.0.0.0.1">Brukeradministrasjon</span></a></div><div class="action-item soft pointer" data-reactid=".1.0.3.3.0.1.2.0.1"><a class="action-title mlm account-settings" href="javascript:void(0)" data-reactid=".1.0.3.3.0.1.2.0.1.0"><i class="fa fa-user" aria-hidden="true" data-reactid=".1.0.3.3.0.1.2.0.1.0.0"></i><span data-reactid=".1.0.3.3.0.1.2.0.1.0.1">Brukerprofil</span></a></div></div><div class="settings-actions" data-reactid=".1.0.3.3.0.1.2.1"><select class="select-block inline language-id" data-reactid=".1.0.3.3.0.1.2.1.0"><option selected="selected" value="no_no" data-reactid=".1.0.3.3.0.1.2.1.0.$0">Norsk - Bokmål</option><option value="en_us" data-reactid=".1.0.3.3.0.1.2.1.0.$1">Engelsk</option><option value="no_no_ny" data-reactid=".1.0.3.3.0.1.2.1.0.$2">Norsk - Nynorsk</option><option value="sv_se" data-reactid=".1.0.3.3.0.1.2.1.0.$3">Svensk</option><option value="pl_pl" data-reactid=".1.0.3.3.0.1.2.1.0.$4">Polsk</option></select><a class="logout-link" href="javascript:void(0)" data-reactid=".1.0.3.3.0.1.2.1.1"><span data-reactid=".1.0.3.3.0.1.2.1.1.0">Logg ut</span><i class="fa fa-power-off" aria-hidden="true" data-reactid=".1.0.3.3.0.1.2.1.1.1"></i></a></div></div></div></div></li><li class="support" data-reactid=".1.0.3.4"><a class="ia-navitem" href="javascript:void(0)" id="main_nav_help" data-reactid=".1.0.3.4.0"><i class="fa fa-question-circle" data-reactid=".1.0.3.4.0.0"></i></a></li><li class="menu-toggle" data-reactid=".1.0.3.5"><a href="javascript:void(0)" id="main_nav_menu_toggle" class="ia-navitem" title="" data-reactid=".1.0.3.5.0" data-original-title="live.dashboard.header.menu-toggle"><i class="fa fa-bars" aria-hidden="true" data-reactid=".1.0.3.5.0.0"></i></a></li></ul><div class="overlay hidden" style="position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; opacity: 0; z-index: 9000; background: rgb(0, 0, 0) none repeat scroll 0% 0%;"></div></nav><div id="newNotifications" data-reactid=".1.1"><div id="popover0.22761980659298842" class="notifications-dropdown ia-popover popover bottom popover-arrow-right" data-reactid=".1.1.0" style="display: none;"><div class="arrow" data-reactid=".1.1.0.0"></div><div class="popover-content panel-container" data-reactid=".1.1.0.2"><div class="pull-right actions" data-reactid=".1.1.0.2.0"><a href="javascript:void(0)" data-reactid=".1.1.0.2.0.0"><i class="fa fa-history" data-reactid=".1.1.0.2.0.0.0"></i><span data-reactid=".1.1.0.2.0.0.1">Alle hendelser</span></a><a href="javascript:void(0)" data-reactid=".1.1.0.2.0.1"><i class="fa fa-cog" data-reactid=".1.1.0.2.0.1.0"></i><span data-reactid=".1.1.0.2.0.1.1">Varslingsinnstillinger</span></a><a href="javascript:void(0)" data-reactid=".1.1.0.2.0.2"><i class="fa fa-times" data-reactid=".1.1.0.2.0.2.0"></i><span data-reactid=".1.1.0.2.0.2.1">Lukk</span></a></div><h3 data-reactid=".1.1.0.2.1">20 nye hendelser</h3><div id="notificationList" data-reactid=".1.1.0.2.2"><div class="event" data-reactid=".1.1.0.2.2.$0"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$0.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$0.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$0.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$0.1.0">26. februar 2019 kl. 13.04</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$0.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$0.2.0">DAT320 Mar2019 Re-exam</a><span data-reactid=".1.1.0.2.2.$0.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$0.2.2">Vinay Jayarama Setty delte med <i>Kathrine Olsen</i>.</span><span data-reactid=".1.1.0.2.2.$0.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$0.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$1"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$1.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$1.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$1.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$1.1.0">26. februar 2019 kl. 12.59</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$1.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$1.2.0">DAT320 Mar2019 Re-exam</a><span data-reactid=".1.1.0.2.2.$1.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$1.2.2">Vinay Jayarama Setty delte med <i>Karolina Dwojak</i>.</span><span data-reactid=".1.1.0.2.2.$1.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$1.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$2"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$2.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$2.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$2.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$2.1.0">26. februar 2019 kl. 12.58</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$2.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$2.2.0">DAT320 Mar2019 Re-exam</a><span data-reactid=".1.1.0.2.2.$2.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$2.2.2">Vinay Jayarama Setty delte med <i>Kjetil Tjåland</i>.</span><span data-reactid=".1.1.0.2.2.$2.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$2.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$3"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$3.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$3.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$3.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$3.1.0">26. februar 2019 kl. 12.56</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$3.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$3.2.0">Deadlock necessary condition (5%)</a><span data-reactid=".1.1.0.2.2.$3.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$3.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$3.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$3.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$4"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$4.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$4.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$4.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$4.1.0">26. februar 2019 kl. 12.56</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$4.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$4.2.0">DAT320 Mar2019 Re-exam</a><span data-reactid=".1.1.0.2.2.$4.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$4.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$4.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$4.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$5"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$5.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$5.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$5.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$5.1.0">26. februar 2019 kl. 12.55</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$5.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$5.2.0">DAT320 Mar2019 Re-exam</a><span data-reactid=".1.1.0.2.2.$5.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$5.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$5.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$5.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$6"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$6.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$6.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$6.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$6.1.0">26. februar 2019 kl. 12.55</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$6.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$6.2.0">Deadlock necessary condition (5%)</a><span data-reactid=".1.1.0.2.2.$6.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$6.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$6.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$6.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$7"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$7.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$7.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$7.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$7.1.0">26. februar 2019 kl. 12.55</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$7.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$7.2.0">DAT320 Mar2019 Re-exam</a><span data-reactid=".1.1.0.2.2.$7.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$7.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$7.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$7.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$8"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$8.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$8.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$8.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$8.1.0">26. februar 2019 kl. 12.55</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$8.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$8.2.0">Deadlock necessary condition (5%)</a><span data-reactid=".1.1.0.2.2.$8.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$8.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$8.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$8.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$9"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$9.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$9.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$9.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$9.1.0">26. februar 2019 kl. 12.53</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$9.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$9.2.0">DAT320 Mar2019 Re-exam</a><span data-reactid=".1.1.0.2.2.$9.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$9.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$9.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$9.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$10"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$10.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$10.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$10.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$10.1.0">26. februar 2019 kl. 12.53</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$10.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$10.2.0">Deadlock necessary condition (5%)</a><span data-reactid=".1.1.0.2.2.$10.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$10.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$10.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$10.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$11"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$11.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$11.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$11.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$11.1.0">26. februar 2019 kl. 12.51</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$11.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$11.2.0">SQL Injection attack (2%)</a><span data-reactid=".1.1.0.2.2.$11.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$11.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$11.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$11.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$12"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$12.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$12.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$12.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$12.1.0">26. februar 2019 kl. 12.51</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$12.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$12.2.0">DAT320 Mar2019 Re-exam</a><span data-reactid=".1.1.0.2.2.$12.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$12.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$12.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$12.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$13"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$13.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$13.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$13.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$13.1.0">26. februar 2019 kl. 12.51</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$13.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$13.2.0">SQL Injection attack (2%)</a><span data-reactid=".1.1.0.2.2.$13.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$13.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$13.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$13.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$14"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$14.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$14.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$14.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$14.1.0">26. februar 2019 kl. 12.51</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$14.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$14.2.0">DAT320 Mar2019 Re-exam</a><span data-reactid=".1.1.0.2.2.$14.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$14.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$14.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$14.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$15"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$15.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$15.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$15.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$15.1.0">26. februar 2019 kl. 12.50</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$15.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$15.2.0">DAT320 Mar2019 Re-exam</a><span data-reactid=".1.1.0.2.2.$15.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$15.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$15.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$15.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$16"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$16.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$16.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$16.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$16.1.0">26. februar 2019 kl. 12.50</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$16.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$16.2.0">Buffer overflow (2%)</a><span data-reactid=".1.1.0.2.2.$16.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$16.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$16.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$16.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$17"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$17.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$17.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$17.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$17.1.0">26. februar 2019 kl. 12.50</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$17.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$17.2.0">Buffer overflow (2%)</a><span data-reactid=".1.1.0.2.2.$17.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$17.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$17.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$17.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$18"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$18.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$18.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$18.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$18.1.0">26. februar 2019 kl. 12.50</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$18.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$18.2.0">DAT320 Mar2019 Re-exam</a><span data-reactid=".1.1.0.2.2.$18.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$18.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$18.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$18.3"></div></div><div class="event" data-reactid=".1.1.0.2.2.$19"><div class="hdiv-left type-icon event-content" data-reactid=".1.1.0.2.2.$19.0"><i class="fa fa-user" data-reactid=".1.1.0.2.2.$19.0.0"></i></div><div class="hdiv-left timestamp event-content" data-reactid=".1.1.0.2.2.$19.1"><span class="event-timeStamp" data-reactid=".1.1.0.2.2.$19.1.0">26. februar 2019 kl. 12.50</span></div><div class="hdiv-left description event-content" data-reactid=".1.1.0.2.2.$19.2"><a class="event-context-object-title" data-preserve-popover="true" data-reactid=".1.1.0.2.2.$19.2.0">Passwords (2%)</a><span data-reactid=".1.1.0.2.2.$19.2.1">&nbsp;-&nbsp;</span><span class="event-name" data-reactid=".1.1.0.2.2.$19.2.2">Vinay Jayarama Setty lagret en ny revisjon.</span><span data-reactid=".1.1.0.2.2.$19.2.3"></span></div><div class="pagination" data-reactid=".1.1.0.2.2.$19.3"></div></div></div></div></div></div></div></div>
+<div id="user-info"></div>
+<div class="container" id="bsContainer">
+    <div id="main" class="hidden"><div class="loading-container" data-reactid=".a"><p data-reactid=".a.0"><i class="fa fa-refresh fa-spin fa-2x" data-reactid=".a.0.0"></i></p></div></div>
+    <div id="overlay">
+    </div>
+    <div id="contextual-help"></div>
+</div>
+<div id="tmp-hidden-container" class=""><iframe id="embeddedTool" class="embeddedToolView hidden" src="Inspera%20Assessment_files/assessment.html" style="width: 1641px; height: 903px;" width="100%" height="100%" frameborder="0"></iframe><iframe id="embeddedTool" class="embeddedToolView hidden" src="Inspera%20Assessment_files/assessment_002.html" style="width: 1641px; height: 903px;" width="100%" height="100%" frameborder="0"></iframe><iframe id="embeddedTool" class="embeddedToolView hidden" src="Inspera%20Assessment_files/assessment_003.html" style="width: 1641px; height: 903px;" width="100%" height="100%" frameborder="0"></iframe><iframe id="embeddedTool" class="embeddedToolView hidden" src="Inspera%20Assessment_files/assessment_004.html" style="width: 1641px; height: 903px;" width="100%" height="100%" frameborder="0"></iframe><iframe id="embeddedTool" class="embeddedToolView hidden" src="Inspera%20Assessment_files/assessment_005.html" style="width: 1641px; height: 903px;" width="100%" height="100%" frameborder="0"></iframe><iframe id="embeddedTool" class="embeddedToolView hidden" src="Inspera%20Assessment_files/assessment_006.html" style="width: 1641px; height: 903px;" width="100%" height="100%" frameborder="0"></iframe><iframe id="embeddedTool" class="embeddedToolView" src="Inspera%20Assessment_files/assessment_007.html" style="width: 1641px; height: 903px;" width="100%" height="100%" frameborder="0"></iframe></div>
+<div id="modal-container"></div>
+<div id="footer"></div>
+<script src="Inspera%20Assessment_files/mqttws31.js" type="text/javascript"></script>
+
+<!--Only load JS if browser is other than IE or newer than IE9-->
+
+<script>
+    // Set timeout for Require. Needs to be set before loading main-built
+    window.require = {waitSeconds: 60};
+</script>
+<!--[if (gt IE 9)|(!IE)]><!-->
+<script data-main="/static/dashboard/admin/js/main-build.js?v=d15b02d9b5fc8cf08b4f8ed467699c973f9af33c" src="Inspera%20Assessment_files/require-build.js" type="text/javascript"></script>
+<!--<![endif]-->
+
+
+
+
+
+
+
+<script>
+    window._trackJs = {
+        token: "b4cce6c8c1e24aac8cb156f72a033c63",
+        application: "dashboard",
+        onError: function (payload, error) {
+            var reportError = true;
+
+            // Remove 401 network events, they happen all the time for us
+            if (typeof error === 'string' && (error.indexOf('401') === 0 || error.indexOf('403') === 0)) {
+                reportError = false;
+            }
+
+            return reportError;
+        }
+    }
+</script>
+    <script type="text/javascript" crossorigin="anonymous" src="Inspera%20Assessment_files/tracker.js" data-token="b4cce6c8c1e24aac8cb156f72a033c63"></script>
+
+
+
+</body></html>
