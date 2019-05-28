@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes</title>
+    
+    <!-- Complete the following link to include the stylesheet use the url_for function -->
+    <link rel="stylesheet" href="{{ url_for("static", filename="style.css") }}">
+    <script src="{{ url_for("static", filename="script.js") }}"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="">Search</a></li>
+                <li class="showing"><a href="/read">Read</a></li>
+                <li><a href="/add">Add</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+</body>
+</html>

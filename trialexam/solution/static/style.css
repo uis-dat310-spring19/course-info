@@ -1,0 +1,161 @@
+body {
+    min-height: 100%;
+    background-color: #cccccc;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+main {
+    position: absolute;
+    top: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+/* DISPLAY */
+.container {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 360px;
+    overflow: scroll;
+}
+
+article {
+    position: relative;
+    min-width: 350px;
+    
+    
+    padding: .5em;
+    overflow: auto;
+    
+}
+
+.content {
+    background-color: #eeeeee;
+    
+    
+    padding: .5em;
+}
+
+.icon.main {
+    width: 200px;
+    float: left;
+    margin-right: 5px;
+}
+
+.icon.exit {
+    position: absolute;
+    width: 15px;
+    right: 15px;
+    top: 15px;
+    padding: 5px;
+}
+
+.icon.exit:hover {
+    background-color: #87cefa;
+}
+
+
+/* ASIDE */
+
+aside {
+    width: 360px;
+    background-color: #efefef;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    bottom:0px;
+}
+
+.note-list {
+    padding: 0;
+    margin:0;
+}
+
+.note-list li {
+    list-style-type:none;
+    padding: 10px .5em;
+    border-bottom: solid 1px #cccccc;
+    border-top: solid 1px #cccccc;
+    
+}
+
+.note-list li.showing {
+    border-left: solid 4px blue;
+}
+
+.note-list li:first-child {
+    border-top: solid 2px #cccccc;
+}
+
+.note-list li:last-child {
+    border-bottom: solid 2px #cccccc;
+}
+
+.note-list li:hover {
+    background-color: #e1ebf7;
+}
+
+
+/* HEADER and NAVBAR */
+header {
+    height: 50px;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: #88baf9;
+    
+}
+
+nav { 
+    display:inline-flex;
+    float: right;
+    min-height: 50px;    
+}
+
+.nav-list {
+    margin: auto 1em;
+}
+
+.nav-list li {
+    width: 100px;
+    border: solid 2px #0000FF;
+    border-radius: 5px; 
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+
+    display: inline-block;
+    background-color: #5ca5ff;
+    color: white;
+}
+
+.nav-list a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+.nav-list li.showing {
+    color: blue;
+    cursor: default;
+}
+
+/* Form styles */
+input, select {
+    width: 100px;
+    display: block;
+    margin: 10px 5px;
+}
+
+textarea {
+    display: block;
+    margin: 10px 5px;
+}

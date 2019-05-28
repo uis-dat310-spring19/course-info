@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container">
+        
+    </div>
+
+    <aside>
+            <ul class="note-list">
+                {% for note in notes %}
+                <li id="{{ "listNote_" + note["id"]}}">
+                    <h4>{{note["title"]}}</h4>
+                    <span>{{ note["fdate"] }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </aside>
+{% endblock %}

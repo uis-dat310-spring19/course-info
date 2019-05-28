@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container">
+        <form action="/add" method="post">
+            <input type="text" name="title" placeholder="Title">
+            <input type="date" name="date">
+            <select name="imageUrl" placeholder="Type">
+                <option value="images/meeting.png">Meeting Notes</option>
+                <option value="images/books.jpg">Reading Notes</option>
+                <option value="images/lecture.png">Lecture Notes</option>
+            </select>
+            <textarea name="content" cols="30" rows="10"></textarea>
+            <input type="submit" value="Add">
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+        Inspera Assessment
+    </title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=1000">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="assessment_data_007/base.css" rel="stylesheet" media="screen" type="text/css">
+    <link href="assessment_data_007/base_002.css" rel="stylesheet" media="screen" type="text/css">
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="/static/assessment/css/ie.css?v=d15b02d9b5fc8cf08b4f8ed467699c973f9af33c" />
+    <![endif]-->
+    <link rel="shortcut icon" href="https://uis.inspera.no/static/assessment/favicon.png">
+
+    <script type="text/javascript">
+        window.supportedLanguages = 'no_no,en_us,no_no_ny,sv_se,pl_pl'.split(',');
+        window.serverVars = {};
+        window.serverVars.version = 'd15b02d9b5fc8cf08b4f8ed467699c973f9af33c';
+        window.serverVars.isLocal = 'true' === 'false';
+        window.serverVars.isProd = 'true' === 'true';
+        window.serverVars.isStage = 'true' === 'false';
+        window.serverVars.basePath = '/static/assessment/';
+        window.serverVars.csrfToken = 'qp6DXZe3E8h8uDPf';
+        window.serverVars.staticFileLocation = '/static/';
+        window.serverVars.servletLocation = '/';
+        window.serverVars.fileServlet = window.serverVars.servletLocation + 'file/';
+        window.serverVars.marketplaceId = 1312542;
+        window.serverVars.languageId = 1;
+        window.serverVars.isNewFeaturesActivated = false;
+        window.serverVars.arMaxNumberOfCandidates = 1500;
+        window.serverVars.enableMiddleEndianDateFormat = false;
+        window.serverVars.enableLiveIndexingFrontend = true;
+        window.serverVars.enableAuthoringInlineLatexEditing = false;
+        window.serverVars.uiLanguageOverride = 'null';
+
+        
+
+        // redirect to /admin check
+        if(location.href.indexOf("/assessment") > -1 && location.search.indexOf("embedded=true") == -1) {
+            location.href = "/admin" + location.search + location.hash;
+        }
+    </script>
+    <script type="text/javascript">
+        function esablishFunctionBridge(callback) {
+            window.bridgeCallback = callback;
+        }
+    </script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config(
+        {
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: true
+            },
+            "HTML-CSS": {
+                availableFonts: ["TeX"],
+                imageFont: null
+            },
+            messageStyle: "none"
+        });
+    </script>
+
+    <script type="text/javascript" src="assessment_data_007/LanguageUtils.js"></script>
+
+    <script type="text/javascript">
+        // Saving locale in LocalStorage (App object is not available at this point, so it can't be used for cache)
+        // Defaulting the language to that of the user
+        var userLanguage = window.LanguageUtils.getLocaleFromLanguageId(1);
+        var _locale = localStorage.getItem('locale') || userLanguage;
+        localStorage.setItem('locale', _locale);
+    </script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/static/assessment/js/main-built.js?v=d15b02d9b5fc8cf08b4f8ed467699c973f9af33c" src="assessment_data_007/main-built.js"></script><style>.cke{visibility:hidden;}</style><script type="text/javascript" src="assessment_data_007/config.js"></script><link rel="stylesheet" type="text/css" href="assessment_data_007/editor_gecko.css"><script type="text/javascript" src="assessment_data_007/no_002.js"></script><script type="text/javascript" src="assessment_data_007/styles.js"></script><script type="text/javascript" src="assessment_data_007/plugin_006.js"></script><script type="text/javascript" src="assessment_data_007/plugin_004.js"></script><script type="text/javascript" src="assessment_data_007/plugin_007.js"></script><script type="text/javascript" src="assessment_data_007/plugin_002.js"></script><script type="text/javascript" src="assessment_data_007/plugin_010.js"></script><script type="text/javascript" src="assessment_data_007/plugin.js"></script><script type="text/javascript" src="assessment_data_007/plugin_003.js"></script><script type="text/javascript" src="assessment_data_007/plugin_012.js"></script><script type="text/javascript" src="assessment_data_007/plugin_005.js"></script><script type="text/javascript" src="assessment_data_007/plugin_008.js"></script><script type="text/javascript" src="assessment_data_007/plugin_011.js"></script><script type="text/javascript" src="assessment_data_007/plugin_009.js"></script><link rel="stylesheet" type="text/css" href="assessment_data_007/scayt.css"><link rel="stylesheet" type="text/css" href="assessment_data_007/dialog.css"><link rel="stylesheet" type="text/css" href="assessment_data_007/tableselection.css"><link rel="stylesheet" type="text/css" href="assessment_data_007/wsc.css"><script type="text/javascript" src="assessment_data_007/no.js"></script><script type="text/javascript" src="assessment_data_007/no_003.js"></script><link rel="stylesheet" type="text/css" href="assessment_data_007/copyformatting.css"><style data-cke-temp="1">.cke_editable{cursor:text}.cke_editable img,.cke_editable input,.cke_editable textarea{cursor:default}
+img.cke_flash{background-image: url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/flash/images/placeholder.png?t=HBDD);background-position: center center;background-repeat: no-repeat;border: 1px solid #a9a9a9;width: 80px;height: 80px;}
+.cke_editable form{border: 1px dotted #FF0000;padding: 2px;}
+
+img.cke_hidden{background-image: url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/forms/images/hiddenfield.gif?t=HBDD);background-position: center center;background-repeat: no-repeat;border: 1px solid #a9a9a9;width: 16px !important;height: 16px !important;}
+img.cke_iframe{background-image: url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/iframe/images/placeholder.png?t=HBDD);background-position: center center;background-repeat: no-repeat;border: 1px solid #a9a9a9;width: 80px;height: 80px;}
+.cke_contents_ltr a.cke_anchor,.cke_contents_ltr a.cke_anchor_empty,.cke_editable.cke_contents_ltr a[name],.cke_editable.cke_contents_ltr a[data-cke-saved-name]{background:url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/link/images/anchor.png?t=HBDD) no-repeat left center;border:1px dotted #00f;background-size:16px;padding-left:18px;cursor:auto;}.cke_contents_ltr img.cke_anchor{background:url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/link/images/anchor.png?t=HBDD) no-repeat left center;border:1px dotted #00f;background-size:16px;width:16px;min-height:15px;height:1.15em;vertical-align:text-bottom;}.cke_contents_rtl a.cke_anchor,.cke_contents_rtl a.cke_anchor_empty,.cke_editable.cke_contents_rtl a[name],.cke_editable.cke_contents_rtl a[data-cke-saved-name]{background:url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/link/images/anchor.png?t=HBDD) no-repeat right center;border:1px dotted #00f;background-size:16px;padding-right:18px;cursor:auto;}.cke_contents_rtl img.cke_anchor{background:url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/link/images/anchor.png?t=HBDD) no-repeat right center;border:1px dotted #00f;background-size:16px;width:16px;min-height:15px;height:1.15em;vertical-align:text-bottom;}
+div.cke_pagebreak{background:url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/pagebreak/images/pagebreak.gif?t=HBDD) no-repeat center center !important;clear:both !important;width:100% !important;border-top:#999 1px dotted !important;border-bottom:#999 1px dotted !important;padding:0 !important;height:7px !important;cursor:default !important;}
+.cke_show_blocks h6:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks h5:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks h4:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks h3:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks h2:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks h1:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks blockquote:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks address:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks pre:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks div:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks p:not([contenteditable=false]):not(.cke_show_blocks_off){background-repeat:no-repeat;border:1px dotted gray;padding-top:8px}.cke_show_blocks h6:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/showblocks/images/block_h6.png?t=HBDD)}.cke_show_blocks h5:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/showblocks/images/block_h5.png?t=HBDD)}.cke_show_blocks h4:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/showblocks/images/block_h4.png?t=HBDD)}.cke_show_blocks h3:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/showblocks/images/block_h3.png?t=HBDD)}.cke_show_blocks h2:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/showblocks/images/block_h2.png?t=HBDD)}.cke_show_blocks h1:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/showblocks/images/block_h1.png?t=HBDD)}.cke_show_blocks blockquote:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/showblocks/images/block_blockquote.png?t=HBDD)}.cke_show_blocks address:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/showblocks/images/block_address.png?t=HBDD)}.cke_show_blocks pre:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/showblocks/images/block_pre.png?t=HBDD)}.cke_show_blocks div:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/showblocks/images/block_div.png?t=HBDD)}.cke_show_blocks p:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/showblocks/images/block_p.png?t=HBDD)}.cke_show_blocks.cke_contents_ltr h6:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr h5:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr h4:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr h3:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr h2:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr h1:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr blockquote:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr address:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr pre:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr div:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr p:not([contenteditable=false]):not(.cke_show_blocks_off){background-position:top left;padding-left:8px}.cke_show_blocks.cke_contents_rtl h6:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl h5:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl h4:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl h3:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl h2:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl h1:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl blockquote:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl address:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl pre:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl div:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl p:not([contenteditable=false]):not(.cke_show_blocks_off){background-position:top right;padding-right:8px}
+.cke_show_borders  table.cke_show_border,.cke_show_borders  table.cke_show_border > tr > td, .cke_show_borders  table.cke_show_border > tr > th,.cke_show_borders  table.cke_show_border > tbody > tr > td, .cke_show_borders  table.cke_show_border > tbody > tr > th,.cke_show_borders  table.cke_show_border > thead > tr > td, .cke_show_borders  table.cke_show_border > thead > tr > th,.cke_show_borders  table.cke_show_border > tfoot > tr > td, .cke_show_borders  table.cke_show_border > tfoot > tr > th{border : #d3d3d3 1px dotted}
+.cke_widget_wrapper{position:relative;outline:none}.cke_widget_inline{display:inline-block}.cke_widget_wrapper:hover>.cke_widget_element{outline:2px solid yellow;cursor:default}.cke_widget_wrapper:hover .cke_widget_editable{outline:2px solid yellow}.cke_widget_wrapper.cke_widget_focused>.cke_widget_element,.cke_widget_wrapper .cke_widget_editable.cke_widget_editable_focused{outline:2px solid #ace}.cke_widget_editable{cursor:text}.cke_widget_drag_handler_container{position:absolute;width:15px;height:0;display:none;opacity:0.75;transition:height 0s 0.2s;line-height:0}.cke_widget_wrapper:hover>.cke_widget_drag_handler_container{height:15px;transition:none}.cke_widget_drag_handler_container:hover{opacity:1}img.cke_widget_drag_handler{cursor:move;width:15px;height:15px;display:inline-block}.cke_widget_mask{position:absolute;top:0;left:0;width:100%;height:100%;display:block}.cke_editable.cke_widget_dragging, .cke_editable.cke_widget_dragging *{cursor:move !important}
+.cke_upload_uploading img{opacity: 0.3}
+img::selection{color:rgba(0,0,0,0)}img.ckimgrsz{outline:1px dashed #000}#ckimgrsz{position:absolute;width:0;height:0;cursor:default;z-index:10001}#ckimgrsz span{display:none;position:absolute;top:0;left:0;width:0;height:0;background-size:100% 100%;opacity:.65;outline:1px dashed #000}#ckimgrsz i{position:absolute;display:block;width:5px;height:5px;background:#fff;border:1px solid #000}#ckimgrsz i.active,#ckimgrsz i:hover{background:#000}#ckimgrsz i.br,#ckimgrsz i.tl{cursor:nwse-resize}#ckimgrsz i.bm,#ckimgrsz i.tm{cursor:ns-resize}#ckimgrsz i.bl,#ckimgrsz i.tr{cursor:nesw-resize}#ckimgrsz i.lm,#ckimgrsz i.rm{cursor:ew-resize}body.dragging-br,body.dragging-br *,body.dragging-tl,body.dragging-tl *{cursor:nwse-resize!important}body.dragging-bm,body.dragging-bm *,body.dragging-tm,body.dragging-tm *{cursor:ns-resize!important}body.dragging-bl,body.dragging-bl *,body.dragging-tr,body.dragging-tr *{cursor:nesw-resize!important}body.dragging-lm,body.dragging-lm *,body.dragging-rm,body.dragging-rm *{cursor:ew-resize!important}</style></head>
+<body class="embedded-assessment" style="">
+<div id="modal-container" class="modal hide fade"></div>
+<div id="alert-container"></div>
+<div id="wrap" style="width: 100%;">
+    
+
+    <div id="header" class="navbar navbar-inverse navbar-static-top ">
+        <div class="navbar-inner header-navbar-inner">
+            <a class="logo" href="https://uis.inspera.no/tests"><img src="assessment_data_007/IA_logo.svg" onerror="this.src='/static/assessment/img/logo_40.png'; this.onerror=null;"></a>
+        </div>
+    </div>
+    <div id="sidebar-container"></div>
+    <div id="page-container">
+        <div id="sub-header">
+            <div class="inner"><div id="question-edit-sub-header" class="fixed"><div class="nav-left">
+    <span class="breadcrumbs">
+        
+            
+                <a id="goToQuestionSetTrigger" href="https://uis.inspera.no/author/test/43203357" class="test-name mrs"><i class="icon-th icon-large"></i></a>
+            
+        
+        <span class="loading-indicator" style="display: none;">
+    Laster <i class="icon-refresh icon-spin mlx"></i>
+</span>
+
+        <span class="question-name hidden loaded editable" style="display: inline;">
+            <span id="questionName" class="name value bold truncation-tooltip truncate truncate-small" title="" data-original-title="DAT310 Info 30/04/2019" style="display: inline-block;">DAT310 Info 30/04/2019</span>
+            <a id="editQuestionNameTrigger" href="javascript:void(0)" class="edit" style="display: inline;"><i class="icon-pencil soft" style="display: inline;"></i></a>
+        </span>
+    </span>
+    <span class="save-indicator">
+    <span class="saved hidden">
+        <i class="icon-info-sign"></i>Lagret
+    </span>
+    <span class="saving hidden">
+        <i class="icon-refresh icon-spin"></i>Lagrer...
+    </span>
+    <span class="error hidden">
+        <i class="icon-exclamation-sign"></i>Feil ved lagring
+    </span>
+</span>
+
+</div>
+<div class="nav-right" style="">
+    
+        
+            
+            <span id="sharingQuestionWithUsersTrigger" class="mrm sharing-status sharing-status-user soft" data-granteetype="user" title="" data-original-title="Del med brukere">
+                <i class="icon-user mrs"></i><span class="value"></span>
+            </span>
+            <span id="sharingQuestionWithOrgUnitsTrigger" class="mrm sharing-status sharing-status-orgunit soft" data-granteetype="orgUnit" title="" data-original-title="Deling med org. enheter">
+                <i class="icon-building mrs"></i><span class="value"></span>
+            </span>
+        
+        <a id="viewQuestionLogEventsTrigger" class="log-link mrm header-tool-svg" title="" data-original-title="Se hendelseslogg">
+            <object type="image/svg+xml" data="assessment_data_007/fa-history.svg"></object>
+        </a>
+        
+            <a id="previewQuestionInNewWindowTrigger" class="icon-eye-open mrm previewNewWindow" title="" data-original-title="Forhåndsvis"></a>
+        
+    
+    <a id="saveQuestionTrigger" class="btn btn-primary save mlm">Lagre</a>
+    
+        <a id="saveAndCloseQuestionTrigger" class="btn save-and-close mls">Lagre og lukk</a>
+   
+</div>
+
+<div class="language-tab-container">
+    <ul class="nav nav-tabs"><li class="active"><a href="javascript:void(0);" id="selectQuestionLanguage_en_us" data-language="en_us" class="selectLanguage">Engelsk</a></li><li class=""><a href="javascript:void(0);" id="selectQuestionLanguage_no_no" data-language="no_no" class="selectLanguage">Bokmål</a></li><li><a class="addLanguage" href="javascript:void(0);" title="" id="editQuestionLanguagesTrigger" data-original-title="Språkinnstillinger"><i class="icon-cog icon-large language-cog"></i></a></li></ul>
+</div></div></div>
+        </div>
+        <div id="container" class="container"><div id="43203355" class="hidden edit-question-container" view_read_only="false" style="display: block;"><div id="editor-toolbar"></div>
+<div class="edit-container">
+    <section class="edit-area">
+        <div class="latex-mode-header hidden">
+            Latexmodus
+            <a href="https://inspera.atlassian.net/wiki/spaces/KB/pages/739016903/Latex+mode" target="_blank">
+                Lær mer
+            </a>
+        </div>
+        <form>
+            <div name="editor" class="editor" id="editor" style="visibility: hidden; display: none;"></div><div id="cke_editor" class="cke_1 cke cke_reset cke_chrome cke_editor_editor cke_ltr cke_browser_gecko cke_focus" dir="ltr" role="application" aria-labelledby="cke_editor_arialbl" style="width: 100%;" lang="no"><span id="cke_editor_arialbl" class="cke_voice_label">Rikteksteditor, editor</span><div class="cke_inner cke_reset" role="presentation"><span id="cke_1_top" class="cke_top cke_reset_all" role="presentation" style="height: auto; -moz-user-select: none;"><span id="cke_11" class="cke_voice_label">Verktøylinjer for editor</span><span id="cke_1_toolbox" class="cke_toolbox" role="group" aria-labelledby="cke_11" onmousedown="return false;"><span id="cke_12" class="cke_toolbar" aria-labelledby="cke_12_label" role="toolbar"><span id="cke_12_label" class="cke_voice_label">Utklippstavle/Angre</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_13" class="cke_button cke_button__undo cke_button_off" title="Angre (⌘+Z)" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_13_label" aria-describedby="cke_13_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(2,event);" onfocus="return CKEDITOR.tools.callFunction(3,event);" onclick="CKEDITOR.tools.callFunction(4,this);return false;"><span class="cke_button_icon cke_button__undo_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/icons.png?t=HBDD');background-position:0 -2016px;background-size:auto;">&nbsp;</span><span id="cke_13_label" class="cke_button_label cke_button__undo_label" aria-hidden="false">Angre</span><span id="cke_13_description" class="cke_button_label" aria-hidden="false">Keyboard shortcut Command+Z</span></a><a id="cke_14" class="cke_button cke_button__redo cke_button_disabled" title="Gjør om (⌘+Y)" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_14_label" aria-describedby="cke_14_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(5,event);" onfocus="return CKEDITOR.tools.callFunction(6,event);" onclick="CKEDITOR.tools.callFunction(7,this);return false;" aria-disabled="true"><span class="cke_button_icon cke_button__redo_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/icons.png?t=HBDD');background-position:0 -1968px;background-size:auto;">&nbsp;</span><span id="cke_14_label" class="cke_button_label cke_button__redo_label" aria-hidden="false">Gjør om</span><span id="cke_14_description" class="cke_button_label" aria-hidden="false">Keyboard shortcut Command+Y</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_15" class="cke_toolbar" aria-labelledby="cke_15_label" role="toolbar"><span id="cke_15_label" class="cke_voice_label">Basisstiler</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_16" class="cke_button cke_button__bold cke_button_off" title="Fet (⌘+B)" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_16_label" aria-describedby="cke_16_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(8,event);" onfocus="return CKEDITOR.tools.callFunction(9,event);" onclick="CKEDITOR.tools.callFunction(10,this);return false;"><span class="cke_button_icon cke_button__bold_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/icons.png?t=HBDD');background-position:0 -24px;background-size:auto;">&nbsp;</span><span id="cke_16_label" class="cke_button_label cke_button__bold_label" aria-hidden="false">Fet</span><span id="cke_16_description" class="cke_button_label" aria-hidden="false">Keyboard shortcut Command+B</span></a><a id="cke_17" class="cke_button cke_button__italic cke_button_off" title="Kursiv (⌘+I)" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_17_label" aria-describedby="cke_17_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(11,event);" onfocus="return CKEDITOR.tools.callFunction(12,event);" onclick="CKEDITOR.tools.callFunction(13,this);return false;"><span class="cke_button_icon cke_button__italic_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/icons.png?t=HBDD');background-position:0 -48px;background-size:auto;">&nbsp;</span><span id="cke_17_label" class="cke_button_label cke_button__italic_label" aria-hidden="false">Kursiv</span><span id="cke_17_description" class="cke_button_label" aria-hidden="false">Keyboard shortcut Command+I</span></a><a id="cke_18" class="cke_button cke_button__underline cke_button_off" title="Understreking (⌘+U)" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_18_label" aria-describedby="cke_18_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(14,event);" onfocus="return CKEDITOR.tools.callFunction(15,event);" onclick="CKEDITOR.tools.callFunction(16,this);return false;"><span class="cke_button_icon cke_button__underline_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/icons.png?t=HBDD');background-position:0 -144px;background-size:auto;">&nbsp;</span><span id="cke_18_label" class="cke_button_label cke_button__underline_label" aria-hidden="false">Understreking</span><span id="cke_18_description" class="cke_button_label" aria-hidden="false">Keyboard shortcut Command+U</span></a><a id="cke_19" class="cke_button cke_button__subscript cke_button_off" title="Senket skrift" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_19_label" aria-describedby="cke_19_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(17,event);" onfocus="return CKEDITOR.tools.callFunction(18,event);" onclick="CKEDITOR.tools.callFunction(19,this);return false;"><span class="cke_button_icon cke_button__subscript_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/icons.png?t=HBDD');background-position:0 -96px;background-size:auto;">&nbsp;</span><span id="cke_19_label" class="cke_button_label cke_button__subscript_label" aria-hidden="false">Senket skrift</span><span id="cke_19_description" class="cke_button_label" aria-hidden="false"></span></a><a id="cke_20" class="cke_button cke_button__superscript cke_button_off" title="Hevet skrift" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_20_label" aria-describedby="cke_20_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(20,event);" onfocus="return CKEDITOR.tools.callFunction(21,event);" onclick="CKEDITOR.tools.callFunction(22,this);return false;"><span class="cke_button_icon cke_button__superscript_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/icons.png?t=HBDD');background-position:0 -120px;background-size:auto;">&nbsp;</span><span id="cke_20_label" class="cke_button_label cke_button__superscript_label" aria-hidden="false">Hevet skrift</span><span id="cke_20_description" class="cke_button_label" aria-hidden="false"></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_21" class="cke_toolbar" aria-labelledby="cke_21_label" role="toolbar"><span id="cke_21_label" class="cke_voice_label">Avsnitt</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_22" class="cke_button cke_button__numberedlist cke_button_off" title="Legg til/Fjern nummerert liste" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_22_label" aria-describedby="cke_22_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(23,event);" onfocus="return CKEDITOR.tools.callFunction(24,event);" onclick="CKEDITOR.tools.callFunction(25,this);return false;"><span class="cke_button_icon cke_button__numberedlist_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/icons.png?t=HBDD');background-position:0 -1392px;background-size:auto;">&nbsp;</span><span id="cke_22_label" class="cke_button_label cke_button__numberedlist_label" aria-hidden="false">Legg til/Fjern nummerert liste</span><span id="cke_22_description" class="cke_button_label" aria-hidden="false"></span></a><a id="cke_23" class="cke_button cke_button__bulletedlist cke_button_off" title="Legg til/Fjern punktmerket liste" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_23_label" aria-describedby="cke_23_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(26,event);" onfocus="return CKEDITOR.tools.callFunction(27,event);" onclick="CKEDITOR.tools.callFunction(28,this);return false;"><span class="cke_button_icon cke_button__bulletedlist_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/icons.png?t=HBDD');background-position:0 -1344px;background-size:auto;">&nbsp;</span><span id="cke_23_label" class="cke_button_label cke_button__bulletedlist_label" aria-hidden="false">Legg til/Fjern punktmerket liste</span><span id="cke_23_description" class="cke_button_label" aria-hidden="false"></span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_24" class="cke_button cke_button__outdent cke_button_disabled" title="Reduser innrykk" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_24_label" aria-describedby="cke_24_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(29,event);" onfocus="return CKEDITOR.tools.callFunction(30,event);" onclick="CKEDITOR.tools.callFunction(31,this);return false;" aria-disabled="true"><span class="cke_button_icon cke_button__outdent_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/icons.png?t=HBDD');background-position:0 -1056px;background-size:auto;">&nbsp;</span><span id="cke_24_label" class="cke_button_label cke_button__outdent_label" aria-hidden="false">Reduser innrykk</span><span id="cke_24_description" class="cke_button_label" aria-hidden="false"></span></a><a id="cke_25" class="cke_button cke_button__indent cke_button_off" title="Øk innrykk" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_25_label" aria-describedby="cke_25_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(32,event);" onfocus="return CKEDITOR.tools.callFunction(33,event);" onclick="CKEDITOR.tools.callFunction(34,this);return false;"><span class="cke_button_icon cke_button__indent_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/icons.png?t=HBDD');background-position:0 -1008px;background-size:auto;">&nbsp;</span><span id="cke_25_label" class="cke_button_label cke_button__indent_label" aria-hidden="false">Øk innrykk</span><span id="cke_25_description" class="cke_button_label" aria-hidden="false"></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_26" class="cke_toolbar" aria-labelledby="cke_26_label" role="toolbar"><span id="cke_26_label" class="cke_voice_label">math</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_27" class="cke_button cke_button__mathjax cke_button_off" title="Matte" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_27_label" aria-describedby="cke_27_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(35,event);" onfocus="return CKEDITOR.tools.callFunction(36,event);" onclick="CKEDITOR.tools.callFunction(37,this);return false;"><span class="cke_button_icon cke_button__mathjax_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/mathjax/icons/mathjax.png?t=HBDD');background-position:0 0px;background-size:16px;">&nbsp;</span><span id="cke_27_label" class="cke_button_label cke_button__mathjax_label" aria-hidden="false">Matte</span><span id="cke_27_description" class="cke_button_label" aria-hidden="false"></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_28" class="cke_toolbar" aria-labelledby="cke_28_label" role="toolbar"><span id="cke_28_label" class="cke_voice_label">Innsetting</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_29" class="cke_button cke_button__attachmentinsert cke_button_off" title="Sett inn fil" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_29_label" aria-describedby="cke_29_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(38,event);" onfocus="return CKEDITOR.tools.callFunction(39,event);" onclick="CKEDITOR.tools.callFunction(40,this);return false;"><span class="cke_button_icon cke_button__attachmentinsert_icon" style="">&nbsp;</span><span id="cke_29_label" class="cke_button_label cke_button__attachmentinsert_label" aria-hidden="false">Sett inn fil</span><span id="cke_29_description" class="cke_button_label" aria-hidden="false"></span></a><a id="cke_30" class="cke_button cke_button__table cke_button_off" title="Tabell" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_30_label" aria-describedby="cke_30_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(41,event);" onfocus="return CKEDITOR.tools.callFunction(42,event);" onclick="CKEDITOR.tools.callFunction(43,this);return false;"><span class="cke_button_icon cke_button__table_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/icons.png?t=HBDD');background-position:0 -1920px;background-size:auto;">&nbsp;</span><span id="cke_30_label" class="cke_button_label cke_button__table_label" aria-hidden="false">Tabell</span><span id="cke_30_description" class="cke_button_label" aria-hidden="false"></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_31" class="cke_toolbar" aria-labelledby="cke_31_label" role="toolbar"><span id="cke_31_label" class="cke_voice_label">Lenker</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_32" class="cke_button cke_button__link cke_button_off" title="Sett inn/Rediger lenke (⌘+L)" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_32_label" aria-describedby="cke_32_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(44,event);" onfocus="return CKEDITOR.tools.callFunction(45,event);" onclick="CKEDITOR.tools.callFunction(46,this);return false;"><span class="cke_button_icon cke_button__link_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/icons.png?t=HBDD');background-position:0 -1272px;background-size:auto;">&nbsp;</span><span id="cke_32_label" class="cke_button_label cke_button__link_label" aria-hidden="false">Sett inn/Rediger lenke</span><span id="cke_32_description" class="cke_button_label" aria-hidden="false">Keyboard shortcut Command+L</span></a><a id="cke_33" class="cke_button cke_button__imageinsert cke_button_off" title="Sett inn bilde" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_33_label" aria-describedby="cke_33_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(47,event);" onfocus="return CKEDITOR.tools.callFunction(48,event);" onclick="CKEDITOR.tools.callFunction(49,this);return false;"><span class="cke_button_icon cke_button__imageinsert_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/imageInsert/icons/image.png?t=HBDD');background-position:0 undefinedpx;background-size:16px;">&nbsp;</span><span id="cke_33_label" class="cke_button_label cke_button__imageinsert_label" aria-hidden="false">Sett inn bilde</span><span id="cke_33_description" class="cke_button_label" aria-hidden="false"></span></a><a id="cke_34" class="cke_button cke_button__attachmentpdf cke_button_off" title="Legg ved PDF" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_34_label" aria-describedby="cke_34_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(50,event);" onfocus="return CKEDITOR.tools.callFunction(51,event);" onclick="CKEDITOR.tools.callFunction(52,this);return false;"><span class="cke_button_icon cke_button__attachmentpdf_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/attachmentPDF/icons/attachmentPDF.png?t=HBDD');background-position:0 undefinedpx;background-size:16px;">&nbsp;</span><span id="cke_34_label" class="cke_button_label cke_button__attachmentpdf_label" aria-hidden="false">Legg ved PDF</span><span id="cke_34_description" class="cke_button_label" aria-hidden="false"></span></a><a id="cke_35" class="cke_button cke_button__iaaudio cke_button_off" title="Sett inn lydklipp" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_35_label" aria-describedby="cke_35_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(53,event);" onfocus="return CKEDITOR.tools.callFunction(54,event);" onclick="CKEDITOR.tools.callFunction(55,this);return false;"><span class="cke_button_icon cke_button__iaaudio_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/iaAudio/audio_icon.png?t=HBDD');background-position:0 undefinedpx;background-size:16px;">&nbsp;</span><span id="cke_35_label" class="cke_button_label cke_button__iaaudio_label" aria-hidden="false">Sett inn lydklipp</span><span id="cke_35_description" class="cke_button_label" aria-hidden="false"></span></a><a id="cke_36" class="cke_button cke_button__iavideo cke_button_off" title="Sett inn video" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_36_label" aria-describedby="cke_36_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(56,event);" onfocus="return CKEDITOR.tools.callFunction(57,event);" onclick="CKEDITOR.tools.callFunction(58,this);return false;"><span class="cke_button_icon cke_button__iavideo_icon" style="background-image:url('https://uis.inspera.no/static/assessment/js/lib/ckeditor/plugins/iaVideo/video_icon.png?t=HBDD');background-position:0 undefinedpx;background-size:16px;">&nbsp;</span><span id="cke_36_label" class="cke_button_label cke_button__iavideo_label" aria-hidden="false">Sett inn video</span><span id="cke_36_description" class="cke_button_label" aria-hidden="false"></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_37" class="cke_toolbar cke_toolbar_last" aria-labelledby="cke_37_label" role="toolbar" style="display: none;"><span id="cke_37_label" class="cke_voice_label">others</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_38" class="cke_button cke_button__interaction cke_button_off" title="Sett inn interaksjon" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_38_label" aria-describedby="cke_38_description" aria-haspopup="false" onkeypress="return false;" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(59,event);" onfocus="return CKEDITOR.tools.callFunction(60,event);" onclick="CKEDITOR.tools.callFunction(61,this);return false;"><span class="cke_button_icon cke_button__interaction_icon" style="">&nbsp;</span><span id="cke_38_label" class="cke_button_label cke_button__interaction_label" aria-hidden="false">Sett inn interaksjon</span><span id="cke_38_description" class="cke_button_label" aria-hidden="false"></span></a></span><span class="cke_toolbar_end"></span></span></span></span><div id="cke_1_contents" class="cke_contents cke_reset" role="presentation" style="height: 600px;"><div class="cke_wysiwyg_div cke_reset cke_enable_context_menu cke_editable cke_editable_themed cke_contents_ltr cke_show_borders" hidefocus="true" tabindex="1" spellcheck="false" style="position: relative;" role="textbox" aria-label="Rikteksteditor, editor" aria-describedby="cke_51" contenteditable="true"><p style="">The trial exam contains 15&nbsp;exercises. You can collect 69 points in total.<br></p><p style=""><br></p><p style=""><strong>Grading:</strong></p><ul class="b6f5"><li style="" class="b6f5">0-25: F</li><li style="" class="b6f5">26-31: E</li><li style="" class="b6f5">32-38: D</li><li style="" class="b6f5">39-51: C</li><li style="" class="b6f5">52-58: B</li><li style="" class="b6f5">59+: A<br></li></ul><ul class="7dff"></ul><p style="">&nbsp;<br></p><p style="">The exam contains two parts.<br></p><p style=""><strong>Part 1 </strong>contains multiple choice and text questions.<br>The scoring of multiple choice questions is as follows<br></p><ul><li style="">The correct solution is 2 or 3&nbsp;points</li><li style="">Wrong answer is -1 point<br></li></ul><p><strong>Part 2 </strong>contains programming questions.<br></p><p><br></p><p style="">&nbsp;<br>You are allowed to use all material&nbsp;in printed or in&nbsp;electronic format, and the following websites:</p><ul class="64dc"><li style="" class="64dc"><p style="">http://w3schools.com&nbsp;(except the online 'tryit' editors! site search within w3schools is OK)</p></li><li style="" class="64dc"><p style="">http://docs.python.org</p></li><li style="" class="64dc"><p style="">http://flask.pocoo.org</p></li><li style="" class="64dc"><p style="">http://jinja.pocoo.org</p></li><li style="" class="64dc"><p style="">https://dev.mysql.com/doc/connector-python/en/</p></li><li style="" class="64dc"><p style="">http://api.jquery.com</p></li><li style="" class="64dc"><p style="">http://getbootstrap.com</p></li><li style="" class="64dc"><p style="">http://github.com/kbalog/web-programming</p></li><li style="" class="64dc"><p style="">http://speakerdeck.com/kbalog</p></li><li style="" class="64dc"><p style="">http://translate.google.com</p></li></ul><p style="">&nbsp;<br><strong>It is not&nbsp;allowed to 'run' any of the sources and test them in a browser.</strong></p><p style=""><br></p><div responseidentifier="RESPONSE" class="interaction iainteractive block-interaction" interactiontype="choiceInteraction" id="RESPONSE" contenteditable="false"><h5>If you have comments to any of the exercises, you may write them here</h5><img data-cke-saved-src="/static/assessment/img/ck_candidate_preview.jpg" src="assessment_data_007/ck_candidate_preview.jpg"></div><p style=""><br></p></div><span id="cke_51" class="cke_voice_label">Trykk ALT 0 for hjelp</span></div><span id="cke_1_bottom" class="cke_bottom cke_reset_all" role="presentation" style="-moz-user-select: none;"><span id="cke_1_resizer" class="cke_resizer cke_resizer_vertical cke_resizer_ltr" title="Dra for å skalere" onmousedown="CKEDITOR.tools.callFunction(0, event)">◢</span></span></div></div>
+        </form>
+    </section>
+    <section class="editor-panel-container">
+        <div class="property-panel-container "><div class="property-panel"><div class="flat-accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+    
+    <div class="group score main">
+        <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-1-header-0" aria-controls="ui-accordion-1-panel-0" aria-selected="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-expand-plus"></span><span class=""></span>Poeng</h3>
+
+        
+            <div class="options-box ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-accordion-1-panel-0" aria-labelledby="ui-accordion-1-header-0" role="tabpanel" aria-expanded="false" aria-hidden="true">
+                
+                
+                <div class="allowed-scores-info" style="display: block;">
+                    <p>Positive og negative tall tillatt.</p>
+                    <p>2 desimaler tillatt.</p>
+                </div>
+                <ul class="unstyled score-inputs">
+                    
+                    <li class="SCORE_EACH_CORRECT" style="display: none;">
+                        <label for="points-correct">Poeng per riktige svar *</label>
+
+                        <div class="number-picker interaction-score">
+                            <label class="icon-caret-left decrease "></label>
+                            <input type="text" id="points-correct" name="points-correct" class="input-number score" value="1">
+                            <label class="icon-caret-right increase "></label>
+                        </div>
+                        <div class="advanced-scoring-explanation">
+                            <a href="javascript:void(0);" data-url="MarksPerCorrectAndPerWrong" class="blue-link learnMore">Lær mer</a>
+                        </div>
+                    </li>
+                    <li class="SCORE_EACH_WRONG" style="display: none;">
+                        <label for="points-wrong">Poeng per feil svar</label>
+
+                        <div class="number-picker interaction-score">
+                            <label class="icon-caret-left decrease "></label>
+                            <input type="text" id="points-wrong" name="points-wrong" class="input-number score" value="0">
+                            <label class="icon-caret-right increase "></label>
+                        </div>
+                        <div class="advanced-scoring-explanation">
+                            <a href="javascript:void(0);" data-url="MarksPerCorrectAndPerWrong" class="blue-link learnMore MarksPerCorrectAndPerWrong">Lær mer</a>
+                        </div>
+                    </li>
+                    <li class="SCORE_UNANSWERED" style="display: none;">
+                        <label for="points-unanswered">Poeng for ubesvart</label>
+
+                        <div class="number-picker">
+                            <label class="icon-caret-left decrease"></label>
+                            <input type="text" id="points-unanswered" name="points-unanswered" class="input-number score" value="0">
+                            <label class="icon-caret-right increase"></label>
+                        </div>
+                        <div class="advanced-scoring-explanation">
+                            <a href="javascript:void(0);" class="blue-link learnMore">Lær mer</a>
+                        </div>
+                    </li>
+                    <li class="SCORE_ALL_CORRECT" style="display: none;">
+                        <label for="points-all-correct">Poeng for alle riktige</label>
+
+                        <div class="number-picker">
+                            <label class="icon-caret-left decrease"></label>
+                            <input type="text" id="points-all-correct" name="points-all-correct" class="input-number score" value="0">
+                            <label class="icon-caret-right increase"></label>
+                        </div>
+                        <div class="advanced-scoring-explanation">
+                            <a href="javascript:void(0);" class="blue-link learnMore">Lær mer</a>
+                        </div>
+                    </li>
+                    <li class="SCORE_MINIMUM" style="display: none;">
+                        <label for="points-minimum">Minimum poengsum</label>
+
+                        <div class="number-picker">
+                            <label class="icon-caret-left decrease"></label>
+                            <input type="text" id="points-minimum" name="points-minimum" class="input-number score">
+                            <label class="icon-caret-right increase"></label>
+                        </div>
+                        <div class="advanced-scoring-explanation">
+                            <a href="javascript:void(0);" class="blue-link learnMore">Lær mer</a>
+                        </div>
+                    </li>
+                    <li class="SCORE_MAXIMUM" style="display: list-item;">
+                        <label for="points-maximum">Maksimum poengsum</label>
+
+                        <div class="number-picker">
+                            <label class="icon-caret-left decrease unselectable"></label>
+                            <input type="text" id="points-maximum" name="points-maximum" class="input-number score" value="0">
+                            <label class="icon-caret-right increase unselectable"></label>
+                        </div>
+                        <div class="advanced-scoring-explanation">
+                            <a href="javascript:void(0);" data-url="ManualScoringMarks" class="blue-link learnMore">Lær mer</a>
+                        </div>
+                    </li>
+                    <li class="BANDED_MARKING" style="display: none;">
+                        <div class="scoring-criterion-list">
+                            
+                            
+                        </div>
+                    </li>
+                    <li class="CRITERIA_MARKING" style="display: none;">
+                        <div class="criteria-marking-view">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+    </div>
+
+
+
+    <div class="group image">
+
+        <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-1-header-1" aria-controls="ui-accordion-1-panel-1" aria-selected="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-expand-plus"></span><span class=""></span>Hovedillustrasjon</h3>
+
+        <div class="options-box ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-accordion-1-panel-1" aria-labelledby="ui-accordion-1-header-1" role="tabpanel" aria-expanded="false" aria-hidden="true">
+            <select id="mediaType" name="mediaType" class="select-block" style="display: none;">
+                <option value="noMedia" selected="selected">Ingen</option>
+                <option value="image">
+                    Bilde
+                </option>
+                <option value="embed">Embedkode</option>
+            </select><div class="btn-group bootstrap-select select-block"><button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-id="mediaType"><div class="filter-option pull-left">Ingen</div>&nbsp;<i class="icon icon-caret-down"></i></button><div class="dropdown-menu open"><ul class="dropdown-menu inner" role="menu"><li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">Ingen</span><i class="icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style=""><span class="text">
+                    Bilde
+                </span><i class="icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="0" class="" style=""><span class="text">Embedkode</span><i class="icon-ok check-mark"></i></a></li></ul></div></div>
+            <div id="wrapper-image" class="media-wrapper" style="display:none">
+                
+                    <div class="addImageContainer">
+                        <a class="add-image soft">Legg til bilde</a>
+                    </div>
+                
+            </div>
+            <div id="wrapper-embed" class="media-wrapper" style="display:none">
+                <label class="embedArea" for="embedEditor">Lim inn embedkode her:</label>
+                <textarea name="embedArea" id="embedEditor" placeholder="Embedkode"></textarea>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+        <div class="group pdfView">
+            <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-1-header-2" aria-controls="ui-accordion-1-panel-2" aria-selected="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-expand-plus"></span><span class=""></span>PDF-dokument</h3>
+            <div class="wrapper-pdf-view ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-accordion-1-panel-2" aria-labelledby="ui-accordion-1-header-2" role="tabpanel" aria-expanded="false" aria-hidden="true">
+                <div class="pdfView-info hidden">
+                   <p>
+                    <a href="" data-bypass="true" target="_blank" data-toggle="tooltip" title="" data-placement="bottom" class="truncation-tooltip pdfView-filename truncate blue-link" data-original-title=".">.</a>
+                    <i class="icon-remove"></i>
+                   </p>
+                   <div class="info-container">
+                     <p class="langPrettyPrint"> versjon</p>
+                     <p class="timestamp"></p>
+                     <p class="fileSize"></p>
+                     <a href="javascript:void(0);" class="pdfView-preview truncate blue-link">Forhåndsvis</a>
+                   </div>
+                </div>
+                 <div class="add-pdf-container">
+                     <div class="info-container">
+                        Benytt en PDF som oppgavetekst.<br>Ikke anbefalt for iPad eller mindre.
+                     </div>
+                     <div class="new-pdf-selector">
+                         <p><a class="upload-pdfView blue-link">Last opp PDF</a></p>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    
+
+
+
+
+    <div class="group metadata">
+        <h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-1-header-3" aria-controls="ui-accordion-1-panel-3" aria-selected="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-expand-plus"></span><span class=""></span>Etiketter</h3>
+        <div class="options-box ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-accordion-1-panel-3" aria-labelledby="ui-accordion-1-header-3" role="tabpanel" aria-expanded="false" aria-hidden="true">
+            <input name="tagsinput" class="tagsinput tagsinput-primary" style="display: none;">
+        </div>
+    </div>
+
+
+
+    
+
+
+
+
+
+
+</div></div></div>
+        <div class="interaction-panel-container flat-accordion hidden"></div>
+    </section>
+</div>
+<div id="editor-question-type-selector">
+    <div class="selector-header">
+        Velg oppgavetype
+    </div>
+    <div class="selector-content">
+        <ul>
+            <li class="template">
+                <div class="preview">
+                    <i></i>
+                </div>
+                <span class="title"></span>
+            </li>
+        </ul>
+    </div>
+</div></div></div>
+        <div id="bottom-container"><div class="edit-question-bottom-bar"><div class="pagination pagination-centered">
+	<div class="edit-question-navbar pagination-navbar">
+		<ul>
+	        
+	            
+	            	<li class="number active" style="display: inline-block;">
+	            		<a class="nav-question question_43203355" href="https://uis.inspera.no/author/question/43203357/43203355/lang-no_no" data-placement="top" data-html="true" title="" data-original-title="Tittel: DAT310 Info 30/04/2019&lt;br/&gt;Type: Langsvar">
+                            
+                                
+                                    
+                                        
+                                            1
+                                        
+                                    
+                                
+                            
+	            		</a>
+	            	</li>
+	        	
+	            	<li class="number" style="display: inline-block;">
+	            		<a class="nav-question question_43203333" href="https://uis.inspera.no/author/question/43203357/43203333/lang-no_no" data-placement="top" data-html="true" title="" data-original-title="Tittel: Kopi av HTML coding 8 &lt;br&gt; Type: Programmering">
+                            
+                                
+                                    
+                                        
+                                            2
+                                        
+                                    
+                                
+                            
+	            		</a>
+	            	</li>
+	        	
+	            	<li class="number" style="display: inline-block;">
+	            		<a class="nav-question question_43203337" href="https://uis.inspera.no/author/question/43203357/43203337/lang-no_no" data-placement="top" data-html="true" title="" data-original-title="Tittel: Kopi av CSS guess 21 &lt;br&gt; Type: Flervalg (ett svar)">
+                            
+                                
+                                    
+                                        
+                                            3
+                                        
+                                    
+                                
+                            
+	            		</a>
+	            	</li>
+	        	
+	            	<li class="number" style="display: inline-block;">
+	            		<a class="nav-question question_43203339" href="https://uis.inspera.no/author/question/43203357/43203339/lang-no_no" data-placement="top" data-html="true" title="" data-original-title="Tittel: Kopi av CSS guess 23 &lt;br&gt; Type: Flervalg (ett svar)">
+                            
+                                
+                                    
+                                        
+                                            4
+                                        
+                                    
+                                
+                            
+	            		</a>
+	            	</li>
+	        	
+	            	<li class="number" style="display: inline-block;">
+	            		<a class="nav-question question_43203329" href="https://uis.inspera.no/author/question/43203357/43203329/lang-no_no" data-placement="top" data-html="true" title="" data-original-title="Tittel: Kopi av Bootstrap 2 &lt;br&gt; Type: Programmering">
+                            
+                                
+                                    
+                                        
+                                            5
+                                        
+                                    
+                                
+                            
+	            		</a>
+	            	</li>
+	        	
+	            	<li class="number" style="display: inline-block;">
+	            		<a class="nav-question question_43203331" href="https://uis.inspera.no/author/question/43203357/43203331/lang-no_no" data-placement="top" data-html="true" title="" data-original-title="Tittel: Kopi av Bootstrap 4 &lt;br&gt; Type: Programmering">
+                            
+                                
+                                    
+                                        
+                                            6
+                                        
+                                    
+                                
+                            
+	            		</a>
+	            	</li>
+	        	
+	            	<li class="number" style="display: inline-block;">
+	            		<a class="nav-question question_43203335" href="https://uis.inspera.no/author/question/43203357/43203335/lang-no_no" data-placement="top" data-html="true" title="" data-original-title="Tittel: Kopi av Bootstrap 5 &lt;br&gt; Type: Programmering">
+                            
+                                
+                                    
+                                        
+                                            7
+                                        
+                                    
+                                
+                            
+	            		</a>
+	            	</li>
+	        	
+	            	<li class="number" style="display: inline-block;">
+	            		<a class="nav-question question_43203343" href="https://uis.inspera.no/author/question/43203357/43203343/lang-no_no" data-placement="top" data-html="true" title="" data-original-title="Tittel: Kopi av JS prog 16 &lt;br&gt; Type: Programmering">
+                            
+                                
+                                    
+                                        
+                                            8
+                                        
+                                    
+                                
+                            
+	            		</a>
+	            	</li>
+	        	
+	            	<li class="number" style="display: inline-block;">
+	            		<a class="nav-question question_43203341" href="https://uis.inspera.no/author/question/43203357/43203341/lang-no_no" data-placement="top" data-html="true" title="" data-original-title="Tittel: Kopi av JS prog 15 &lt;br&gt; Type: Programmering">
+                            
+                                
+                                    
+                                        
+                                            9
+                                        
+                                    
+                                
+                            
+	            		</a>
+	            	</li>
+	        	
+	            	<li class="number" style="display: inline-block;">
+	            		<a class="nav-question question_43203325" href="https://uis.inspera.no/author/question/43203357/43203325/lang-no_no" data-placement="top" data-html="true" title="" data-original-title="Tittel: Kopi av JS what 2 &lt;br&gt; Type: Fyll inn tekst">
+                            
+                                
+                                    
+                                        
+                                            10
+                                        
+                                    
+                                
+                            
+	            		</a>
+	            	</li>
+	        	
+	            	<li class="number" style="display: inline-block;">
+	            		<a class="nav-question question_43203327" href="https://uis.inspera.no/author/question/43203357/43203327/lang-no_no" data-placement="top" data-html="true" title="" data-original-title="Tittel: Kopi av JS what 4 &lt;br&gt; Type: Flervalg (ett svar)">
+                            
+                                
+                                    
+                                        
+                                            11
+                                        
+                                    
+                                
+                            
+	            		</a>
+	            	</li>
+	        	
+	            	<li class="number" style="display: inline-block;">
+	            		<a class="nav-question question_43203349" href="https://uis.inspera.no/author/question/43203357/43203349/lang-no_no" data-placement="top" data-html="true" title="" data-original-title="Tittel: Kopi av Python code 3 &lt;br&gt; Type: Sammensatt">
+                            
+                                
+                                    
+                                        
+                                            12
+                                        
+                                    
+                                
+                            
+	            		</a>
+	            	</li>
+	        	
+	            	<li class="number" style="display: inline-block;">
+	            		<a class="nav-question question_43203345" href="https://uis.inspera.no/author/question/43203357/43203345/lang-no_no" data-placement="top" data-html="true" title="" data-original-title="Tittel: Kopi av Jinja 2 &lt;br&gt; Type: Sammensatt">
+                            
+                                
+                                    
+                                        
+                                            13
+                                        
+                                    
+                                
+                            
+	            		</a>
+	            	</li>
+	        	
+	            	<li class="number" style="display: inline-block;">
+	            		<a class="nav-question question_43203347" href="https://uis.inspera.no/author/question/43203357/43203347/lang-no_no" data-placement="top" data-html="true" title="" data-original-title="Tittel: Kopi av Jinja 3 &lt;br&gt; Type: Flervalg (ett svar)">
+                            
+                                
+                                    
+                                        
+                                            14
+                                        
+                                    
+                                
+                            
+	            		</a>
+	            	</li>
+	        	
+	            	<li class="number" style="display: inline-block;">
+	            		<a class="nav-question question_43203351" href="https://uis.inspera.no/author/question/43203357/43203351/lang-no_no" data-placement="top" data-html="true" title="" data-original-title="Tittel: Kopi av Flask 3 &lt;br&gt; Type: Langsvar">
+                            
+                                
+                                    
+                                        
+                                            15
+                                        
+                                    
+                                
+                            
+	            		</a>
+	            	</li>
+	        	
+	            	<li class="number" style="display: inline-block;">
+	            		<a class="nav-question question_43203353" href="https://uis.inspera.no/author/question/43203357/43203353/lang-no_no" data-placement="top" data-html="true" title="" data-original-title="Tittel: Kopi av Flask 4 &lt;br&gt; Type: Programmering">
+                            
+                                
+                                    
+                                        
+                                            16
+                                        
+                                    
+                                
+                            
+	            		</a>
+	            	</li><li class="pagination-dropdown dropup" style="display: none;">
+  <i class="dropdown-arrow"></i>
+  <a href="javascript:" class="dropdown-toggle" data-toggle="dropdown">
+    <i class="fui-triangle-up"></i>
+  </a>
+  <ul class="dropdown-menu dropdown-menu-mod">
+  </ul>
+</li>
+	        	
+	        
+	        <li style="display: inline-block;"><a class="add-new-question" href="javascript:"><i class="icon icon-plus"></i></a></li>
+	    </ul>
+    </div>
+    <div class="add-question-same-type">
+    	<label class="checkbox" for="same-type-question">
+			<span class="icons"><span class="first-icon fui-checkbox-unchecked"></span><span class="second-icon fui-checkbox-checked"></span></span><input id="same-type-question" type="checkbox" value="">
+			Lag samme type</label>
+    </div>
+</div>
+</div></div>
+    </div>
+    <div id="push"></div>
+</div>
+<div id="support-container"></div>
+<div id="footer">
+    <div id="termsPrivacyWrapper">
+        <!-- the url and link title is set in app.js -->
+        <a class="soft mrm" id="privacyDeclaration" target="_blank" href="http://www.inspera.no/privacy?languageId=1">Personvernerklæring</a>
+        <a class="soft mrm" id="termsAndConditions" target="_blank" href="http://www.inspera.no/terms?languageId=1">Brukervilkår</a>
+    </div>
+    <p>
+        Powered by Inspera
+    </p>
+</div>
+
+<script type="text/javascript">
+    // We need to set the CKEDITOR basepath before loading any other JS
+    var CKEDITOR_BASEPATH = '/static/assessment/js/lib/ckeditor/';
+    var ASSESSMENT_BASE = "/static/assessment/js/";
+    var CHARTING_MODULES_BASE = "/static/assessment/charting/javascript/";
+    var SCRIPTS_BASE = "/static/scripts/";
+</script>
+<!--Only load JS if browser is other than IE or newer than IE8-->
+<script type="text/javascript">
+    /** Warning! Don't touch this block without looking at the build scripts first... **/
+    var env = "server";
+    // Write the script tag to load the correct JS file
+    // We have separate JS files for the different locales
+    // If local we just run the config as usual, and load locale from there
+    var NO_BUNLDE = "";
+
+    if (env == "local" || NO_BUNLDE != '') {
+        document.write("<script id='requireJS' data-main='/static/assessment/js/main.js' src='/static/assessment/js/lib/require.js?v=d15b02d9b5fc8cf08b4f8ed467699c973f9af33c' type='text/javascript'><\/script>");
+    } else {
+        // Set timeout for Require. Needs to be set before loading main-built
+        window.require = {waitSeconds: 60};
+        document.write("<script id='requireJS' data-main='/static/assessment/js/main-built.js?v=d15b02d9b5fc8cf08b4f8ed467699c973f9af33c' src='/static/assessment/js/lib/require.js?v=d15b02d9b5fc8cf08b4f8ed467699c973f9af33c' type='text/javascript'><\/script>");
+        
+    }
+</script><script id="requireJS" data-main="/static/assessment/js/main-built.js?v=d15b02d9b5fc8cf08b4f8ed467699c973f9af33c" src="assessment_data_007/require.js" type="text/javascript"></script>
+<script src="assessment_data_007/chartEmbedMain.js"></script>
+
+
+<script>
+    window._trackJs = {
+        token: "b4cce6c8c1e24aac8cb156f72a033c63",
+        application: "assessment",
+        onError: function (payload, error) {
+            var reportError = true;
+
+            // Remove 401 network events, they happen all the time for us
+            if (typeof error === 'string' && (error.indexOf('401') === 0 || error.indexOf('403') === 0)) {
+                reportError = false;
+            }
+
+            return reportError;
+        }
+    }
+</script>
+<script type="text/javascript" crossorigin="anonymous" src="tracker.js" data-token="b4cce6c8c1e24aac8cb156f72a033c63"></script>
+
+
+
+
+<div class="cke_screen_reader_only cke_copyformatting_notification"><div aria-live="polite"></div></div></body></html>
