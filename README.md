@@ -2,7 +2,7 @@
 
 This repository is for the 2019 spring edition of the DAT310 Web programming course at the University of Stavanger.
 
-  - [Trial Exam Solution](solutions/trialexam)
+  - [Trial Exam](trialexam)
   - [Assignments](https://github.com/uis-dat310-spring19/assignments) (and [how to hand them in on GitHub](HOWTO_GitHub.md))
   - [Online course admin](http://www2.ux.uis.no/~ljehl/dat310/)
   - [List of useful resources](Resources.md)
