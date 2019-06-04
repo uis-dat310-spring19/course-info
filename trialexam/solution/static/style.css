@@ -38,7 +38,7 @@ article {
 .content {
     background-color: #eeeeee;
     
-    
+    overflow: auto;
     padding: .5em;
 }
 

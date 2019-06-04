@@ -5,7 +5,8 @@ function getPostDetails(noteId){
             showFullNote(xhr.responseText, noteId);
         }
     }
-
+    xhr.open("GET", "/note/" + noteId, true);
+    xhr.send(null);
     
 }
 
@@ -35,7 +36,7 @@ function removeArticle(noteId){
     //remove article
     var articleId = "article_"+ noteId;
     var article = document.getElementById(articleId);
-    article.ribparentElement.removeChild(article);
+    article.parentElement.removeChild(article);
     
 }
 
